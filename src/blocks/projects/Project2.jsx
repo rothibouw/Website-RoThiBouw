@@ -23,7 +23,37 @@ export default function Project2({ heading, caption, projects, categories }) {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  const filteredProjects = selectedCategory === 'all' ? projects : projects.filter((project) => project.category === selectedCategory);
+  // Filter logic: max 6 projects, with at least one from each category when viewing all
+  const getFilteredProjects = () => {
+    if (selectedCategory === 'all') {
+      // Get unique categories from projects
+      const uniqueCategories = [...new Set(projects.flatMap((p) => p.categories))];
+      const result = [];
+
+      // First pass: get one from each category
+      for (const cat of uniqueCategories) {
+        const project = projects.find((p) => p.categories.includes(cat));
+        if (project && !result.includes(project)) {
+          result.push(project);
+        }
+      }
+
+      // Second pass: add more projects until we reach 6
+      for (const project of projects) {
+        if (result.length >= 6) break;
+        if (!result.includes(project)) {
+          result.push(project);
+        }
+      }
+
+      return result;
+    } else {
+      // Filter by category and limit to max 6
+      return projects.filter((p) => p.categories.includes(selectedCategory)).slice(0, 6);
+    }
+  };
+
+  const filteredProjects = getFilteredProjects();
 
   return (
     <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>

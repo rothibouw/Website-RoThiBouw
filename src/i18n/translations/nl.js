@@ -164,35 +164,34 @@ export const translations = {
   home: {
     hero: {
       slide1: {
-        title: 'Kwaliteit Vakmanschap in Houtconstructie',
-        description: 'Professioneel timmerwerk en bouwdiensten voor uw project'
+        title: 'RoThi, uw partner voor elk project',
+        description: 'Samen met u, gewóón mooie dingen maken!'
       },
       slide2: {
-        title: 'Van Renovatie tot Nieuwbouw',
-        description: 'Complete oplossingen voor al uw bouwbehoeften'
+        title: 'RoThi, uw partner voor elk project',
+        description: 'Samen met u, gewóón mooie dingen maken!'
       },
       slide3: {
-        title: 'Duurzame en Mooie Resultaten',
-        description: 'Jarenlange ervaring in timmerwerk en bouw'
+        title: 'RoThi, uw partner voor elk project',
+        description: 'Samen met u, gewóón mooie dingen maken!'
       }
     },
     services: {
       heading: 'Onze Diensten',
-      caption: 'Professionele bouwdiensten op maat voor uw behoeften',
+      renovations: {
+        title: 'Ver- en aanbouw',
+        description: 'Complete ver- en aanbouwoplossingen voor uw woning of bedrijfspand'
+      },
       roofing: {
         title: 'Dakwerken',
-        description: 'Expert dakconstructie, reparaties en onderhoud voor residentiële en commerciële panden'
+        description: 'Nieuwe dakconstructie, reparaties en onderhoud voor residentiële en commerciële panden'
       },
       carpentry: {
         title: 'Timmerwerk',
         description: 'Hoogwaardig timmerwerk voor zowel binnen- als buitenprojecten'
       },
-      renovations: {
-        title: 'Ver- en aanbouw',
-        description: 'Complete ver- en aanbouwoplossingen die uw woning of bedrijfspand uitbreiden'
-      },
       sustainability: {
-        title: 'Verduurzaaming',
+        title: 'Verduurzaming',
         description: 'Professionele verduurzaming voor uw woning of bedrijfspand'
       },
       woodConstructions: {
@@ -204,18 +203,18 @@ export const translations = {
       heading: 'Van vriendschap,',
       highlight: 'naar vakmanschap',
       caption:
-        'RoThiBouw is opgericht door Roy en Thijs — twee jonge vakmensen met een gedeelde passie voor kwaliteitsbouw. Het begon als een droom en is uitgegroeid tot een vertrouwde naam in timmerwerk, dakwerken en renovaties. Met oog voor detail en een persoonlijke aanpak bij elk project, leveren we vakmanschap waar u op kunt bouwen.',
-      button: 'Leer Ons Kennen'
+        'RoThi Bouw is opgericht door Roy en Thijs, twee jonge vakmensen met een gedeelde passie voor de bouw. Wil je ons beter leren kennen? Klik dan hieronder.',
+      button: 'Leer ons kennen'
     },
     projects: {
-      heading: 'Uitgelichte Projecten',
-      caption: 'Bekijk enkele van onze recent voltooide bouwprojecten'
+      heading: 'Uitgelichte projecten',
+      caption: 'Bekijk enkele van onze recent afgeronde bouwprojecten'
     },
-    viewAllProjects: 'Bekijk Alle Projecten',
+    viewAllProjects: 'Bekijk alle projecten',
     cta: {
-      heading: 'Klaar om Uw Project te Starten?',
-      description: 'Neem vandaag nog contact met ons op voor een gratis consultatie en offerte',
-      button: 'Neem Contact Op'
+      heading: 'Klaar om uw project te starten?',
+      description: 'Neem vandaag nog contact met ons op!',
+      button: 'Neem contact op'
     }
   },
 
@@ -449,15 +448,15 @@ export const translations = {
       }
     },
     cta: {
-      heading: 'Interesse in Deze Dienst?',
-      button: 'Neem Contact Op'
+      heading: 'Interesse in deze dienst?',
+      button: 'Neem contact op'
     },
     relatedProjects: {
-      heading: 'Gerelateerde Projecten',
+      heading: 'Gerelateerde projecten',
       caption: 'Bekijk projecten die wij hebben uitgevoerd in deze categorie'
     },
     navigation: {
-      heading: 'Onze Diensten',
+      heading: 'Ontdek onze andere diensten',
       caption: 'Ontdek al onze professionele bouwdiensten'
     },
     serviceNotFound: 'Dienst niet gevonden'
@@ -466,7 +465,7 @@ export const translations = {
   // Projects Page
   projects: {
     heading: 'Onze Projecten',
-    caption: 'Ontdek onze uitgevoerde bouwprojecten en zie de kwaliteit en mogelijkheden van ons vakmanschap',
+    caption: 'Ontdek hier onze uitgevoerde projecten',
     filterByCategory: 'Filter op categorie',
     noProjects: 'Geen projecten gevonden in deze categorie',
     aboutProject: 'Over dit project',
@@ -488,26 +487,74 @@ export const translations = {
     items: {
       project1: {
         title: 'Kaprenovatie Hooge Mierde',
-        subtitle: 'Uw huis verduurzamen en daarbij één nieuw fris dak.', /// nog naar een kop samenvoegen
+        subtitle: 'Uw huis verduurzamen en daarbij één nieuw fris dak.',
         detailDescription:
-          'Bij deze kaprenovatie hebben we op het woonhuis gebruik gemaakt van renovatieplaten, Renopir. Dit zorgt ervoor dat wij het dakbeschot kunnen laten zitten zodat er binnen niks aan het huis wordt aangetast. De klant heeft gekozen voor een OVH 206 pan. In combinatie van deze nieuwe pannen en een onderhoudsarme overstek van Rockpanel (RAL 7035) is de kap helemaal afgewerkt. Uiteraard hebben we ook nieuwe zinken goten en afvoeren toegepast.',
-        activities: {
-          activity1: 'Massieve eiken kolommen met stalen voetplaten',
-          activity2: 'Hoogwaardige dakbedekking met optimale waterafvoer',
-          activity3: 'Naadloze aansluiting op bestaand gevel',
-          activity4: 'Duurzame terrasvloer in harmonie met de overkapping',
-          activity5: 'Professionele afwerking met oog voor detail'
-        }
+          'Bij deze kaprenovatie hebben we op het woonhuis gebruik gemaakt van renovatieplaten, Renopir. ' +
+          'Dit zorgt ervoor dat wij het dakbeschot kunnen laten zitten zodat er binnen niks aan het huis wordt aangetast. ' +
+          'De klant heeft gekozen voor een OVH 206 pan. In combinatie van deze nieuwe pannen en een onderhoudsarme overstek van Rockpanel (RAL 7035) is de kap helemaal afgewerkt. ' +
+          'Uiteraard hebben we ook nieuwe zinken goten en afvoeren toegepast.'
       },
       project2: {
-        title: 'Moderne Aanbouw met Houtbekleding',
+        title: 'Gevelbekleding Bladel',
         detailDescription:
-          'Deze moderne aanbouw combineert functionaliteit met esthetiek. De houtbekleding geeft de aanbouw een warme en eigentijdse uitstraling die perfect integreert met de bestaande architectuur.',
-        activities: {
-          activity1: 'Bouw van de aanbouw met moderne architectuur',
-          activity2: 'Installatie van hoogwaardige houtbekleding',
-          activity3: 'Grote raampartijen voor optimaal natuurlijk licht'
-        }
+          'Bij dit project wilde de klant een nieuwe uitstraling van de tuin. ' +
+          'Er is hierbij gekozen voor padouk gevelbekleding, dit is een hoogwaardige en stabiele tropische hardhoutsoort. ' +
+          'Dit houtsoort behoort tot duurzaamheidsklasse 1 en kan wel 20 tot 25 jaar onbehandeld meegaan. ' +
+          'Verder is er gekozen voor barcode profiel.'
+      },
+      project3: {
+        title: 'Overkapping en tuinkamer Schijndel',
+        subtitle: 'Twee constructies voor een upgrade in uw tuin .',
+        detailDescription:
+          'Deze klant wenste een meer connectie van binnen naar buiten. ' +
+          'Hierbij is er gekozen voor een tuinkamer en overkapping. ' +
+          'De tuinkamer is een uitbereiding van de woonkamer geworden. ' +
+          'Hierbij is een mooie zithoek gecreëerd met rondom uitzicht over de tuin. ' +
+          'De overkapping met rondom glazen schuifwanden is zorgt voor een mooie plek die zowel als binnen als als buiten plek gezien kan worden. ' +
+          'We hebben gebruik gemaakt van prefab eiken constructies. ' +
+          'Bij de tuinkamer is eiken dakbeschot toegepast en landelijke zwarte (RAL 9005) kozijnen. ' +
+          'Het dakvlak van nieuwe eiken overkapping hebben we vlak door laten lopen met het bestaande schuurtje. ' +
+          'Als dakplaat hebben we unilin SW Light dakplaten toegepast met een witte afgewerkte onderkant. ' +
+          'Deze mensen kunnen jaren genieten van hun mooie tuin.'
+      },
+      project4: {
+        title: 'Verduurzamen platdak Hilvarenbeek',
+        subtitle: 'Deze klant zit er weer warmpjes bij.',
+        detailDescription:
+          'Dit platdak was hard aan vervanging toe. ' +
+          'Nadat we de oude dakbedekking en dakbeschot afgevoerd hadden kon het opbouwen beginnen. ' +
+          'Hierin hebben we de klant volledig ontzorgt, van dakbeschot tot aftimmering. ' +
+          'Als platdakisolatie hebben we pir isolatie van unilin toegepast, de boei is gemaakt van trespa (RAL 9001) en vervolgens afgewerkt met een zinken kraal. ' +
+          'Deze aanbouw kan er weer jaren tegenaan.'
+      },
+      project5: {
+        title: 'Douglas overkapping Lage Mierde',
+        subtitle: 'Gezellige sfeervolle overkapping voor elk seizoen.',
+        detailDescription:
+          'Deze douglas overkapping is door RoThi handgemaakt en geplaatst. ' +
+          'Deze klant heeft gekozen voor een zadeldak met hierop de OVH 206 pan. ' +
+          'Als dakbeschot zijn douglas sponningdelen toegepast, en als wandbekleding is douglas zweeds rabat gebruikt. '
+      },
+      project6: {
+        title: 'Overstek Hooge Mierde',
+        detailDescription:
+          'Deze klant wilde hun betimmerde overstek vervangen voor een onderhoudsarme oplossing. ' +
+          'Hierdoor zou het arbeidsintensieve schilderwerk te komen vervallen. ' +
+          'De klant heeft gekozen voor een boei van Trespa en tegen het plafond zijn keralit sponningdelen bevestigd, dit beide in RAL 9001. ' +
+          'De oude zinken goten en afvoeren zijn daarnaast vervangen.'
+      },
+      project7: {
+        title: 'Overstek Hooge Mierde',
+        detailDescription:
+          'Deze klant wilde hun betimmerde overstek vervangen voor een onderhoudsarme oplossing. ' +
+          'De klant heeft gekozen voor een boei van Trespa (RAL 5011) en een overstek plafond van Keralit (RAL 9001), Ook hebben we de goten en afvoeren vervangen in zink.'
+      },
+      project8: {
+        title: 'Gevelbekleding bedrijfshal Veldhoven',
+        subtitle: 'Een simpele oplossing waardoor je hal meteen en frisse uitstraling krijgt.',
+        detailDescription:
+          'In overleg met de klant is hier gekozen voor onderhoudsarme gevelbekleding om hiermee het aanzicht een frisse look en warme uitstraling te geven. ' +
+          'Dit Facade blokprofiel combineert het warme uiterlijk van houten latten met de duurzaamheid en het gemak van gecoat staal.'
       }
     }
   }

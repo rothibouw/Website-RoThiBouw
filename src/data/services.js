@@ -49,7 +49,7 @@ export const services = [
     descriptionImage: '/assets/services/timmerwerk/description.jpeg',
     features: ['services.timmerwerk.features.f1', 'services.timmerwerk.features.f2', 'services.timmerwerk.features.f3'],
     featureImage: '/assets/services/timmerwerk/feature.jpeg',
-    relatedCategories: ['-'] // Not yet ready for linking, so empty category to avoid showing any projects for now
+    relatedCategories: ['timmerwerk'] // Not yet ready for linking, so empty category to avoid showing any projects for now
   },
   {
     slug: 'verduurzaming',
@@ -113,7 +113,7 @@ export const serviceProcessSteps = {
 
 export const servicesNavigationData = {
   heading: 'services.navigation.heading',
-  caption: 'services.navigation.caption',
+  // caption: 'services.navigation.caption',
   list: services.map((service) => ({
     icon: service.icon,
     title: service.titleKey,

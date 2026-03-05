@@ -11,7 +11,7 @@ import useDataThemeMode from '@/hooks/useDataThemeMode';
 import useTranslation from '@/hooks/useTranslation';
 
 // @data
-import { heroSlides, servicesData, aboutTeaserData, projectsData } from './data';
+import { heroSlides, servicesData, aboutTeaserData, projectsData, ctaData } from './data';
 
 /***************************  HOME PAGE  ***************************/
 
@@ -42,6 +42,10 @@ export default function HomePage() {
           {
             importFunc: () => import('@/blocks/projects').then((module) => ({ default: module.Project1 })),
             props: projectsData
+          },
+          {
+            importFunc: () => import('@/blocks/cta').then((module) => ({ default: module.Cta1 })),
+            props: ctaData
           }
         ]}
         offset="200px"

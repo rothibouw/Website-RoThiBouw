@@ -23,6 +23,11 @@ export const useNavbarData = () => {
           toggleBtn: { children: t('nav.services', 'Services'), size: 'small', sx: { color: 'text.primary', py: 1.5 } },
           menuItems: [
             {
+              icon: 'tabler-crane',
+              title: t('projects.categories.renovaties'),
+              link: '/services/renovaties'
+            },
+            {
               icon: 'tabler-home',
               title: t('projects.categories.dakwerken'),
               link: '/services/dakwerken'
@@ -31,11 +36,6 @@ export const useNavbarData = () => {
               icon: 'tabler-hammer',
               title: t('projects.categories.timmerwerk'),
               link: '/services/timmerwerk'
-            },
-            {
-              icon: 'tabler-crane',
-              title: t('projects.categories.renovaties'),
-              link: '/services/renovaties'
             },
             {
               icon: 'tabler-michelin-star-green',

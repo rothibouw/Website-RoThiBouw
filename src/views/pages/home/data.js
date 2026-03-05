@@ -21,8 +21,16 @@ export const heroSlides = [
 export const servicesData = {
   heading: 'home.services.heading',
   headerAlign: 'center',
-  caption: 'home.services.caption',
   list: [
+    {
+      icon: 'tabler-crane',
+      title: 'home.services.renovations.title',
+      content: 'home.services.renovations.description',
+      link: {
+        href: '/services/renovaties',
+        children: 'common.learnMore'
+      }
+    },
     {
       icon: 'tabler-home',
       title: 'home.services.roofing.title',
@@ -38,15 +46,6 @@ export const servicesData = {
       content: 'home.services.carpentry.description',
       link: {
         href: '/services/timmerwerk',
-        children: 'common.learnMore'
-      }
-    },
-    {
-      icon: 'tabler-crane',
-      title: 'home.services.renovations.title',
-      content: 'home.services.renovations.description',
-      link: {
-        href: '/services/renovaties',
         children: 'common.learnMore'
       }
     },
@@ -88,4 +87,12 @@ export const projectsData = {
   projects: projects,
   showViewAll: true,
   viewAllBtnKey: 'home.viewAllProjects'
+};
+
+export const ctaData = {
+  headingKey: 'home.cta.heading',
+  primaryBtn: {
+    children: 'home.cta.button',
+    href: '/contact'
+  }
 };

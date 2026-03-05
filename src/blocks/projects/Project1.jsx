@@ -23,6 +23,9 @@ import { SECTION_COMMON_PY } from '@/utils/constant';
 export default function Project1({ heading, caption, projects, showViewAll = true, viewAllBtnKey = 'home.viewAllProjects' }) {
   const { t } = useTranslation();
 
+  // Filter for highlighted projects only
+  const highlightedProjects = projects.filter((project) => project.isHighlighted);
+
   return (
     <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>
       <Stack spacing={5}>
@@ -41,7 +44,7 @@ export default function Project1({ heading, caption, projects, showViewAll = tru
 
         {/* Projects Grid */}
         <Grid container spacing={3}>
-          {projects.slice(0, 3).map((project, index) => (
+          {highlightedProjects.map((project, index) => (
             <Grid key={project.id} size={{ xs: 12, sm: 6, md: 6 }}>
               <ProjectCard project={project} index={index} />
             </Grid>

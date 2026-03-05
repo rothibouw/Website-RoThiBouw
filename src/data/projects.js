@@ -3,9 +3,10 @@ export const projects = [
     // General project info
     id: 'project-1',
     slug: 'project-1',
-    category: 'dakwerken',
-    year: 2026,
     location: 'Hooge Mierde',
+    year: 2026,
+    categories: ['dakwerken'],
+    isHighlighted: true,
     // Header info
     titleKey: 'projects.items.project1.title',
     subtitleKey: 'projects.items.project1.subtitle',
@@ -33,113 +34,201 @@ export const projects = [
     }
   },
   {
+    // General project info
     id: 'project-2',
     slug: 'project-2',
-    titleKey: 'projects.items.project2.title',
-    subtitleKey: 'projects.items.project2.subtitle',
-    projectInformationDescriptionKey: 'projects.items.project2.projectInformationDescription',
-    category: 'timmerwerk',
+    location: 'Bladel',
     year: 2026,
-    location: 'Reusel',
-    images: [
-      '/assets/temp/placeholder.png',
-      '/assets/temp/placeholder.png',
-      '/assets/temp/placeholder.png',
-      '/assets/temp/placeholder.png',
-      '/assets/temp/placeholder.png'
-    ],
+    categories: ['timmerwerk'],
+    isHighlighted: true,
+    // Header info
+    titleKey: 'projects.items.project2.title',
+    // Gallery info
+    images: ['/assets/temp/placeholder.png', '/assets/temp/placeholder.png'],
     thumbnail: '/assets/temp/placeholder.png',
+    // Description info
+    detailDescriptionKey: 'projects.items.project2.detailDescription',
+    // Project information
+    projectInformationDescriptionKey: 'projects.items.project2.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Reusel' },
+      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Bladel' },
       { icon: 'tabler-calendar', label: 'Jaar', value: '2026' },
       { icon: 'tabler-folder', label: 'Categorie', value: 'Timmerwerk' }
     ],
-    secondaryInfo: [
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Moderne architectuur' },
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Energieefficiënt' },
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Milieuvriendelijk' }
-    ],
+    // Review/Testimonial info
     testimonial: {
-      name: 'Jane Smith',
+      name: '...',
       reviewKey: 'projects.items.project2.review'
     }
   },
   {
+    // General project info
     id: 'project-3',
     slug: 'project-3',
+    year: 2025,
+    categories: ['houtConstructies', 'renovaties'],
+    isHighlighted: false,
+    // Header info
     titleKey: 'projects.items.project3.title',
     subtitleKey: 'projects.items.project3.subtitle',
+    // Gallery info
+    images: ['/assets/temp/placeholder.png', '/assets/temp/placeholder.png'],
+    thumbnail: '/assets/temp/placeholder.png',
+    // Description info
+    detailDescriptionKey: 'projects.items.project3.detailDescription',
+    // Project information
     projectInformationDescriptionKey: 'projects.items.project3.projectInformationDescription',
-    category: 'renovaties',
-    year: 2025,
-    location: 'Tilburg',
-    images: ['/assets/home/image_1.jpg', '/assets/home/image_2.jpg'],
-    thumbnail: '/assets/home/image_3.jpg',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Tilburg' },
       { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Renovaties' }
+      { icon: 'tabler-folder', label: 'Categorie', value: 'Hout constructies & Ver- en aanbouw' }
     ],
-    secondaryInfo: [
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Historische restauratie' },
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Authentieke materialen' },
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Vakmanschap' }
-    ],
+    // Review/Testimonial info
     testimonial: {
-      name: 'Alice Johnson',
+      name: '...',
       reviewKey: 'projects.items.project3.review'
     }
   },
   {
+    // General project info
     id: 'project-4',
     slug: 'project-4',
+    location: 'Hilvarenbeek',
+    year: 2025,
+    categories: ['verduurzaming'],
+    isHighlighted: false,
+    // Header info
     titleKey: 'projects.items.project4.title',
     subtitleKey: 'projects.items.project4.subtitle',
+    // Gallery info
+    images: ['/assets/temp/placeholder.png', '/assets/temp/placeholder.png'],
+    thumbnail: '/assets/temp/placeholder.png',
+    // Description info
+    detailDescriptionKey: 'projects.items.project4.detailDescription',
+    // Project information
     projectInformationDescriptionKey: 'projects.items.project4.projectInformationDescription',
-    category: 'verduurzaming',
-    year: 2025,
-    location: 'Eindhoven',
-    images: ['/assets/home/image_1.jpg', '/assets/home/image_2.jpg'],
-    thumbnail: '/assets/home/image_3.jpg',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Eindhoven' },
+      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Hilvarenbeek' },
       { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
       { icon: 'tabler-folder', label: 'Categorie', value: 'Verduurzaming' }
     ],
-    secondaryInfo: [
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Innovatief ontwerp' },
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Duurzame houtsoorten' },
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Sterke constructie' }
-    ],
+    // Review/Testimonial info
     testimonial: {
-      name: 'Bob Williams',
+      name: '...',
       reviewKey: 'projects.items.project4.review'
     }
   },
   {
+    // General project info
     id: 'project-5',
     slug: 'project-5',
+    location: 'Lage Mierde',
+    year: 2024,
+    categories: ['verduurzaming', 'houtConstructies', 'timmerwerk'],
+    isHighlighted: false,
+    // Header info
     titleKey: 'projects.items.project5.title',
     subtitleKey: 'projects.items.project5.subtitle',
-    projectInformationDescriptionKey: 'projects.items.project5.projectInformationDescription',
-    category: 'houtConstructies',
-    year: 2024,
-    location: 'Breda',
+    // Gallery info
     images: ['/assets/temp/placeholder.png', '/assets/temp/placeholder.png'],
     thumbnail: '/assets/temp/placeholder.png',
+    // Description info
+    detailDescriptionKey: 'projects.items.project5.detailDescription',
+    // Project information
+    projectInformationDescriptionKey: 'projects.items.project5.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Breda' },
+      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Lage Mierde' },
       { icon: 'tabler-calendar', label: 'Jaar', value: '2024' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Hout Constructies' }
+      { icon: 'tabler-folder', label: 'Categorie', value: 'Hout constructies & Timmerwerk' }
     ],
-    secondaryInfo: [
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Energiezuinige renovatie' },
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Zonnepanelen integratie' },
-      { icon: 'tabler-check', label: 'Kenmerk', value: 'Isolatie verbetering' }
-    ],
+    // Review/Testimonial info
     testimonial: {
-      name: 'Charlie Brown',
+      name: '...',
       reviewKey: 'projects.items.project5.review'
+    }
+  },
+  {
+    // General project info
+    id: 'project-6',
+    slug: 'project-6',
+    location: 'Hooge Mierde',
+    year: 2025,
+    categories: ['timmerwerk'],
+    isHighlighted: false,
+    // Header info
+    titleKey: 'projects.items.project6.title',
+    // Gallery info
+    images: ['/assets/temp/placeholder.png', '/assets/temp/placeholder.png'],
+    thumbnail: '/assets/temp/placeholder.png',
+    // Description info
+    detailDescriptionKey: 'projects.items.project6.detailDescription',
+    // Project information
+    projectInformationDescriptionKey: 'projects.items.project6.projectInformationDescription',
+    primaryInfo: [
+      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Hooge Mierde' },
+      { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
+      { icon: 'tabler-folder', label: 'Categorie', value: 'Timmerwerk' }
+    ],
+    // Review/Testimonial info
+    testimonial: {
+      name: '...',
+      reviewKey: 'projects.items.project6.review'
+    }
+  },
+  {
+    // General project info
+    id: 'project-7',
+    slug: 'project-7',
+    location: 'Lage Mierde',
+    year: 2025,
+    categories: ['timmerwerk'],
+    isHighlighted: false,
+    // Header info
+    titleKey: 'projects.items.project7.title',
+    // Gallery info
+    images: ['/assets/temp/placeholder.png', '/assets/temp/placeholder.png'],
+    thumbnail: '/assets/temp/placeholder.png',
+    // Description info
+    detailDescriptionKey: 'projects.items.project7.detailDescription',
+    // Project information
+    projectInformationDescriptionKey: 'projects.items.project7.projectInformationDescription',
+    primaryInfo: [
+      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Lage Mierde' },
+      { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
+      { icon: 'tabler-folder', label: 'Categorie', value: 'Timmerwerk' }
+    ],
+    // Review/Testimonial info
+    testimonial: {
+      name: '...',
+      reviewKey: 'projects.items.project7.review'
+    }
+  },
+  {
+    // General project info
+    id: 'project-8',
+    slug: 'project-8',
+    location: 'Veldhoven',
+    year: 2025,
+    categories: ['verduurzaming'],
+    isHighlighted: false,
+    // Header info
+    titleKey: 'projects.items.project8.title',
+    subtitleKey: 'projects.items.project8.subtitle',
+    // Gallery info
+    images: ['/assets/temp/placeholder.png', '/assets/temp/placeholder.png'],
+    thumbnail: '/assets/temp/placeholder.png',
+    // Description info
+    detailDescriptionKey: 'projects.items.project8.detailDescription',
+    // Project information
+    projectInformationDescriptionKey: 'projects.items.project8.projectInformationDescription',
+    primaryInfo: [
+      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Veldhoven' },
+      { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
+      { icon: 'tabler-folder', label: 'Categorie', value: 'Timmerwerk' }
+    ],
+    // Review/Testimonial info
+    testimonial: {
+      name: '...',
+      reviewKey: 'projects.items.project8.review'
     }
   }
 ];

@@ -128,7 +128,7 @@ export default function ProjectCard({ project, index = 0 }) {
           <Typeset
             {...{
               heading: t(project.titleKey),
-              caption: t(project.subtitleKey),
+              caption: project.subtitleKey ? t(project.subtitleKey) : undefined,
               stackProps: { sx: { gap: { xs: 1, md: 1.5 } } },
               headingProps: { variant: 'h4' },
               captionProps: {
@@ -146,15 +146,20 @@ export default function ProjectCard({ project, index = 0 }) {
 
           {/* Metadata */}
           <Stack direction="row" spacing={2} sx={{ mt: 'auto', pt: { xs: 1, md: 2 }, alignItems: 'center' }}>
-            <Stack direction="row" spacing={0.5} alignItems="center" sx={{ flex: 1 }}>
-              <SvgIcon name="tabler-map-pin" size={16} color="text.secondary" />
-              <Box component="span" sx={{ fontSize: '0.875rem', color: 'text.secondary' }}>
-                {project.location}
+            {project.location && (
+              <Stack direction="row" spacing={0.5} alignItems="center" sx={{ flex: 1 }}>
+                <SvgIcon name="tabler-map-pin" size={16} color="text.secondary" />
+                <Box component="span" sx={{ fontSize: '0.875rem', color: 'text.secondary' }}>
+                  {project.location}
+                </Box>
+              </Stack>
+            )}
+            {!project.location && <Box sx={{ flex: 1 }} />}
+            {project.year && (
+              <Box component="span" sx={{ fontSize: '0.875rem', fontWeight: 600, color: 'text.secondary' }}>
+                {project.year}
               </Box>
-            </Stack>
-            <Box component="span" sx={{ fontSize: '0.875rem', fontWeight: 600, color: 'text.secondary' }}>
-              {project.year}
-            </Box>
+            )}
           </Stack>
 
           {/* Navigation Button */}
@@ -171,10 +176,10 @@ ProjectCard.propTypes = {
   project: PropTypes.shape({
     slug: PropTypes.string.isRequired,
     titleKey: PropTypes.string.isRequired,
-    subtitleKey: PropTypes.string.isRequired,
+    subtitleKey: PropTypes.string,
     category: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
-    location: PropTypes.string.isRequired,
+    year: PropTypes.number,
+    location: PropTypes.string,
     thumbnail: PropTypes.string.isRequired,
     images: PropTypes.arrayOf(PropTypes.string)
   }).isRequired,
