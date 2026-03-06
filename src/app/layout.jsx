@@ -12,7 +12,10 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 // @project
 import ProviderWrapper from './ProviderWrapper';
+
 import { mainMetadata } from '@/metadata';
+
+import { LocalBusinessJsonLd } from '@/components/LocalBusinessJsonLd';
 
 // @types
 const gaId = process.env.NEXT_PUBLIC_ANALYTICS_ID || '';
@@ -26,7 +29,7 @@ export const metadata = { ...mainMetadata };
 // Root layout component that wraps the entire application
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="nl">
       <head>
         {/* Preconnect and DNS Prefetch */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -34,6 +37,9 @@ export default function RootLayout({ children }) {
 
         {/* Sitemap reference for SEO */}
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+        {/* Structured data for Google local search */}
+        <LocalBusinessJsonLd />
       </head>
       <body suppressHydrationWarning>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>

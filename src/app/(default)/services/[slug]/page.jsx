@@ -5,8 +5,15 @@ import { notFound } from 'next/navigation';
 // @project
 const ServiceDetailPage = dynamic(() => import('@/views/pages/service-detail'));
 
-// Import services data
 import { services } from '@/data/services';
+
+import { nlTranslations } from '@/i18n';
+
+/***************************  HELPERS  ***************************/
+
+function t(key) {
+  return key.split('.').reduce((obj, k) => obj?.[k], nlTranslations) ?? key;
+}
 
 /***************************  GENERATE STATIC PARAMS  ***************************/
 
@@ -23,16 +30,20 @@ export async function generateMetadata({ params }) {
   const service = services.find((s) => s.slug === slug);
 
   if (!service) {
-    return {
-      title: 'Service Not Found'
-    };
+    return { title: 'Dienst niet gevonden' };
   }
 
+  const title = t(service.titleKey);
+  const description = t(service.descriptionKey)?.slice(0, 160);
+
   return {
-    title: service.slug
-      .split('-')
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ')
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `/services/${service.slug}`
+    }
   };
 }
 

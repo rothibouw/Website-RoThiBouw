@@ -2,13 +2,13 @@
 import dynamic from 'next/dynamic';
 
 // @project
+import { aboutMetadata } from '@/metadata';
+
 const AboutPage = dynamic(() => import('@/views/pages/about'));
 
 /***************************  METADATA - ABOUT  ***************************/
 
-export const metadata = {
-  title: 'About Us'
-};
+export const metadata = aboutMetadata;
 
 /***************************  PAGE - ABOUT  ***************************/
 

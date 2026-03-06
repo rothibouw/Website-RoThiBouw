@@ -2,13 +2,13 @@
 import dynamic from 'next/dynamic';
 
 // @project
+import { termsConditionsMetadata } from '@/metadata';
+
 const TermsConditionsPage = dynamic(() => import('@/views/pages/terms-conditions'));
 
 /***************************  METADATA  ***************************/
 
-export const metadata = {
-  title: 'Terms & Conditions'
-};
+export const metadata = termsConditionsMetadata;
 
 /***************************  PAGE - TERMS & CONDITIONS  ***************************/
 
