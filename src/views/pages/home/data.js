@@ -19,51 +19,51 @@ export const heroSlides = [
 ];
 
 export const servicesData = {
-  heading: 'home.services.heading',
+  headingKey: 'home.services.heading',
   headerAlign: 'center',
   list: [
     {
       icon: 'tabler-crane',
-      title: 'home.services.renovations.title',
-      content: 'home.services.renovations.description',
+      titleKey: 'home.services.renovations.title',
+      descriptionKey: 'home.services.renovations.description',
       link: {
-        href: '/services/renovaties',
+        href: '/diensten/ver-en-aanbouwen',
         children: 'common.learnMore'
       }
     },
     {
       icon: 'tabler-home',
-      title: 'home.services.roofing.title',
-      content: 'home.services.roofing.description',
+      titleKey: 'home.services.roofing.title',
+      descriptionKey: 'home.services.roofing.description',
       link: {
-        href: '/services/dakwerken',
+        href: '/diensten/dakwerken',
         children: 'common.learnMore'
       }
     },
     {
       icon: 'tabler-hammer',
-      title: 'home.services.carpentry.title',
-      content: 'home.services.carpentry.description',
+      titleKey: 'home.services.carpentry.title',
+      descriptionKey: 'home.services.carpentry.description',
       link: {
-        href: '/services/timmerwerk',
+        href: '/diensten/timmerwerk',
         children: 'common.learnMore'
       }
     },
     {
       icon: 'tabler-michelin-star-green',
-      title: 'home.services.sustainability.title',
-      content: 'home.services.sustainability.description',
+      titleKey: 'home.services.sustainability.title',
+      descriptionKey: 'home.services.sustainability.description',
       link: {
-        href: '/services/verduurzaming',
+        href: '/diensten/verduurzaming',
         children: 'common.learnMore'
       }
     },
     {
       icon: 'tabler-wood',
-      title: 'home.services.woodConstructions.title',
-      content: 'home.services.woodConstructions.description',
+      titleKey: 'home.services.woodConstructions.title',
+      descriptionKey: 'home.services.woodConstructions.description',
       link: {
-        href: '/services/houtConstructies',
+        href: '/diensten/hout-constructies',
         children: 'common.learnMore'
       }
     }
@@ -74,16 +74,16 @@ export const aboutTeaserData = {
   headingKey: 'home.aboutTeaser.heading',
   highlightKey: 'home.aboutTeaser.highlight',
   captionKey: 'home.aboutTeaser.caption',
-  image: '/assets/temp/placeholder.png',
+  image: '/assets/home/about.jpeg',
   primaryBtn: {
-    href: '/about',
+    href: '/over-ons',
     children: 'home.aboutTeaser.button'
   }
 };
 
 export const projectsData = {
-  heading: 'home.projects.heading',
-  caption: 'home.projects.caption',
+  headingKey: 'home.projects.heading',
+  captionKey: 'home.projects.caption',
   projects: projects,
   showViewAll: true,
   viewAllBtnKey: 'home.viewAllProjects'

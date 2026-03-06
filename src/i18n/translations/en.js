@@ -202,7 +202,7 @@ export const translations = {
       heading: 'Two friends,',
       highlight: 'one mission',
       caption:
-        'RoThiBouw was founded by Roy and Thijs — two young craftsmen with a shared passion for quality construction. What started as a dream has grown into a trusted name in carpentry, roofing, and renovations. With an eye for detail and a personal approach to every project, we deliver craftsmanship you can build on.',
+        'RoThi Bouw was founded by Roy and Thijs — two young craftsmen with a shared passion for quality construction. What started as a dream has grown into a trusted name in carpentry, roofing, and renovations. With an eye for detail and a personal approach to every project, we deliver craftsmanship you can build on.',
       button: 'Get to Know Us'
     },
     projects: {
@@ -222,19 +222,19 @@ export const translations = {
     hero: {
       title: 'Two friends,',
       titleHighlight: 'one mission',
-      description: 'Craftsmanship, integrity and personal attention — that is what RoThiBouw stands for.'
+      description: 'Craftsmanship, integrity and personal attention — that is what RoThi Bouw stands for.'
     },
     story: {
       heading: 'From dream to',
       highlight: 'reality',
-      p1: 'RoThiBouw was founded out of the shared passion of Roy and Thijs for construction and craftsmanship. Two friends who believed that quality work and personal attention should go hand in hand.',
+      p1: 'RoThi Bouw was founded out of the shared passion of Roy and Thijs for construction and craftsmanship. Two friends who believed that quality work and personal attention should go hand in hand.',
       p2: 'What started as small jobs for friends and family quickly grew into a fully fledged construction company. Today we are proud to have completed many projects, always with the same dedication and eye for detail.',
       p3: 'We specialise in carpentry, roofing, renovations and extensions — and we approach every project as if it were our own.'
     },
     founders: {
-      headingKey: 'Who is RoThiBouw?',
+      headingKey: 'Who is RoThi Bouw?',
       captionKey:
-        'The skilled craftsmen behind RoThiBouw - two friends with a shared vision to deliver exceptional craftsmanship and quality construction',
+        'The skilled craftsmen behind RoThi Bouw - two friends with a shared vision to deliver exceptional craftsmanship and quality construction',
       roy: {
         role: 'Co-founder',
         quote: '"Building is more than stacking bricks. It is craftsmanship, trust and delivering something people can truly be proud of."'
@@ -246,11 +246,11 @@ export const translations = {
     },
     timeline: {
       heading: 'Our Journey',
-      caption: 'Key milestones that shaped RoThiBouw into the company we are today!',
+      caption: 'Key milestones that shaped RoThi Bouw into the company we are today!',
       founded: {
         title: '2023 - Company Founded',
         description:
-          'RoThiBouw was founded by two friends. What started as a dream between two experienced construction professionals has grown into a trusted name in carpentry, roofing, and renovations.'
+          'RoThi Bouw was founded by two friends. What started as a dream between two experienced construction professionals has grown into a trusted name in carpentry, roofing, and renovations.'
       },
       office: {
         title: 'New Workshop',
@@ -267,7 +267,7 @@ export const translations = {
       }
     },
     founders: {
-      heading: 'The people behind RoThiBouw',
+      heading: 'The people behind RoThi Bouw',
       roy: {
         role: 'Co-founder',
         quote: '"..."'
@@ -335,12 +335,12 @@ export const translations = {
       acceptanceOfTerms: {
         heading: 'Acceptance of Terms',
         caption:
-          'By accessing and using the RoThiBouw website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website or services. These terms apply to all visitors, users, and others who access or use our services.'
+          'By accessing and using the RoThi Bouw website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website or services. These terms apply to all visitors, users, and others who access or use our services.'
       },
       servicesDescription: {
         heading: 'Services Description',
         caption:
-          'RoThiBouw provides construction services including roof construction and repairs, timber work, renovations, dormer windows, garden canopies, and wall construction. All services are subject to availability and may be modified or discontinued at any time. Service descriptions, pricing, and availability are subject to change without notice.'
+          'RoThi Bouw provides construction services including roof construction and repairs, timber work, renovations, dormer windows, garden canopies, and wall construction. All services are subject to availability and may be modified or discontinued at any time. Service descriptions, pricing, and availability are subject to change without notice.'
       },
       userResponsibilities: {
         heading: 'User Responsibilities',
@@ -350,12 +350,12 @@ export const translations = {
       intellectualProperty: {
         heading: 'Intellectual Property',
         caption:
-          'All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of RoThiBouw or its content suppliers and is protected by Dutch and international copyright laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.'
+          'All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of RoThi Bouw or its content suppliers and is protected by Dutch and international copyright laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.'
       },
       limitationOfLiability: {
         heading: 'Limitation of Liability',
         caption:
-          'RoThiBouw shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services. Our total liability for any claims under these terms shall not exceed the amount paid by you for our services in the twelve months preceding the claim.'
+          'RoThi Bouw shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services. Our total liability for any claims under these terms shall not exceed the amount paid by you for our services in the twelve months preceding the claim.'
       },
       warranties: {
         heading: 'Warranties and Guarantees',
@@ -395,7 +395,7 @@ export const translations = {
       title: 'Roofing',
       descriptionTitle: 'Professional Roof Construction & Repairs',
       description:
-        'At RoThiBouw, we specialize in all forms of roofing work. From new construction to renovation, we ensure a waterproof and durable roof that lasts for years. Our experienced craftsmen work with high-quality materials and always deliver a clean and professional result.',
+        'At RoThi Bouw, we specialize in all forms of roofing work. From new construction to renovation, we ensure a waterproof and durable roof that lasts for years. Our experienced craftsmen work with high-quality materials and always deliver a clean and professional result.',
       features: {
         f1: 'New roof constructions',
         f2: 'Roof renovations and repairs',
@@ -409,7 +409,7 @@ export const translations = {
       title: 'Timber Work',
       descriptionTitle: 'Expert Carpentry for Every Project',
       description:
-        "Carpentry is at the core of what we do. Whether it's installing window frames, building a wooden structure, or finishing an interior - at RoThiBouw you are assured of precision and quality. We work with various types of wood and deliver custom solutions for every situation.",
+        "Carpentry is at the core of what we do. Whether it's installing window frames, building a wooden structure, or finishing an interior - at RoThi Bouw you are assured of precision and quality. We work with various types of wood and deliver custom solutions for every situation.",
       features: {
         f1: 'Window and door frames',
         f2: 'Wooden structures and support beams',

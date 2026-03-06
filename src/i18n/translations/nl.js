@@ -48,13 +48,13 @@ export const translations = {
   // Navigation
   nav: {
     home: 'Home',
-    about: 'Over Ons',
+    about: 'Over ons',
     projects: 'Projecten',
     contact: 'Contact',
     services: 'Diensten',
     career: 'Carrière',
     privacyPolicy: 'Privacybeleid',
-    termsConditions: 'Algemene Voorwaarden'
+    termsConditions: 'Algemene voorwaarden'
   },
 
   // Common actions and words
@@ -177,7 +177,7 @@ export const translations = {
       }
     },
     services: {
-      heading: 'Onze Diensten',
+      heading: 'Onze diensten',
       renovations: {
         title: 'Ver- en aanbouwen',
         description: 'Complete ver- en aanbouwoplossingen voor uw woning of bedrijfspand'
@@ -235,11 +235,11 @@ export const translations = {
     },
     timeline: {
       heading: 'Onze reis',
-      caption: 'Belangrijke mijlpalen die RoThiBouw vormden tot het bedrijf dat we vandaag zijn!',
+      caption: 'Belangrijke mijlpalen die RoThi Bouw vormden tot het bedrijf dat we vandaag zijn!',
       founded: {
         title: '2023 - Bedrijf Opgericht',
         description:
-          'RoThiBouw werd in 2023 opgericht door twee vrienden. Wat begon als een droom tussen twee ervaren bouwprofessionals is uitgegroeid tot een vertrouwde naam in timmerwerk, dakwerken en renovaties.'
+          'RoThi Bouw werd in 2023 opgericht door twee vrienden. Wat begon als een droom tussen twee ervaren bouwprofessionals is uitgegroeid tot een vertrouwde naam in timmerwerk, dakwerken en renovaties.'
       },
       office: {
         title: 'Nieuwe Werkplaats',
@@ -257,7 +257,7 @@ export const translations = {
       }
     },
     founders: {
-      heading: 'De vakmannen achter RoThiBouw',
+      heading: 'De vakmannen achter RoThi Bouw',
       roy: {
         role: 'Mede-oprichter',
         quote: '"..."'
@@ -325,12 +325,12 @@ export const translations = {
       acceptanceOfTerms: {
         heading: 'Aanvaarding van Voorwaarden',
         caption:
-          'Door toegang te krijgen tot en gebruik te maken van de RoThiBouw website en diensten, gaat u akkoord met deze Algemene Voorwaarden. Als u het niet eens bent met een deel van deze voorwaarden, mag u onze website of diensten niet gebruiken. Deze voorwaarden zijn van toepassing op alle bezoekers, gebruikers en anderen die toegang hebben tot of gebruik maken van onze diensten.'
+          'Door toegang te krijgen tot en gebruik te maken van de RoThi Bouw website en diensten, gaat u akkoord met deze Algemene Voorwaarden. Als u het niet eens bent met een deel van deze voorwaarden, mag u onze website of diensten niet gebruiken. Deze voorwaarden zijn van toepassing op alle bezoekers, gebruikers en anderen die toegang hebben tot of gebruik maken van onze diensten.'
       },
       servicesDescription: {
         heading: 'Beschrijving van Diensten',
         caption:
-          'RoThiBouw biedt bouwdiensten aan, waaronder dakconstructie en -reparaties, timmerwerk, renovaties, dakkapellen, tuinoverkappingen en muurconstructie. Alle diensten zijn onder voorbehoud van beschikbaarheid en kunnen op elk moment worden gewijzigd of stopgezet. Dienstbeschrijvingen, prijzen en beschikbaarheid kunnen zonder voorafgaande kennisgeving worden gewijzigd.'
+          'RoThi Bouw biedt bouwdiensten aan, waaronder dakconstructie en -reparaties, timmerwerk, renovaties, dakkapellen, tuinoverkappingen en muurconstructie. Alle diensten zijn onder voorbehoud van beschikbaarheid en kunnen op elk moment worden gewijzigd of stopgezet. Dienstbeschrijvingen, prijzen en beschikbaarheid kunnen zonder voorafgaande kennisgeving worden gewijzigd.'
       },
       userResponsibilities: {
         heading: 'Gebruikersverantwoordelijkheden',
@@ -340,12 +340,12 @@ export const translations = {
       intellectualProperty: {
         heading: 'Intellectueel Eigendom',
         caption:
-          "Alle inhoud op deze website, inclusief maar niet beperkt tot tekst, afbeeldingen, logo's, afbeeldingen en software, is eigendom van RoThiBouw of haar inhoudsleveranciers en wordt beschermd door Nederlandse en internationale auteursrechtwetten. U mag geen inhoud reproduceren, distribueren of afgeleide werken maken zonder onze uitdrukkelijke schriftelijke toestemming."
+          "Alle inhoud op deze website, inclusief maar niet beperkt tot tekst, afbeeldingen, logo's, afbeeldingen en software, is eigendom van RoThi Bouw of haar inhoudsleveranciers en wordt beschermd door Nederlandse en internationale auteursrechtwetten. U mag geen inhoud reproduceren, distribueren of afgeleide werken maken zonder onze uitdrukkelijke schriftelijke toestemming."
       },
       limitationOfLiability: {
         heading: 'Beperking van Aansprakelijkheid',
         caption:
-          'RoThiBouw is niet aansprakelijk voor indirecte, incidentele, speciale, gevolgschade of bestraffende schade die voortvloeit uit uw gebruik van of onvermogen om onze diensten te gebruiken. Onze totale aansprakelijkheid voor eventuele claims onder deze voorwaarden mag niet meer bedragen dan het bedrag dat u voor onze diensten heeft betaald in de twaalf maanden voorafgaand aan de claim.'
+          'RoThi Bouw is niet aansprakelijk voor indirecte, incidentele, speciale, gevolgschade of bestraffende schade die voortvloeit uit uw gebruik van of onvermogen om onze diensten te gebruiken. Onze totale aansprakelijkheid voor eventuele claims onder deze voorwaarden mag niet meer bedragen dan het bedrag dat u voor onze diensten heeft betaald in de twaalf maanden voorafgaand aan de claim.'
       },
       warranties: {
         heading: 'Garanties',
@@ -384,7 +384,7 @@ export const translations = {
       title: 'Dakwerken',
       descriptionTitle: 'Dakconstructie & Reparaties',
       description:
-        'Bij RoThiBouw zijn we gespecialiseerd in alle vormen van dakwerk. Van nieuwbouw tot renovatie, wij zorgen voor een duurzaam dak dat jarenlang meegaat. Onze ervaren vakmensen werken met hoogwaardige materialen en leveren altijd een strak en professioneel resultaat.',
+        'Bij RoThi Bouw zijn we gespecialiseerd in alle vormen van dakwerk. Van nieuwbouw tot renovatie, wij zorgen voor een duurzaam dak dat jarenlang meegaat. Onze ervaren vakmensen werken met hoogwaardige materialen en leveren altijd een strak en professioneel resultaat.',
       features: {
         f1: 'Nieuwbouw dakconstructies',
         f2: 'Dakrenovaties en reparaties',
@@ -398,7 +398,7 @@ export const translations = {
       title: 'Timmerwerk',
       descriptionTitle: 'Vakkundig timmerwerk voor elk project',
       description:
-        'Timmerwerk is de kern van wat wij doen. Of het nu gaat om het plaatsen van kozijnen, het aanbrengen van gevelbekleding of aftimmering, bij RoThiBouw bent u verzekerd van precisie en kwaliteit. Wij werken met diverse houtsoorten en leveren maatwerk voor elke situatie.',
+        'Timmerwerk is de kern van wat wij doen. Of het nu gaat om het plaatsen van kozijnen, het aanbrengen van gevelbekleding of aftimmering, bij RoThi Bouw bent u verzekerd van precisie en kwaliteit. Wij werken met diverse houtsoorten en leveren maatwerk voor elke situatie.',
       features: {
         f1: 'Kozijnen',
         f2: 'Diversen gevelbekleding',
@@ -409,26 +409,25 @@ export const translations = {
       title: 'Verduurzaming',
       descriptionTitle: 'Duurzame oplossingen voor uw woning',
       description:
-        'Bij RoThiBouw zorgen we ervoor dat uw woning verduurzaamd wordt, van vloer tot hellend dak en van gevel tot platdak. Hierbij zorgen we uiteraard voor een nieuwe vloer, nieuw metselwerk en nieuwe dakbedekking, net wat voor u van toepassing is. Hierbij zorgen we ervoor dat uw woning klaar is voor de toekomst.',
+        'Bij RoThi Bouw zorgen we ervoor dat uw woning verduurzaamd wordt, van vloer tot hellend dak en van gevel tot platdak. Hierbij zorgen we uiteraard voor een nieuwe vloer, nieuw metselwerk en nieuwe dakbedekking, net wat voor u van toepassing is. Hierbij zorgen we ervoor dat uw woning klaar is voor de toekomst.',
       features: {
         f1: 'Aanbrengen vloer-, gevel- en dakisolatie',
         f2: 'Aanpak koudebruggen',
         f3: 'Energie besparende installaties',
-        f4: 'Zonnenpanelen'
+        f4: 'Zonnenpanelen',
+        f5: 'Mogelijkheid op subsidies'
       }
     },
     houtConstructies: {
       title: 'Hout constructies',
       descriptionTitle: 'Houtconstructies & Maatwerk',
       description:
-        'Van houten draagconstructies tot maatwerk, RoThiBouw levert vakkundig houtwerk. Wij werken met verschillende houtsoorten en technieken om een stevig en mooi resultaat te garanderen.',
+        'Van houten draagconstructies tot maatwerk, RoThi Bouw levert vakkundig houtwerk. Wij werken met verschillende houtsoorten en technieken om een stevig en mooi resultaat te garanderen.',
       features: {
         f1: 'Houten draagconstructies',
-        f2: '-',
-        f3: '-',
-        f4: '-',
-        f5: '-',
-        f6: '-'
+        f2: 'Prefab',
+        f3: 'Handgemaakt',
+        f4: 'Verschillende houtsoorten'
       }
     },
     process: {
@@ -464,7 +463,7 @@ export const translations = {
 
   // Projects Page
   projects: {
-    heading: 'Onze Projecten',
+    heading: 'Onze projecten',
     caption: 'Ontdek hier onze uitgevoerde projecten',
     filterByCategory: 'Filter op categorie',
     noProjects: 'Geen projecten gevonden in deze categorie',
@@ -475,12 +474,12 @@ export const translations = {
 
     // Category labels
     categories: {
-      all: 'Alle Projecten',
+      all: 'Alle projecten',
       renovaties: 'Ver- en aanbouwen',
       dakwerken: 'Dakwerken',
       timmerwerk: 'Timmerwerk',
       verduurzaming: 'Verduurzaming',
-      houtConstructies: 'Hout Constructies'
+      houtConstructies: 'Hout constructies'
     },
 
     // Project items
@@ -503,8 +502,8 @@ export const translations = {
           'Verder is er gekozen voor barcode profiel.'
       },
       project3: {
-        title: 'Overkapping en tuinkamer Schijndel',
-        subtitle: 'Twee constructies voor een upgrade in uw tuin .',
+        title: 'Overkapping en tuinkamer',
+        subtitle: 'Twee constructies voor een upgrade in uw tuin.',
         detailDescription:
           'Deze klant wenste een meer connectie van binnen naar buiten. ' +
           'Hierbij is er gekozen voor een tuinkamer en overkapping. ' +

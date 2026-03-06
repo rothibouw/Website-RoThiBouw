@@ -41,15 +41,16 @@ export const createServiceDetailSections = (service) => {
   });
 
   // 4. Related projects (only when at least one exists)
-  const relatedProjects = projects.filter((project) => service.relatedCategories.includes(project.category));
+  const relatedProjects = projects.filter((project) => project.categories.some((cat) => service.relatedCategories.includes(cat)));
   if (relatedProjects.length > 0) {
     sections.push({
       importFunc: () => import('@/blocks/projects').then((module) => ({ default: module.Project1 })),
       props: {
-        heading: 'services.relatedProjects.heading',
-        caption: 'services.relatedProjects.caption',
+        headingKey: 'services.relatedProjects.heading',
+        captionKey: 'services.relatedProjects.caption',
         projects: relatedProjects,
-        showViewAll: false
+        showViewAll: false,
+        highlightedOnly: false
       }
     });
   }
@@ -71,7 +72,7 @@ export const createServiceDetailSections = (service) => {
     importFunc: () => import('@/blocks/contact-us').then((module) => ({ default: module.ContactUs3 })),
     props: {
       ...servicesNavigationData,
-      list: servicesNavigationData.list.filter((item) => item.title !== service.titleKey)
+      list: servicesNavigationData.list.filter((item) => item.titleKey !== service.titleKey)
     }
   });
 

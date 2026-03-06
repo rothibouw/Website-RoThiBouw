@@ -112,7 +112,11 @@ export default function ProjectSpecsDescription({ specifications, descriptionKey
 
   return (
     <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>
-      <Grid container spacing={{ xs: 3, sm: 4 }} sx={{ alignItems: { sm: 'stretch' } }}>
+      <Grid
+        container
+        spacing={{ xs: 3, sm: 4 }}
+        sx={{ alignItems: { sm: 'stretch' }, justifyContent: descriptionText ? 'flex-start' : 'center' }}
+      >
         {specsContent}
         {descriptionContent}
       </Grid>

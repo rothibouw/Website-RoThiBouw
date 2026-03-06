@@ -7,16 +7,16 @@ export const projectCategories = [
     labelKey: 'projects.categories.all'
   },
   {
+    id: 'renovaties',
+    labelKey: 'projects.categories.renovaties'
+  },
+  {
     id: 'dakwerken',
     labelKey: 'projects.categories.dakwerken'
   },
   {
     id: 'timmerwerk',
     labelKey: 'projects.categories.timmerwerk'
-  },
-  {
-    id: 'renovaties',
-    labelKey: 'projects.categories.renovaties'
   },
   {
     id: 'verduurzaming',

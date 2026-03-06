@@ -45,7 +45,7 @@ export const createProjectDetailSections = (project) => {
   // }
 
   // 2. Primary Section - Primary Info + Short Description (Idea 3 icons + Idea 1 description)
-  if (project.primaryInfo && project.primaryInfo.length > 0 && project.projectInformationDescriptionKey) {
+  if (project.primaryInfo && project.primaryInfo.length > 0) {
     sections.push({
       importFunc: () => import('@/blocks/project').then((module) => ({ default: module.ProjectSpecsDescription })),
       props: {

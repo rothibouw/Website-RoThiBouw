@@ -6,7 +6,7 @@ export const services = [
     slug: 'ver-en-aanbouwen',
     titleKey: 'services.renovaties.title',
     icon: 'tabler-paint',
-    heroImage: '/assets/temp/placeholder.png',
+    heroImage: '/assets/services/ver-en-aanbouw/hero.jpeg',
     descriptionTitleKey: 'services.renovaties.descriptionTitle',
     descriptionKey: 'services.renovaties.description',
     descriptionImage: '/assets/temp/placeholder.png',
@@ -55,7 +55,7 @@ export const services = [
     slug: 'verduurzaming',
     titleKey: 'services.verduurzaming.title',
     icon: 'tabler-building',
-    heroImage: '/assets/temp/placeholder.png',
+    heroImage: '/assets/services/verduurzaming/hero.jpeg',
     descriptionTitleKey: 'services.verduurzaming.descriptionTitle',
     descriptionKey: 'services.verduurzaming.description',
     descriptionImage: '/assets/services/verduurzaming/description.jpeg',
@@ -63,7 +63,8 @@ export const services = [
       'services.verduurzaming.features.f1',
       'services.verduurzaming.features.f2',
       'services.verduurzaming.features.f3',
-      'services.verduurzaming.features.f4'
+      'services.verduurzaming.features.f4',
+      'services.verduurzaming.features.f5'
     ],
     featureImage: '/assets/services/verduurzaming/feature.jpeg',
     relatedCategories: ['verduurzaming']
@@ -72,19 +73,17 @@ export const services = [
     slug: 'hout-constructies',
     titleKey: 'services.houtConstructies.title',
     icon: 'tabler-wall',
-    heroImage: '/assets/temp/placeholder.png',
+    heroImage: '/assets/services/hout-constructies/hero.jpeg',
     descriptionTitleKey: 'services.houtConstructies.descriptionTitle',
     descriptionKey: 'services.houtConstructies.description',
-    descriptionImage: '/assets/temp/placeholder.png',
+    descriptionImage: '/assets/services/hout-constructies/description.jpeg',
     features: [
       'services.houtConstructies.features.f1',
       'services.houtConstructies.features.f2',
       'services.houtConstructies.features.f3',
-      'services.houtConstructies.features.f4',
-      'services.houtConstructies.features.f5',
-      'services.houtConstructies.features.f6'
+      'services.houtConstructies.features.f4'
     ],
-    featureImage: '/assets/temp/placeholder.png',
+    featureImage: '/assets/services/hout-constructies/feature.jpeg',
     relatedCategories: ['houtConstructies']
   }
 ];

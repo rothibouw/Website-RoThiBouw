@@ -21,11 +21,14 @@ import { SECTION_COMMON_PY } from '@/utils/constant';
 
 /***************************  PROJECTS - 2 (WITH CATEGORY FILTER)  ***************************/
 
+// Config: Set to null to show all projects, or a number to limit (e.g., 6)
+const MAX_PROJECTS_DISPLAY = null;
+
 export default function Project2({ headingKey, captionKey, projects, categories }) {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  // Filter logic: max 6 projects, with at least one from each category when viewing all
+  // Filter logic: with optional limit, and at least one from each category when viewing all
   const getFilteredProjects = () => {
     if (selectedCategory === 'all') {
       // Get unique categories from projects
@@ -40,9 +43,9 @@ export default function Project2({ headingKey, captionKey, projects, categories 
         }
       }
 
-      // Second pass: add more projects until we reach 6
+      // Second pass: add more projects until we reach the limit (if set)
       for (const project of projects) {
-        if (result.length >= 6) break;
+        if (MAX_PROJECTS_DISPLAY && result.length >= MAX_PROJECTS_DISPLAY) break;
         if (!result.includes(project)) {
           result.push(project);
         }
@@ -50,8 +53,9 @@ export default function Project2({ headingKey, captionKey, projects, categories 
 
       return result;
     } else {
-      // Filter by category and limit to max 6
-      return projects.filter((p) => p.categories.includes(selectedCategory)).slice(0, 6);
+      // Filter by category and limit to max (if set)
+      const filtered = projects.filter((p) => p.categories.includes(selectedCategory));
+      return MAX_PROJECTS_DISPLAY ? filtered.slice(0, MAX_PROJECTS_DISPLAY) : filtered;
     }
   };
 

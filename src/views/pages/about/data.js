@@ -18,27 +18,27 @@ export const ourStoryData = {
 };
 
 export const timelineData = {
-  heading: 'about.timeline.heading',
-  caption: 'about.timeline.caption',
+  headingKey: 'about.timeline.heading',
+  captionKey: 'about.timeline.caption',
   sections: [
     {
-      title: 'about.timeline.founded.title',
-      description: 'about.timeline.founded.description',
+      titleKey: 'about.timeline.founded.title',
+      descriptionKey: 'about.timeline.founded.description',
       image: '/assets/temp/placeholder.png'
     },
     {
-      title: 'about.timeline.office.title',
-      description: 'about.timeline.office.description',
+      titleKey: 'about.timeline.office.title',
+      descriptionKey: 'about.timeline.office.description',
       image: '/assets/temp/placeholder.png'
     },
     {
-      title: 'about.timeline.projects.title',
-      description: 'about.timeline.projects.description',
+      titleKey: 'about.timeline.projects.title',
+      descriptionKey: 'about.timeline.projects.description',
       image: '/assets/temp/placeholder.png'
     },
     {
-      title: 'about.timeline.certification.title',
-      description: 'about.timeline.certification.description',
+      titleKey: 'about.timeline.certification.title',
+      descriptionKey: 'about.timeline.certification.description',
       image: '/assets/temp/placeholder.png'
     }
   ]

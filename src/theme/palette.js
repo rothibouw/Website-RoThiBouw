@@ -12,20 +12,20 @@ export default function palette(mode) {
   const textPrimaryDark = '#E2E2E5'; // on surface
   const textSecondaryDark = '#C2C7CE'; // on surface variant
   const dividerDark = '#42474E'; // outline variant
-  const backgroundDark = '#051519'; // RoThiBouw brand dark
+  const backgroundDark = '#051519'; // RoThi Bouw brand dark
 
   const lightPalette = {
     primary: {
       lighter: '#B3D4DC', // lighter teal variant
       light: '#5AA2B5', // light teal
-      main: '#4a4e52', // bright teal (This is the main highlight color for RoThiBouw)
+      main: '#4a4e52', // bright teal (This is the main highlight color for RoThi Bouw)
       dark: '#131414', // darker variant (On hover or active state)
-      darker: '#051519' // darkest variant (RoThiBouw brand dark)
+      darker: '#051519' // darkest variant (RoThi Bouw brand dark)
     },
     secondary: {
       lighter: '#D9D9D9', // lighter grey
       light: '#ADADAD', // light grey
-      main: '#8c8a8a', // RoThiBouw brand grey
+      main: '#8c8a8a', // RoThi Bouw brand grey
       dark: '#5A5858', // darker grey
       darker: '#2E2D2D' // darkest grey
     },
@@ -54,7 +54,7 @@ export default function palette(mode) {
   const darkPalette = {
     primary: {
       lighter: '#030E11', // darker variant
-      light: '#051519', // RoThiBouw brand dark
+      light: '#051519', // RoThi Bouw brand dark
       main: '#4A8B9E', // medium teal
       dark: '#5AA2B5', // lighter variant
       darker: '#7BC4D8' // lightest variant
@@ -62,7 +62,7 @@ export default function palette(mode) {
     secondary: {
       lighter: '#3D3C3C', // darker grey variant
       light: '#A5A3A3', // light grey for dark mode
-      main: '#BFBDBD', // RoThiBouw grey lighter for dark mode
+      main: '#BFBDBD', // RoThi Bouw grey lighter for dark mode
       dark: '#D9D9D9', // lighter grey
       darker: '#F0F0F0' // lightest grey
     },

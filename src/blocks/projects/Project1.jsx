@@ -22,11 +22,18 @@ import { SECTION_COMMON_PY } from '@/utils/constant';
 
 /***************************  PROJECTS - 1 (FEATURED)  ***************************/
 
-export default function Project1({ headingKey, captionKey, projects, showViewAll = true, viewAllBtnKey = 'home.viewAllProjects' }) {
+export default function Project1({
+  headingKey,
+  captionKey,
+  projects,
+  showViewAll = true,
+  viewAllBtnKey = 'home.viewAllProjects',
+  highlightedOnly = true
+}) {
   const { t } = useTranslation();
 
-  // Filter for highlighted projects only
-  const highlightedProjects = projects.filter((project) => project.isHighlighted);
+  // Filter for highlighted projects only (if enabled)
+  const displayedProjects = highlightedOnly ? projects.filter((project) => project.isHighlighted) : projects;
 
   return (
     <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>
@@ -46,7 +53,7 @@ export default function Project1({ headingKey, captionKey, projects, showViewAll
 
         {/* Projects Grid */}
         <Grid container spacing={3}>
-          {highlightedProjects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <Grid key={project.id} size={{ xs: 12, sm: 6, md: 6 }}>
               <ProjectCard project={project} index={index} />
             </Grid>
@@ -75,5 +82,6 @@ Project1.propTypes = {
   captionKey: PropTypes.string.isRequired,
   projects: PropTypes.array.isRequired,
   showViewAll: PropTypes.bool,
-  viewAllBtnKey: PropTypes.string
+  viewAllBtnKey: PropTypes.string,
+  highlightedOnly: PropTypes.bool
 };

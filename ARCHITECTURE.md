@@ -881,7 +881,7 @@ Add to `src/i18n/translations/en.js` and `nl.js`:
 ```js
 team: {
   heading: 'Meet Our Team',
-  caption: 'The people behind RoThiBouw'
+  caption: 'The people behind RoThi Bouw'
 }
 ```
 

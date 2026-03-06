@@ -17,8 +17,8 @@ export default function ProjectsPage() {
       sections={{
         importFunc: () => import('@/blocks/projects').then((module) => ({ default: module.Project2 })),
         props: {
-          heading: 'projects.heading',
-          caption: 'projects.caption',
+          headingKey: 'projects.heading',
+          captionKey: 'projects.caption',
           projects,
           categories: projectCategories
         }

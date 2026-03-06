@@ -1,11 +1,11 @@
 export const contactData = {
-  heading: 'contact.heading',
-  caption: 'contact.caption',
+  headingKey: 'contact.heading',
+  captionKey: 'contact.caption',
   list: [
     {
       icon: 'tabler-mail',
-      title: 'contact.emailCard.title',
-      content: 'contact.emailCard.content',
+      titleKey: 'contact.emailCard.title',
+      descriptionKey: 'contact.emailCard.content',
       link: {
         href: 'mailto:info@rothibouw.nl',
         children: 'contact.emailCard.buttonText'
@@ -13,8 +13,8 @@ export const contactData = {
     },
     {
       icon: 'tabler-phone',
-      title: 'contact.phoneCard.title',
-      content: 'contact.phoneCard.content',
+      titleKey: 'contact.phoneCard.title',
+      descriptionKey: 'contact.phoneCard.content',
       link: [
         {
           href: 'tel:+31 (0)6 81 39 97 41',
@@ -28,8 +28,8 @@ export const contactData = {
     },
     {
       icon: 'tabler-brand-whatsapp',
-      title: 'contact.whatsappCard.title',
-      content: 'contact.whatsappCard.content',
+      titleKey: 'contact.whatsappCard.title',
+      descriptionKey: 'contact.whatsappCard.content',
       link: [
         {
           href: 'https://wa.me/31123456789',

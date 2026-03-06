@@ -37,6 +37,10 @@ export default function MenuPopper({
     setAnchorEl(anchorEl ? null : event.currentTarget);
   };
 
+  const closeMenu = () => {
+    setAnchorEl(null);
+  };
+
   useEffect(() => {
     defaultOpen && setAnchorEl(anchorRef.current);
   }, [defaultOpen]);
@@ -107,7 +111,7 @@ export default function MenuPopper({
               }}
             >
               <ClickAwayListener onClickAway={() => setAnchorEl(null)}>
-                <Box>{children}</Box>
+                <Box onClick={closeMenu}>{children}</Box>
               </ClickAwayListener>
             </Card>
           </Fade>
