@@ -19,11 +19,11 @@ import { SECTION_COMMON_PY } from '@/utils/constant';
 
 /***************************  SERVICE - DESCRIPTION  ***************************/
 
-export default function ServiceDescription({ title, titleKey, description, descriptionKey, image, reverse = false }) {
+export default function ServiceDescription({ titleKey, descriptionKey, image, reverse = false }) {
   const { t } = useTranslation();
 
-  const displayTitle = titleKey ? t(titleKey) : title;
-  const displayDescription = descriptionKey ? t(descriptionKey) : description;
+  const displayTitle = t(titleKey);
+  const displayDescription = t(descriptionKey);
 
   const textContent = (
     <MotionWrapper variant="slideInFromSide" direction={reverse ? 'right' : 'left'}>
@@ -63,10 +63,8 @@ export default function ServiceDescription({ title, titleKey, description, descr
 }
 
 ServiceDescription.propTypes = {
-  title: PropTypes.string,
-  titleKey: PropTypes.string,
-  description: PropTypes.string,
-  descriptionKey: PropTypes.string,
+  titleKey: PropTypes.string.isRequired,
+  descriptionKey: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   reverse: PropTypes.bool
 };

@@ -26,7 +26,7 @@ import { SECTION_COMMON_PY, BORDER_RADIUS } from '@/utils/constant';
 
 /***************************  CONTACT US - CARD  ***************************/
 
-function ContactCard({ icon, title, content, link }) {
+function ContactCard({ icon, titleKey, descriptionKey, link }) {
   const { t } = useTranslation();
 
   // Normalize link to always be an array
@@ -41,8 +41,8 @@ function ContactCard({ icon, title, content, link }) {
         <Stack sx={{ gap: { xs: 2, md: 3 }, height: 1, alignItems: 'flex-start', justifyContent: 'space-between' }}>
           <Typeset
             {...{
-              heading: t(title),
-              caption: t(content),
+              heading: t(titleKey),
+              caption: t(descriptionKey),
               stackProps: { sx: { gap: 1 } },
               headingProps: { variant: 'h4' },
               captionProps: { variant: 'body1' }
@@ -67,7 +67,7 @@ function ContactCard({ icon, title, content, link }) {
 
 /***************************  CONTACT US - 4  ***************************/
 
-export default function ContactUs4({ heading, caption, list, showForm = true }) {
+export default function ContactUs4({ headingKey, captionKey, list, showForm = true }) {
   const { t } = useTranslation();
   const sectionPadding = { xs: 2, sm: 3, md: 5 };
 
@@ -81,11 +81,11 @@ export default function ContactUs4({ heading, caption, list, showForm = true }) 
                 <GraphicsCard sx={{ height: 1, borderRadius: BORDER_RADIUS.xs }}>
                   <GraphicsCard sx={{ bgcolor: 'grey.200', borderRadius: BORDER_RADIUS.xs }}>
                     <Box sx={{ p: { xs: 2, sm: 4, md: 5 } }}>
-                      {heading && (
+                      {headingKey && (
                         <Typeset
                           {...{
-                            heading: t(heading),
-                            caption: t(caption),
+                            heading: t(headingKey),
+                            caption: t(captionKey),
                             stackProps: { sx: { alignItems: 'center', textAlign: 'center' } },
                             headingProps: { sx: { maxWidth: { xs: '85%', sm: '80%' } } },
                             captionProps: { sx: { maxWidth: { sm: '60%' } } }
@@ -114,6 +114,6 @@ export default function ContactUs4({ heading, caption, list, showForm = true }) 
   );
 }
 
-ContactCard.propTypes = { icon: PropTypes.any, title: PropTypes.any, content: PropTypes.any, link: PropTypes.any };
+ContactCard.propTypes = { icon: PropTypes.any, titleKey: PropTypes.any, descriptionKey: PropTypes.any, link: PropTypes.any };
 
-ContactUs4.propTypes = { heading: PropTypes.any, caption: PropTypes.any, list: PropTypes.any, showForm: PropTypes.bool };
+ContactUs4.propTypes = { headingKey: PropTypes.any, captionKey: PropTypes.any, list: PropTypes.any, showForm: PropTypes.bool };

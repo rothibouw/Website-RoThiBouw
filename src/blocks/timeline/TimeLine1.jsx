@@ -25,7 +25,7 @@ import { SECTION_COMMON_PY } from '@/utils/constant';
 
 /***************************  TIMELINE - 1  ***************************/
 
-export default function TimeLine1({ heading, caption, sections }) {
+export default function TimeLine1({ headingKey, captionKey, sections }) {
   const theme = useTheme();
   const { t } = useTranslation();
   const containerRef = useRef(null);
@@ -44,8 +44,8 @@ export default function TimeLine1({ heading, caption, sections }) {
       <Stack sx={{ gap: { xs: 6, md: 8 } }} ref={containerRef}>
         <Typeset
           {...{
-            heading: t(heading),
-            caption: t(caption),
+            heading: t(headingKey),
+            caption: t(captionKey),
             stackProps: { sx: { alignItems: 'center' } },
             headingProps: { variant: 'h2', sx: { textAlign: 'center' } },
             captionProps: { sx: { maxWidth: 700, textAlign: 'center' } }
@@ -113,14 +113,14 @@ export default function TimeLine1({ heading, caption, sections }) {
                       // Text on left for odd items (1, 3, 5...)
                       <MotionWrapper variant="slideInFromSide" direction="left" delay={0.2} duration={0.6}>
                         <Stack sx={{ gap: { xs: 2, md: 2.5 } }}>
-                          {section.title && (
+                          {section.titleKey && (
                             <Typography variant="h3" sx={{ color: 'text.primary' }}>
-                              {t(section.title)}
+                              {t(section.titleKey)}
                             </Typography>
                           )}
-                          {section.description && (
+                          {section.descriptionKey && (
                             <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8 }}>
-                              {t(section.description)}
+                              {t(section.descriptionKey)}
                             </Typography>
                           )}
                         </Stack>
@@ -159,14 +159,14 @@ export default function TimeLine1({ heading, caption, sections }) {
                       // Text on right for even items (0, 2, 4...)
                       <MotionWrapper variant="slideInFromSide" direction="right" delay={0.2} duration={0.6}>
                         <Stack sx={{ gap: { xs: 2, md: 2.5 } }}>
-                          {section.title && (
+                          {section.titleKey && (
                             <Typography variant="h3" sx={{ color: 'text.primary' }}>
-                              {t(section.title)}
+                              {t(section.titleKey)}
                             </Typography>
                           )}
-                          {section.description && (
+                          {section.descriptionKey && (
                             <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8 }}>
-                              {t(section.description)}
+                              {t(section.descriptionKey)}
                             </Typography>
                           )}
                         </Stack>
@@ -198,12 +198,12 @@ export default function TimeLine1({ heading, caption, sections }) {
 }
 
 TimeLine1.propTypes = {
-  heading: PropTypes.string,
-  caption: PropTypes.string,
+  headingKey: PropTypes.string,
+  captionKey: PropTypes.string,
   sections: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string,
-      description: PropTypes.string,
+      titleKey: PropTypes.string,
+      descriptionKey: PropTypes.string,
       image: PropTypes.string
     })
   )

@@ -14,12 +14,14 @@ import ContainerWrapper from '@/components/ContainerWrapper';
 import MotionWrapper from '@/components/MotionWrapper';
 import ProjectCard from '@/components/cards/ProjectCard';
 import Typeset from '@/components/Typeset';
+
 import useTranslation from '@/hooks/useTranslation';
+
 import { SECTION_COMMON_PY } from '@/utils/constant';
 
 /***************************  PROJECTS - 2 (WITH CATEGORY FILTER)  ***************************/
 
-export default function Project2({ heading, caption, projects, categories }) {
+export default function Project2({ headingKey, captionKey, projects, categories }) {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
 
@@ -62,8 +64,8 @@ export default function Project2({ heading, caption, projects, categories }) {
         <MotionWrapper>
           <Typeset
             {...{
-              heading: t(heading),
-              caption: t(caption),
+              heading: t(headingKey),
+              caption: t(captionKey),
               stackProps: { sx: { gap: 1.5, textAlign: 'center', maxWidth: 600, mx: 'auto' } },
               headingProps: { variant: 'h2', component: 'h1' },
               captionProps: { variant: 'body1' }
@@ -117,8 +119,8 @@ export default function Project2({ heading, caption, projects, categories }) {
 }
 
 Project2.propTypes = {
-  heading: PropTypes.string.isRequired,
-  caption: PropTypes.string.isRequired,
+  headingKey: PropTypes.string.isRequired,
+  captionKey: PropTypes.string.isRequired,
   projects: PropTypes.array.isRequired,
   categories: PropTypes.arrayOf(
     PropTypes.shape({

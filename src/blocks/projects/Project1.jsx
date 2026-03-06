@@ -15,12 +15,14 @@ import ContainerWrapper from '@/components/ContainerWrapper';
 import MotionWrapper from '@/components/MotionWrapper';
 import ProjectCard from '@/components/cards/ProjectCard';
 import Typeset from '@/components/Typeset';
+
 import useTranslation from '@/hooks/useTranslation';
+
 import { SECTION_COMMON_PY } from '@/utils/constant';
 
 /***************************  PROJECTS - 1 (FEATURED)  ***************************/
 
-export default function Project1({ heading, caption, projects, showViewAll = true, viewAllBtnKey = 'home.viewAllProjects' }) {
+export default function Project1({ headingKey, captionKey, projects, showViewAll = true, viewAllBtnKey = 'home.viewAllProjects' }) {
   const { t } = useTranslation();
 
   // Filter for highlighted projects only
@@ -33,8 +35,8 @@ export default function Project1({ heading, caption, projects, showViewAll = tru
         <MotionWrapper>
           <Typeset
             {...{
-              heading: t(heading),
-              caption: t(caption),
+              heading: t(headingKey),
+              caption: t(captionKey),
               stackProps: { sx: { gap: 1.5, textAlign: 'center', maxWidth: 600, mx: 'auto' } },
               headingProps: { variant: 'h2' },
               captionProps: { variant: 'body1' }
@@ -56,7 +58,7 @@ export default function Project1({ heading, caption, projects, showViewAll = tru
           <MotionWrapper delay={0.3}>
             <Stack direction="row" justifyContent="center">
               <ButtonAnimationWrapper>
-                <Button component={NextLink} href="/projects" variant="outlined" size="large" sx={{ px: 4 }}>
+                <Button component={NextLink} href="/projecten" variant="outlined" size="large" sx={{ px: 4 }}>
                   {t(viewAllBtnKey)}
                 </Button>
               </ButtonAnimationWrapper>
@@ -69,8 +71,8 @@ export default function Project1({ heading, caption, projects, showViewAll = tru
 }
 
 Project1.propTypes = {
-  heading: PropTypes.string.isRequired,
-  caption: PropTypes.string.isRequired,
+  headingKey: PropTypes.string.isRequired,
+  captionKey: PropTypes.string.isRequired,
   projects: PropTypes.array.isRequired,
   showViewAll: PropTypes.bool,
   viewAllBtnKey: PropTypes.string

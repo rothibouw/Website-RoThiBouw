@@ -42,7 +42,7 @@ function getGridSize(index, length) {
 
 /***************************  CONTACT US - CARD  ***************************/
 
-function ContactCard({ icon, title, content, link }) {
+function ContactCard({ icon, titleKey, descriptionKey, link }) {
   const { t } = useTranslation();
 
   return (
@@ -54,8 +54,8 @@ function ContactCard({ icon, title, content, link }) {
         <Stack sx={{ alignItems: 'flex-start', justifyContent: 'space-between', height: 1, gap: { xs: 2, md: 3 } }}>
           <Typeset
             {...{
-              heading: t(title),
-              caption: t(content),
+              heading: t(titleKey),
+              caption: t(descriptionKey),
               stackProps: { sx: { gap: { xs: 1 } } },
               headingProps: { variant: 'h4' },
               captionProps: { variant: 'body1' }
@@ -72,7 +72,7 @@ function ContactCard({ icon, title, content, link }) {
 
 /***************************  CONTACT US - 3  ***************************/
 
-export default function ContactUs3({ heading, caption, list, headerAlign = 'center', animateHeader = true }) {
+export default function ContactUs3({ headingKey, captionKey, list, headerAlign = 'center', animateHeader = true }) {
   const { t } = useTranslation();
   const headerAlignValue = headerAlign === 'center' ? 'center' : headerAlign === 'right' ? 'flex-end' : 'flex-start';
 
@@ -82,8 +82,8 @@ export default function ContactUs3({ heading, caption, list, headerAlign = 'cent
         <MotionWrapper animate={animateHeader}>
           <Typeset
             {...{
-              heading: t(heading),
-              caption: t(caption),
+              heading: t(headingKey),
+              caption: t(captionKey),
               stackProps: { sx: { alignItems: headerAlignValue } }
             }}
           />
@@ -102,11 +102,11 @@ export default function ContactUs3({ heading, caption, list, headerAlign = 'cent
   );
 }
 
-ContactCard.propTypes = { icon: PropTypes.any, title: PropTypes.any, content: PropTypes.any, link: PropTypes.any };
+ContactCard.propTypes = { icon: PropTypes.any, titleKey: PropTypes.any, descriptionKey: PropTypes.any, link: PropTypes.any };
 
 ContactUs3.propTypes = {
-  heading: PropTypes.string,
-  caption: PropTypes.string,
+  headingKey: PropTypes.string,
+  captionKey: PropTypes.string,
   list: PropTypes.array,
   headerAlign: PropTypes.oneOf(['left', 'center', 'right']),
   animateHeader: PropTypes.bool
