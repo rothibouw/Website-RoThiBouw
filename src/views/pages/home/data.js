@@ -1,21 +1,9 @@
-import { projects } from '@/data/projects';
-
 export const heroSlides = [
   {
     image: '/assets/home/hero_1.jpg',
     titleKey: 'home.hero.slide1.title',
     descriptionKey: 'home.hero.slide1.description'
   }
-  // {
-  //   image: '/assets/home/image_2.jpg',
-  //   titleKey: 'home.hero.slide2.title',
-  //   descriptionKey: 'home.hero.slide2.description'
-  // },
-  // {
-  //   image: '/assets/home/image_3.jpg',
-  //   titleKey: 'home.hero.slide3.title',
-  //   descriptionKey: 'home.hero.slide3.description'
-  // }
 ];
 
 export const servicesData = {
@@ -23,47 +11,56 @@ export const servicesData = {
   headerAlign: 'center',
   list: [
     {
-      icon: 'tabler-crane',
-      titleKey: 'home.services.renovations.title',
-      descriptionKey: 'home.services.renovations.description',
+      icon: 'tabler-cpu',
+      titleKey: 'home.services.plcSoftware.title',
+      descriptionKey: 'home.services.plcSoftware.description',
       link: {
-        href: '/diensten/ver-en-aanbouwen',
+        href: '/diensten/plc-software',
         children: 'common.learnMore'
       }
     },
     {
-      icon: 'tabler-home',
-      titleKey: 'home.services.roofing.title',
-      descriptionKey: 'home.services.roofing.description',
+      icon: 'tabler-plug',
+      titleKey: 'home.services.schakelkastEngineering.title',
+      descriptionKey: 'home.services.schakelkastEngineering.description',
       link: {
-        href: '/diensten/dakwerken',
+        href: '/diensten/schakelkast-engineering',
         children: 'common.learnMore'
       }
     },
     {
-      icon: 'tabler-hammer',
-      titleKey: 'home.services.carpentry.title',
-      descriptionKey: 'home.services.carpentry.description',
+      icon: 'tabler-bolt',
+      titleKey: 'home.services.elektrischeInstallatie.title',
+      descriptionKey: 'home.services.elektrischeInstallatie.description',
       link: {
-        href: '/diensten/timmerwerk',
+        href: '/diensten/elektrische-installatie',
         children: 'common.learnMore'
       }
     },
     {
-      icon: 'tabler-michelin-star-green',
-      titleKey: 'home.services.sustainability.title',
-      descriptionKey: 'home.services.sustainability.description',
+      icon: 'tabler-settings',
+      titleKey: 'home.services.aandrijvingConfiguratie.title',
+      descriptionKey: 'home.services.aandrijvingConfiguratie.description',
       link: {
-        href: '/diensten/verduurzaming',
+        href: '/diensten/aandrijving-configuratie',
         children: 'common.learnMore'
       }
     },
     {
-      icon: 'tabler-wood',
-      titleKey: 'home.services.woodConstructions.title',
-      descriptionKey: 'home.services.woodConstructions.description',
+      icon: 'tabler-refresh',
+      titleKey: 'home.services.machineUpgrades.title',
+      descriptionKey: 'home.services.machineUpgrades.description',
       link: {
-        href: '/diensten/hout-constructies',
+        href: '/diensten/machine-upgrades',
+        children: 'common.learnMore'
+      }
+    },
+    {
+      icon: 'tabler-rocket',
+      titleKey: 'home.services.inbedrijfstelling.title',
+      descriptionKey: 'home.services.inbedrijfstelling.description',
+      link: {
+        href: '/diensten/inbedrijfstelling',
         children: 'common.learnMore'
       }
     }
@@ -81,12 +78,46 @@ export const aboutTeaserData = {
   }
 };
 
-export const projectsData = {
-  headingKey: 'home.projects.heading',
-  captionKey: 'home.projects.caption',
-  projects: projects,
-  showViewAll: true,
-  viewAllBtnKey: 'home.viewAllProjects'
+export const processData = {
+  heading: 'home.process.heading',
+  caption: 'home.process.caption',
+  cards: [
+    {
+      title: 'home.process.step1.title',
+      description: 'home.process.step1.description',
+      icon: 'tabler-search',
+      image: '/assets/temp/placeholder.png'
+    },
+    {
+      title: 'home.process.step2.title',
+      description: 'home.process.step2.description',
+      icon: 'tabler-pencil',
+      image: '/assets/temp/placeholder.png'
+    },
+    {
+      title: 'home.process.step3.title',
+      description: 'home.process.step3.description',
+      icon: 'tabler-code',
+      image: '/assets/temp/placeholder.png'
+    },
+    {
+      title: 'home.process.step4.title',
+      description: 'home.process.step4.description',
+      icon: 'tabler-rocket',
+      image: '/assets/temp/placeholder.png'
+    }
+  ]
+};
+
+export const clienteleData = {
+  titleKey: 'home.clientele.title',
+  clienteleList: [
+    { image: '/assets/temp/placeholder.png', sx: { height: 40 } },
+    { image: '/assets/temp/placeholder.png', sx: { height: 40 } },
+    { image: '/assets/temp/placeholder.png', sx: { height: 40 } },
+    { image: '/assets/temp/placeholder.png', sx: { height: 40 } },
+    { image: '/assets/temp/placeholder.png', sx: { height: 40 } }
+  ]
 };
 
 export const ctaData = {

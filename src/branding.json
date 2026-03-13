@@ -1,9 +1,9 @@
 {
-  "brandName": "RoThi Bouw",
+  "brandName": "LFT-Works",
   "title": "",
   "company": {
-    "name": "RoThi Bouw",
-    "url": "https://rothibouw.nl",
+    "name": "LFT-Works",
+    "url": "https://lft-works.nl",
     "socialLink": {
       "linkedin": "#",
       "instagram": "#",
@@ -16,8 +16,8 @@
     }
   },
   "logo": {
-    "light": "/assets/logo/light.png",
-    "dark": "/assets/logo/dark.png",
+    "light": "/assets/logo/light-lft.png",
+    "dark": "/assets/logo/light-lft.png",
     "main": "",
     "logoIcon": "",
     "logoFab": "",

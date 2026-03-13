@@ -5,7 +5,7 @@ export const heroData = {
       title: 'about.hero.title',
       titleHighlight: 'about.hero.titleHighlight',
       description: 'about.hero.description',
-      objectPosition: 'center 30%' // Position image higher to show faces on larger screens
+      objectPosition: 'center 30%'
     }
   ],
   height: { xs: 400, sm: 500, md: 600 },
@@ -23,23 +23,18 @@ export const timelineData = {
   captionKey: 'about.timeline.caption',
   sections: [
     {
-      titleKey: 'about.timeline.founded.title',
-      descriptionKey: 'about.timeline.founded.description',
+      titleKey: 'about.timeline.started.title',
+      descriptionKey: 'about.timeline.started.description',
       image: '/assets/temp/placeholder.png'
     },
     {
-      titleKey: 'about.timeline.office.title',
-      descriptionKey: 'about.timeline.office.description',
+      titleKey: 'about.timeline.experience.title',
+      descriptionKey: 'about.timeline.experience.description',
       image: '/assets/temp/placeholder.png'
     },
     {
-      titleKey: 'about.timeline.projects.title',
-      descriptionKey: 'about.timeline.projects.description',
-      image: '/assets/temp/placeholder.png'
-    },
-    {
-      titleKey: 'about.timeline.certification.title',
-      descriptionKey: 'about.timeline.certification.description',
+      titleKey: 'about.timeline.lftworks.title',
+      descriptionKey: 'about.timeline.lftworks.description',
       image: '/assets/temp/placeholder.png'
     }
   ]
@@ -49,22 +44,12 @@ export const teamData = {
   headingKey: 'about.founders.heading',
   members: [
     {
-      name: 'Roy van Strijdhoven',
-      roleKey: 'about.founders.roy.role',
-      quoteKey: 'about.founders.roy.quote',
-      avatar: '/assets/about/roy.jpeg',
-      phone: '+31 (0)6 81 39 97 41',
-      email: 'roy@rothibouw.nl'
-      // linkedin: 'https://linkedin.com/in/roy-van-strijdhoven'
-    },
-    {
-      name: 'Thijs van Gisbergen',
-      roleKey: 'about.founders.thijs.role',
-      quoteKey: 'about.founders.thijs.quote',
-      avatar: '/assets/about/thijs.jpg',
-      phone: '+31 (0)6 57 41 59 09',
-      email: 'thijs@rothibouw.nl'
-      // linkedin: 'https://linkedin.com/in/thijs-van-gisbergen'
+      name: 'LFT-Works',
+      roleKey: 'about.founders.engineer.role',
+      quoteKey: 'about.founders.engineer.quote',
+      avatar: '/assets/temp/placeholder.png',
+      phone: '+31 (0)6 00 00 00 00',
+      email: 'info@lft-works.nl'
     }
   ]
 };

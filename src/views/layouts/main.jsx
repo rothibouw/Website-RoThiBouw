@@ -6,8 +6,8 @@ import Box from '@mui/material/Box';
 
 // @project
 import { Footer9 } from '@/blocks/footer';
-import { Navbar11 } from '@/blocks/navbar';
-import { NavbarContent11 } from '@/blocks/navbar/navbar-content';
+import { Navbar2 } from '@/blocks/navbar';
+import { NavbarContent2 } from '@/blocks/navbar/navbar-content';
 
 // @data
 import { useNavbarData } from './data/navbar';
@@ -23,14 +23,14 @@ export default function MainLayout({ children }) {
     <>
       {/* Header section */}
       <Box sx={{ bgcolor: 'grey.100' }}>
-        <Navbar11>
-          <NavbarContent11 {...navbar} />
-        </Navbar11>
+        <Navbar2>
+          <NavbarContent2 {...navbar} />
+        </Navbar2>
       </Box>
       {/* Page content */}
       <main>{children}</main>
       {/* Footer section */}
-      <Footer9 companyInfo={companyInfo} bottomBar={bottomBar} />;
+      <Footer9 companyInfo={companyInfo} bottomBar={bottomBar} />
     </>
   );
 }

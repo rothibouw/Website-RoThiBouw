@@ -13,7 +13,7 @@ const ogCommon = {
       url: '/assets/og-image.jpg', // TODO: Create 1200x630 image with logo + project photo
       width: 1200,
       height: 630,
-      alt: `${branding.brandName} — Timmerbedrijf in Reusel, Noord-Brabant`
+      alt: `${branding.brandName} — Industriele Automatisering & PLC Programmering`
     }
   ]
 };
@@ -26,39 +26,35 @@ export const mainMetadata = {
     default: branding.brandName
   },
   description:
-    'RoThi Bouw is een timmerbedrijf uit Reusel, actief in de regio Eindhoven en Tilburg. Gespecialiseerd in nieuwbouw, verbouwingen, dakwerk en afbouw. Vraag vrijblijvend een offerte aan.',
+    'LFT-Works is gespecialiseerd in industriele automatisering, PLC programmering, schakelkast engineering en inbedrijfstelling. Uw partner voor betrouwbare automatiseringsoplossingen.',
   applicationName: branding.brandName,
   keywords: [
-    'timmerbedrijf',
-    'timmerman',
-    'aannemer',
-    'Reusel',
-    'Eindhoven',
-    'Tilburg',
-    'Noord-Brabant',
-    'nieuwbouw',
-    'verbouwing',
-    'dakwerk',
-    'afbouw',
-    'renovatie',
-    'houtbouw',
-    'kozijnen'
+    'industriele automatisering',
+    'PLC programmering',
+    'schakelkast engineering',
+    'inbedrijfstelling',
+    'aandrijftechniek',
+    'machine upgrades',
+    'Siemens',
+    'besturingstechniek',
+    'elektrische installatie',
+    'LFT-Works'
   ],
   creator: branding.company?.name || branding.brandName,
-  metadataBase: new URL(process.env.NEXT_PUBLIC_METADATA_BASE || 'https://www.rothibouw.nl'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_METADATA_BASE || 'https://www.lft-works.nl'),
   alternates: {
     canonical: '/'
   },
   icons: {
     icon: [
-      { url: '/assets/logo/light.png', media: '(prefers-color-scheme: light)' },
-      { url: '/assets/logo/dark.png', media: '(prefers-color-scheme: dark)' }
+      { url: '/assets/logo/light-lft.png', media: '(prefers-color-scheme: light)' },
+      { url: '/assets/logo/light-lft.png', media: '(prefers-color-scheme: dark)' }
     ],
-    apple: '/assets/logo/light.png'
+    apple: '/assets/logo/light-lft.png'
   },
   openGraph: {
-    title: `${branding.brandName} — Timmerbedrijf Reusel | Nieuwbouw, Verbouwingen & Dakwerk`,
-    description: 'Timmerbedrijf uit Reusel, actief in de regio Eindhoven en Tilburg. Nieuwbouw, verbouwingen, dakwerk en afbouw.',
+    title: `${branding.brandName} — Industriele Automatisering & PLC Programmering`,
+    description: 'Specialist in industriele automatisering, PLC software, schakelkast engineering en inbedrijfstelling.',
     url: '/',
     ...ogCommon
   }
@@ -70,10 +66,10 @@ export const mainMetadata = {
 export const aboutMetadata = {
   title: 'Over ons',
   description:
-    'Maak kennis met RoThi Bouw: een timmerbedrijf uit Reusel met vakmanschap en persoonlijke aanpak. Lees meer over ons team, onze werkwijze en waar we voor staan.',
+    'Maak kennis met LFT-Works: specialist in industriele automatisering met jarenlange ervaring in PLC programmering, besturingstechniek en inbedrijfstelling.',
   openGraph: {
     title: 'Over ons',
-    description: 'Vakmanschap en persoonlijke aanpak. Leer het team achter RoThi Bouw kennen.',
+    description: 'Ervaren automatiseringsspecialist. Leer de engineer achter LFT-Works kennen.',
     url: '/over-ons',
     ...ogCommon
   }
@@ -83,10 +79,10 @@ export const aboutMetadata = {
 export const servicesMetadata = {
   title: 'Diensten',
   description:
-    'RoThi Bouw biedt nieuwbouw, verbouwingen, dakwerk en afbouw in de regio Reusel, Eindhoven en Tilburg. Bekijk onze diensten en vraag een vrijblijvende offerte aan.',
+    'LFT-Works biedt PLC programmering, schakelkast engineering, elektrische installatie, aandrijving configuratie, machine upgrades en inbedrijfstelling. Vraag vrijblijvend een offerte aan.',
   openGraph: {
     title: 'Onze diensten',
-    description: 'Nieuwbouw, verbouwingen, dakwerk en afbouw in Noord-Brabant. Bekijk wat wij voor u kunnen betekenen.',
+    description: 'PLC software, schakelkast engineering, inbedrijfstelling en meer. Bekijk wat LFT-Works voor u kan betekenen.',
     url: '/diensten',
     ...ogCommon
   }
@@ -96,10 +92,10 @@ export const servicesMetadata = {
 export const projectsMetadata = {
   title: 'Projecten',
   description:
-    "Bekijk onze afgeronde projecten: nieuwbouw, verbouwingen en renovaties in de regio Reusel, Eindhoven en Tilburg. Foto's en beschrijvingen van ons vakwerk.",
+    "Bekijk onze afgeronde automatiseringsprojecten: PLC programma's, schakelkasten en machine upgrades voor diverse industrieen.",
   openGraph: {
     title: 'Projecten',
-    description: "Foto's en beschrijvingen van afgeronde bouwprojecten door RoThi Bouw.",
+    description: 'Overzicht van afgeronde automatiseringsprojecten door LFT-Works.',
     url: '/projecten',
     ...ogCommon
   }
@@ -109,10 +105,10 @@ export const projectsMetadata = {
 export const contactMetadata = {
   title: 'Contact',
   description:
-    'Neem contact op met RoThi Bouw voor een vrijblijvende offerte of meer informatie. Wij zijn gevestigd in Reusel en actief in de regio Eindhoven en Tilburg.',
+    'Neem contact op met LFT-Works voor een vrijblijvende offerte of meer informatie over industriele automatisering en PLC programmering.',
   openGraph: {
     title: 'Contact',
-    description: 'Neem contact op voor een vrijblijvende offerte. Gevestigd in Reusel, actief in heel Noord-Brabant.',
+    description: 'Neem contact op voor een vrijblijvende offerte. Uw partner in industriele automatisering.',
     url: '/contact',
     ...ogCommon
   }
@@ -121,14 +117,14 @@ export const contactMetadata = {
 // PRIVACY POLICY
 export const privacyPolicyMetadata = {
   title: 'Privacybeleid',
-  description: 'Lees het privacybeleid van RoThi Bouw. Hoe wij omgaan met uw persoonsgegevens conform de AVG.',
+  description: 'Lees het privacybeleid van LFT-Works. Hoe wij omgaan met uw persoonsgegevens conform de AVG.',
   robots: {
     index: false,
     follow: true
   },
   openGraph: {
     title: 'Privacybeleid',
-    description: 'Privacybeleid van RoThi Bouw Timmerbedrijf.',
+    description: 'Privacybeleid van LFT-Works.',
     url: '/privacy-policy',
     ...ogCommon
   }
@@ -137,14 +133,14 @@ export const privacyPolicyMetadata = {
 // TERMS & CONDITIONS
 export const termsConditionsMetadata = {
   title: 'Algemene voorwaarden',
-  description: 'Bekijk de algemene voorwaarden van RoThi Bouw Timmerbedrijf.',
+  description: 'Bekijk de algemene voorwaarden van LFT-Works.',
   robots: {
     index: false,
     follow: true
   },
   openGraph: {
     title: 'Algemene voorwaarden',
-    description: 'Algemene voorwaarden van RoThi Bouw Timmerbedrijf.',
+    description: 'Algemene voorwaarden van LFT-Works.',
     url: '/terms-conditions',
     ...ogCommon
   }

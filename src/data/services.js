@@ -3,88 +3,108 @@
 
 export const services = [
   {
-    slug: 'ver-en-aanbouwen',
-    titleKey: 'services.renovaties.title',
-    icon: 'tabler-paint',
-    heroImage: '/assets/services/ver-en-aanbouw/hero.jpeg',
-    descriptionTitleKey: 'services.renovaties.descriptionTitle',
-    descriptionKey: 'services.renovaties.description',
+    slug: 'plc-software',
+    titleKey: 'services.plcSoftware.title',
+    icon: 'tabler-cpu',
+    heroImage: '/assets/temp/placeholder.png',
+    descriptionTitleKey: 'services.plcSoftware.descriptionTitle',
+    descriptionKey: 'services.plcSoftware.description',
     descriptionImage: '/assets/temp/placeholder.png',
     features: [
-      'services.renovaties.features.f1',
-      'services.renovaties.features.f2',
-      'services.renovaties.features.f3',
-      'services.renovaties.features.f4',
-      'services.renovaties.features.f5'
+      'services.plcSoftware.features.f1',
+      'services.plcSoftware.features.f2',
+      'services.plcSoftware.features.f3',
+      'services.plcSoftware.features.f4',
+      'services.plcSoftware.features.f5'
     ],
     featureImage: '/assets/temp/placeholder.png',
-    relatedCategories: ['renovaties']
+    relatedCategories: ['plc-software']
   },
   {
-    slug: 'dakwerken',
-    titleKey: 'services.dakwerken.title',
-    icon: 'tabler-home',
-    heroImage: '/assets/services/dakwerken/hero.jpeg',
-    descriptionTitleKey: 'services.dakwerken.descriptionTitle',
-    descriptionKey: 'services.dakwerken.description',
-    descriptionImage: '/assets/services/dakwerken/description.jpeg',
+    slug: 'schakelkast-engineering',
+    titleKey: 'services.schakelkastEngineering.title',
+    icon: 'tabler-plug',
+    heroImage: '/assets/temp/placeholder.png',
+    descriptionTitleKey: 'services.schakelkastEngineering.descriptionTitle',
+    descriptionKey: 'services.schakelkastEngineering.description',
+    descriptionImage: '/assets/temp/placeholder.png',
     features: [
-      'services.dakwerken.features.f1',
-      'services.dakwerken.features.f2',
-      'services.dakwerken.features.f3',
-      'services.dakwerken.features.f4',
-      'services.dakwerken.features.f5',
-      'services.dakwerken.features.f6'
+      'services.schakelkastEngineering.features.f1',
+      'services.schakelkastEngineering.features.f2',
+      'services.schakelkastEngineering.features.f3',
+      'services.schakelkastEngineering.features.f4',
+      'services.schakelkastEngineering.features.f5'
     ],
-    featureImage: '/assets/services/dakwerken/feature.jpeg',
-    relatedCategories: ['dakwerken']
+    featureImage: '/assets/temp/placeholder.png',
+    relatedCategories: ['schakelkast-engineering']
   },
   {
-    slug: 'timmerwerk',
-    titleKey: 'services.timmerwerk.title',
-    icon: 'tabler-tool',
-    heroImage: '/assets/services/timmerwerk/hero.jpeg',
-    descriptionTitleKey: 'services.timmerwerk.descriptionTitle',
-    descriptionKey: 'services.timmerwerk.description',
-    descriptionImage: '/assets/services/timmerwerk/description.jpeg',
-    features: ['services.timmerwerk.features.f1', 'services.timmerwerk.features.f2', 'services.timmerwerk.features.f3'],
-    featureImage: '/assets/services/timmerwerk/feature.jpeg',
-    relatedCategories: ['timmerwerk']
-  },
-  {
-    slug: 'verduurzaming',
-    titleKey: 'services.verduurzaming.title',
-    icon: 'tabler-building',
-    heroImage: '/assets/services/verduurzaming/hero.jpeg',
-    descriptionTitleKey: 'services.verduurzaming.descriptionTitle',
-    descriptionKey: 'services.verduurzaming.description',
-    descriptionImage: '/assets/services/verduurzaming/description.jpeg',
+    slug: 'elektrische-installatie',
+    titleKey: 'services.elektrischeInstallatie.title',
+    icon: 'tabler-bolt',
+    heroImage: '/assets/temp/placeholder.png',
+    descriptionTitleKey: 'services.elektrischeInstallatie.descriptionTitle',
+    descriptionKey: 'services.elektrischeInstallatie.description',
+    descriptionImage: '/assets/temp/placeholder.png',
     features: [
-      'services.verduurzaming.features.f1',
-      'services.verduurzaming.features.f2',
-      'services.verduurzaming.features.f3',
-      'services.verduurzaming.features.f4',
-      'services.verduurzaming.features.f5'
+      'services.elektrischeInstallatie.features.f1',
+      'services.elektrischeInstallatie.features.f2',
+      'services.elektrischeInstallatie.features.f3',
+      'services.elektrischeInstallatie.features.f4'
     ],
-    featureImage: '/assets/services/verduurzaming/feature.jpeg',
-    relatedCategories: ['verduurzaming']
+    featureImage: '/assets/temp/placeholder.png',
+    relatedCategories: ['elektrische-installatie']
   },
   {
-    slug: 'hout-constructies',
-    titleKey: 'services.houtConstructies.title',
-    icon: 'tabler-wall',
-    heroImage: '/assets/services/hout-constructies/hero.jpeg',
-    descriptionTitleKey: 'services.houtConstructies.descriptionTitle',
-    descriptionKey: 'services.houtConstructies.description',
-    descriptionImage: '/assets/services/hout-constructies/description.jpeg',
+    slug: 'aandrijving-configuratie',
+    titleKey: 'services.aandrijvingConfiguratie.title',
+    icon: 'tabler-settings',
+    heroImage: '/assets/temp/placeholder.png',
+    descriptionTitleKey: 'services.aandrijvingConfiguratie.descriptionTitle',
+    descriptionKey: 'services.aandrijvingConfiguratie.description',
+    descriptionImage: '/assets/temp/placeholder.png',
     features: [
-      'services.houtConstructies.features.f1',
-      'services.houtConstructies.features.f2',
-      'services.houtConstructies.features.f3',
-      'services.houtConstructies.features.f4'
+      'services.aandrijvingConfiguratie.features.f1',
+      'services.aandrijvingConfiguratie.features.f2',
+      'services.aandrijvingConfiguratie.features.f3',
+      'services.aandrijvingConfiguratie.features.f4'
     ],
-    featureImage: '/assets/services/hout-constructies/feature.jpeg',
-    relatedCategories: ['houtConstructies']
+    featureImage: '/assets/temp/placeholder.png',
+    relatedCategories: ['aandrijving-configuratie']
+  },
+  {
+    slug: 'machine-upgrades',
+    titleKey: 'services.machineUpgrades.title',
+    icon: 'tabler-refresh',
+    heroImage: '/assets/temp/placeholder.png',
+    descriptionTitleKey: 'services.machineUpgrades.descriptionTitle',
+    descriptionKey: 'services.machineUpgrades.description',
+    descriptionImage: '/assets/temp/placeholder.png',
+    features: [
+      'services.machineUpgrades.features.f1',
+      'services.machineUpgrades.features.f2',
+      'services.machineUpgrades.features.f3',
+      'services.machineUpgrades.features.f4'
+    ],
+    featureImage: '/assets/temp/placeholder.png',
+    relatedCategories: ['machine-upgrades']
+  },
+  {
+    slug: 'inbedrijfstelling',
+    titleKey: 'services.inbedrijfstelling.title',
+    icon: 'tabler-rocket',
+    heroImage: '/assets/temp/placeholder.png',
+    descriptionTitleKey: 'services.inbedrijfstelling.descriptionTitle',
+    descriptionKey: 'services.inbedrijfstelling.description',
+    descriptionImage: '/assets/temp/placeholder.png',
+    features: [
+      'services.inbedrijfstelling.features.f1',
+      'services.inbedrijfstelling.features.f2',
+      'services.inbedrijfstelling.features.f3',
+      'services.inbedrijfstelling.features.f4'
+    ],
+    featureImage: '/assets/temp/placeholder.png',
+    relatedCategories: ['inbedrijfstelling']
   }
 ];
 
@@ -112,7 +132,6 @@ export const serviceProcessSteps = {
 
 export const servicesNavigationData = {
   headingKey: 'services.navigation.heading',
-  // captionKey: 'services.navigation.caption',
   list: services.map((service) => ({
     icon: service.icon,
     titleKey: service.titleKey,

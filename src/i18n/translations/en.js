@@ -105,8 +105,7 @@ export const translations = {
     followUsOn: 'Follow Us on',
     allRightsReserved: 'All rights reserved',
     email: 'Email',
-    phoneRoy: 'Phone Roy',
-    phoneThijs: 'Phone Thijs',
+    phone: 'Phone',
     kvkNumber: 'KvK Number',
     btwNumber: 'BTW Number'
   },
@@ -124,7 +123,7 @@ export const translations = {
       buttonText: 'Back to Home Page'
     },
     500: {
-      heading: 'Please try again later or feel free to contact us if the problem persists. Email: info@rothibouw.nl',
+      heading: 'Please try again later or feel free to contact us if the problem persists. Email: info@lft-works.nl',
       buttonText: 'Back to Home Page'
     },
     maintenance: {
@@ -136,25 +135,21 @@ export const translations = {
   contact: {
     pageTitle: 'Contact Us',
     heading: 'Get in Touch',
-    caption: "Have a question? We'd love to hear from you.",
+    caption: 'Have a question about industrial automation? I would love to hear from you.',
     emailCard: {
-      title: 'Email us',
-      content: 'You can always send us an email',
+      title: 'Email',
+      content: 'Send me an email for inquiries',
       buttonText: 'Send Email'
     },
     phoneCard: {
-      title: 'Call us',
-      content: 'Call Roy or Thijs for direct contact',
-      buttonText: 'Call now',
-      roy: 'Call Roy',
-      thijs: 'Call Thijs'
+      title: 'Call',
+      content: 'Call for direct contact',
+      buttonText: 'Call now'
     },
     whatsappCard: {
-      title: 'WhatsApp us',
+      title: 'WhatsApp',
       content: 'Quick and easy communication',
-      buttonText: 'Start chat',
-      roy: 'Chat with Roy',
-      thijs: 'Chat with Thijs'
+      buttonText: 'Start chat'
     }
   },
 
@@ -162,57 +157,84 @@ export const translations = {
   home: {
     hero: {
       slide1: {
-        title: 'Quality Craftsmanship in Wood Construction',
-        description: 'Professional timber work and construction services for your project'
+        title: 'Industrial Automation & PLC Solutions',
+        description: 'Your partner for reliable automation, from design to commissioning'
       },
       slide2: {
-        title: 'From Renovation to New Construction',
-        description: 'Complete solutions for all your construction needs'
+        title: 'PLC Programming & Control Systems',
+        description: 'Tailored software solutions for your production process'
       },
       slide3: {
-        title: 'Durable and Beautiful Results',
-        description: 'Years of experience in carpentry and construction'
+        title: 'From Concept to Commissioning',
+        description: 'Complete automation solutions for the industry'
       }
     },
     services: {
       heading: 'Our Services',
-      caption: 'Professional construction services tailored to your needs',
-      roofing: {
-        title: 'Roofing',
-        description: 'Expert roof construction, repairs, and maintenance for residential and commercial properties'
+      caption: 'Professional industrial automation services',
+      plcSoftware: {
+        title: 'PLC Software',
+        description: 'Custom PLC programming for optimal machine control and process automation'
       },
-      carpentry: {
-        title: 'Timber Work',
-        description: 'High-quality carpentry services for both interior and exterior projects'
+      schakelkastEngineering: {
+        title: 'Control Panel Engineering',
+        description: 'Design and assembly of control panels according to industrial standards'
       },
-      renovations: {
-        title: 'Extensions & Renovations',
-        description: 'Complete renovation and extension services to transform your home or business'
+      elektrischeInstallatie: {
+        title: 'Electrical Installation',
+        description: 'Professional electrical installations for industrial machinery and systems'
       },
-      sustainability: {
-        title: 'Sustainability',
-        description: 'Professional sustainability work for your home or business'
+      aandrijvingConfiguratie: {
+        title: 'Drive Configuration',
+        description: 'Configuration and optimization of frequency drives and servo systems'
       },
-      woodConstructions: {
-        title: 'Wood Construction',
-        description: 'Expert wood construction services tailored to your project needs'
+      machineUpgrades: {
+        title: 'Machine Upgrades',
+        description: 'Modernize existing machines with new control systems and software'
+      },
+      inbedrijfstelling: {
+        title: 'Commissioning',
+        description: 'Complete commissioning and testing of automated systems on location'
       }
     },
     aboutTeaser: {
-      heading: 'Two friends,',
-      highlight: 'one mission',
+      heading: 'Passion for',
+      highlight: 'automation',
       caption:
-        'RoThi Bouw was founded by Roy and Thijs — two young craftsmen with a shared passion for quality construction. What started as a dream has grown into a trusted name in carpentry, roofing, and renovations. With an eye for detail and a personal approach to every project, we deliver craftsmanship you can build on.',
-      button: 'Get to Know Us'
+        'LFT-Works is specialized in industrial automation and PLC programming. With years of experience in the industry, I deliver reliable and efficient automation solutions. From PLC software to complete control panel engineering — your project is in good hands.',
+      button: 'Learn More'
+    },
+    process: {
+      heading: 'Work Process',
+      caption: 'From analysis to commissioning, a structured approach for every project',
+      step1: {
+        title: 'Analysis',
+        description: 'Thorough analysis of your process and requirements. Together we determine the best automation approach.'
+      },
+      step2: {
+        title: 'Engineering',
+        description: 'Detailed design of electrical schematics, control panel layout, and software architecture.'
+      },
+      step3: {
+        title: 'Programming',
+        description: 'Development and testing of PLC software, HMI visualization, and drive configurations.'
+      },
+      step4: {
+        title: 'Commissioning',
+        description: 'On-site installation, testing, and commissioning of the complete system with training for operators.'
+      }
+    },
+    clientele: {
+      title: 'Trusted by industry leaders'
     },
     projects: {
       heading: 'Featured Projects',
-      caption: 'Take a look at some of our recently completed construction projects'
+      caption: 'A selection of completed automation projects'
     },
     viewAllProjects: 'View All Projects',
     cta: {
-      heading: 'Ready to Start Your Project?',
-      description: 'Contact us today for a free consultation and quote',
+      heading: 'Ready to Automate Your Process?',
+      description: 'Contact me for a no-obligation consultation',
       button: 'Get in Touch'
     }
   },
@@ -220,61 +242,41 @@ export const translations = {
   // About Page
   about: {
     hero: {
-      title: 'Two friends,',
-      titleHighlight: 'one mission',
-      description: 'Craftsmanship, integrity and personal attention — that is what RoThi Bouw stands for.'
+      title: 'Engineering',
+      titleHighlight: 'with passion',
+      description: 'Reliable automation solutions through experience and dedication.'
     },
     story: {
-      heading: 'From dream to',
-      highlight: 'reality',
-      p1: 'RoThi Bouw was founded out of the shared passion of Roy and Thijs for construction and craftsmanship. Two friends who believed that quality work and personal attention should go hand in hand.',
-      p2: 'What started as small jobs for friends and family quickly grew into a fully fledged construction company. Today we are proud to have completed many projects, always with the same dedication and eye for detail.',
-      p3: 'We specialise in carpentry, roofing, renovations and extensions — and we approach every project as if it were our own.'
-    },
-    founders: {
-      headingKey: 'Who is RoThi Bouw?',
-      captionKey:
-        'The skilled craftsmen behind RoThi Bouw - two friends with a shared vision to deliver exceptional craftsmanship and quality construction',
-      roy: {
-        role: 'Co-founder',
-        quote: '"Building is more than stacking bricks. It is craftsmanship, trust and delivering something people can truly be proud of."'
-      },
-      thijs: {
-        role: 'Co-founder',
-        quote: '"Quality is in the details. I am not satisfied until every joint, every edge and every finish is exactly right."'
-      }
+      heading: 'From experience to',
+      highlight: 'expertise',
+      p1: 'LFT-Works was founded from a passion for industrial automation and technology. With a background in automation engineering, I have built up extensive experience with PLC systems, drive technology, and control panel engineering.',
+      p2: 'Starting at BTH-Holland, I gained hands-on experience with depaneling machines and filling lines. This practical foundation has been invaluable for understanding the full scope of industrial automation — from sensor level to complete production line integration.',
+      p3: 'Today, LFT-Works offers comprehensive automation services. Whether it concerns new PLC software, a control panel upgrade, or complete commissioning — every project is approached with the same dedication and attention to quality.'
     },
     timeline: {
-      heading: 'Our Journey',
-      caption: 'Key milestones that shaped RoThi Bouw into the company we are today!',
-      founded: {
-        title: '2023 - Company Founded',
+      heading: 'My Journey',
+      caption: 'Key milestones in my career as an automation engineer',
+      started: {
+        title: 'Started in Automation',
         description:
-          'RoThi Bouw was founded by two friends. What started as a dream between two experienced construction professionals has grown into a trusted name in carpentry, roofing, and renovations.'
+          'Began career in industrial automation, gaining hands-on experience with PLC systems and machine control at BTH-Holland.'
       },
-      office: {
-        title: 'New Workshop',
-        description: 'Moved to a new workshop, giving us more space to plan and prepare our projects with precision.'
-      },
-      projects: {
-        title: '100+ Projects',
-        description: 'Reached an important milestone of completing over 100 successful construction projects for satisfied clients.'
-      },
-      certification: {
-        title: 'Contractor Certification',
+      experience: {
+        title: 'Growing Expertise',
         description:
-          'Working towards obtaining official contractor certifications to expand our capabilities for larger and more complex projects.'
+          'Expanded knowledge in drive technology, control panel engineering, and complex automation projects across various industries.'
+      },
+      lftworks: {
+        title: 'LFT-Works Founded',
+        description:
+          'Founded LFT-Works to offer specialized automation services — PLC programming, control panel engineering, and commissioning.'
       }
     },
     founders: {
-      heading: 'The people behind RoThi Bouw',
-      roy: {
-        role: 'Co-founder',
-        quote: '"..."'
-      },
-      thijs: {
-        role: 'Co-founder',
-        quote: '"..."'
+      heading: 'The engineer behind LFT-Works',
+      engineer: {
+        role: 'Automation Engineer',
+        quote: '"Every machine deserves software that works reliably. That is what I strive for in every project."'
       }
     }
   },
@@ -292,7 +294,7 @@ export const translations = {
       informationUsage: {
         heading: 'How We Use Your Information',
         caption:
-          'We use the information we collect to provide, maintain, and improve our services, to communicate with you about our construction services, to respond to your inquiries, and to send you technical notices and support messages. We may also use your information to personalize your experience and to develop new services.'
+          'We use the information we collect to provide, maintain, and improve our services, to communicate with you about our automation services, to respond to your inquiries, and to send you technical notices and support messages.'
       },
       informationSharing: {
         heading: 'Information Sharing',
@@ -335,12 +337,12 @@ export const translations = {
       acceptanceOfTerms: {
         heading: 'Acceptance of Terms',
         caption:
-          'By accessing and using the RoThi Bouw website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website or services. These terms apply to all visitors, users, and others who access or use our services.'
+          'By accessing and using the LFT-Works website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website or services. These terms apply to all visitors, users, and others who access or use our services.'
       },
       servicesDescription: {
         heading: 'Services Description',
         caption:
-          'RoThi Bouw provides construction services including roof construction and repairs, timber work, renovations, dormer windows, garden canopies, and wall construction. All services are subject to availability and may be modified or discontinued at any time. Service descriptions, pricing, and availability are subject to change without notice.'
+          'LFT-Works provides industrial automation services including PLC programming, control panel engineering, electrical installation, drive configuration, machine upgrades, and commissioning. All services are subject to availability and may be modified or discontinued at any time.'
       },
       userResponsibilities: {
         heading: 'User Responsibilities',
@@ -350,17 +352,17 @@ export const translations = {
       intellectualProperty: {
         heading: 'Intellectual Property',
         caption:
-          'All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of RoThi Bouw or its content suppliers and is protected by Dutch and international copyright laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.'
+          'All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of LFT-Works or its content suppliers and is protected by Dutch and international copyright laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.'
       },
       limitationOfLiability: {
         heading: 'Limitation of Liability',
         caption:
-          'RoThi Bouw shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services. Our total liability for any claims under these terms shall not exceed the amount paid by you for our services in the twelve months preceding the claim.'
+          'LFT-Works shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services. Our total liability for any claims under these terms shall not exceed the amount paid by you for our services in the twelve months preceding the claim.'
       },
       warranties: {
         heading: 'Warranties and Guarantees',
         caption:
-          'We warrant that our construction services will be performed in a professional and workmanlike manner in accordance with industry standards. However, we make no warranties regarding specific results or outcomes. All warranties are subject to the terms of any written agreements for specific projects.'
+          'We warrant that our automation services will be performed in a professional and workmanlike manner in accordance with industry standards. However, we make no warranties regarding specific results or outcomes. All warranties are subject to the terms of any written agreements for specific projects.'
       },
       changesToTerms: {
         heading: 'Changes to Terms',
@@ -377,87 +379,94 @@ export const translations = {
 
   // Service Detail Pages
   services: {
-    renovaties: {
-      title: 'Extensions & Renovations',
-      descriptionTitle: 'Complete Renovation Solutions',
+    plcSoftware: {
+      title: 'PLC Software',
+      descriptionTitle: 'Custom PLC Programming',
       description:
-        'A renovation gives your home a new life. Whether you want to refresh a single room or plan a complete remodel, we guide you from start to finish. With an eye for detail and respect for the existing structure, we realize your dream project.',
+        'PLC software is the heart of every automated system. I develop reliable and efficient PLC programs tailored to your specific process requirements. From simple machine control to complex production line automation.',
       features: {
-        f1: 'Complete home renovations',
-        f2: 'Kitchen and bathroom remodels',
-        f3: 'Extensions and additions',
-        f4: 'Floor and wall renewals',
-        f5: 'Insulation and energy efficiency',
-        f6: 'Structural modifications'
+        f1: 'Siemens TIA Portal (S7-1200/1500)',
+        f2: 'Structured programming (SCL, FBD, LAD)',
+        f3: 'HMI/SCADA visualization',
+        f4: 'Communication protocols (Profinet, Modbus, OPC-UA)',
+        f5: 'Safety PLC programming (SIL/PLe)'
       }
     },
-    dakwerken: {
-      title: 'Roofing',
-      descriptionTitle: 'Professional Roof Construction & Repairs',
+    schakelkastEngineering: {
+      title: 'Control Panel Engineering',
+      descriptionTitle: 'Professional Control Panel Design',
       description:
-        'At RoThi Bouw, we specialize in all forms of roofing work. From new construction to renovation, we ensure a waterproof and durable roof that lasts for years. Our experienced craftsmen work with high-quality materials and always deliver a clean and professional result.',
+        'From schematic design to fully assembled control panel. I take care of the complete engineering process, from component selection to wiring diagrams according to current standards and regulations.',
       features: {
-        f1: 'New roof constructions',
-        f2: 'Roof renovations and repairs',
-        f3: 'Roof tile installation and replacement',
-        f4: 'Roof insulation and ventilation',
-        f5: 'Gutters and rainwater drainage',
-        f6: 'Lead and zinc work'
+        f1: 'Electrical schematic design (EPLAN/SEE Electrical)',
+        f2: 'Component selection and specification',
+        f3: 'Control panel layout and assembly',
+        f4: 'CE marking and documentation',
+        f5: 'Testing and inspection'
       }
     },
-    timmerwerk: {
-      title: 'Timber Work',
-      descriptionTitle: 'Expert Carpentry for Every Project',
+    elektrischeInstallatie: {
+      title: 'Electrical Installation',
+      descriptionTitle: 'Industrial Electrical Installation',
       description:
-        "Carpentry is at the core of what we do. Whether it's installing window frames, building a wooden structure, or finishing an interior - at RoThi Bouw you are assured of precision and quality. We work with various types of wood and deliver custom solutions for every situation.",
+        'Professional electrical installations for industrial machinery and production environments. From cable routing to sensor connections — everything for a reliable and safe electrical infrastructure.',
       features: {
-        f1: 'Window and door frames',
-        f2: 'Wooden structures and support beams',
-        f3: 'Wood cladding for facades'
+        f1: 'Machine wiring and cable routing',
+        f2: 'Sensor and actuator installation',
+        f3: 'Motor connections and cable management',
+        f4: 'Grounding and EMC measures'
       }
     },
-    verduurzaming: {
-      title: 'Sustainability',
-      descriptionTitle: 'Sustainable Construction Solutions',
+    aandrijvingConfiguratie: {
+      title: 'Drive Configuration',
+      descriptionTitle: 'Drive Technology & Configuration',
       description:
-        'Sustainability is increasingly important in construction. We offer various sustainable solutions, from energy-efficient insulation to the use of environmentally friendly materials. Together we look at how we can make your project more sustainable without compromising on quality or aesthetics.',
+        'Optimal configuration of frequency drives and servo systems for precise and energy-efficient motor control. From parameter settings to complex motion control applications.',
       features: {
-        f1: 'Energy-efficient insulation',
-        f2: 'Use of sustainable materials',
-        f3: 'Solar panel installation',
-        f4: 'Green roofs and walls',
-        f5: 'Water-saving solutions',
-        f6: 'Sustainable renovation techniques'
+        f1: 'Frequency drive parameterization (SEW, Danfoss, Siemens)',
+        f2: 'Servo drive configuration',
+        f3: 'Motion control applications',
+        f4: 'Energy optimization and monitoring'
       }
     },
-    houtConstructies: {
-      title: 'Wood Construction',
-      descriptionTitle: 'Expert Wood Construction Services',
+    machineUpgrades: {
+      title: 'Machine Upgrades',
+      descriptionTitle: 'Machine Modernization & Retrofitting',
       description:
-        "Wood is a versatile and beautiful material for construction. Whether it's a wooden canopy, a garden structure, or a custom wood project, we have the expertise to bring your vision to life. With attention to detail and a focus on quality, we create durable and aesthetically pleasing wood constructions that fit perfectly with your home or business.",
+        'Give your existing machines a new life with modern control technology. Machine upgrades extend the lifespan of your equipment while improving performance, reliability, and energy efficiency.',
       features: {
-        f1: 'Custom wooden canopies',
-        f2: 'Garden structures and pergolas',
-        f3: 'Wooden carports and garages',
-        f4: 'Custom wood projects',
-        f5: 'Wooden facades and cladding',
-        f6: 'Wooden interior structures'
+        f1: 'PLC retrofit (replacing obsolete controllers)',
+        f2: 'HMI panel upgrades',
+        f3: 'Drive system modernization',
+        f4: 'Safety system upgrades (CE compliance)'
+      }
+    },
+    inbedrijfstelling: {
+      title: 'Commissioning',
+      descriptionTitle: 'Complete System Commissioning',
+      description:
+        'Thorough commissioning and testing of your automated systems on location. From I/O testing to full production validation — ensuring everything works perfectly before handover.',
+      features: {
+        f1: 'I/O testing and signal verification',
+        f2: 'Functional testing and validation',
+        f3: 'Performance optimization',
+        f4: 'Operator training and documentation'
       }
     },
     process: {
       heading: 'Our Working Process',
-      caption: 'From inspection to delivery, we guide you through every step',
+      caption: 'From analysis to commissioning, a structured approach for every project',
       step1: {
-        title: 'Inspection & Advice',
-        description: 'We visit your location to assess the situation and provide honest and expert advice on the possibilities.'
+        title: 'Analysis & Advice',
+        description: 'We analyze your process and requirements and provide expert advice on the best automation approach.'
       },
       step2: {
-        title: 'Execution',
-        description: 'Our craftsmen get to work with high-quality materials, delivering expert work with attention to detail.'
+        title: 'Engineering & Development',
+        description: 'Detailed design and development of schematics, software, and control systems.'
       },
       step3: {
-        title: 'Delivery & Warranty',
-        description: 'After a thorough final inspection, we deliver the project and offer a warranty on our work.'
+        title: 'Commissioning & Support',
+        description: 'On-site commissioning, testing, and handover with training and ongoing support.'
       }
     },
     cta: {
@@ -466,11 +475,11 @@ export const translations = {
     },
     relatedProjects: {
       heading: 'Related Projects',
-      caption: 'View projects we have completed in this category'
+      caption: 'View projects completed in this category'
     },
     navigation: {
       heading: 'Our Services',
-      caption: 'Discover all our professional construction services'
+      caption: 'Discover all our professional automation services'
     },
     serviceNotFound: 'Service not found'
   },
@@ -478,7 +487,7 @@ export const translations = {
   // Projects Page
   projects: {
     heading: 'Our Projects',
-    caption: 'Explore our completed construction projects and see the quality of our craftsmanship',
+    caption: 'Explore our completed automation projects',
     filterByCategory: 'Filter by Category',
     noProjects: 'No projects found in this category',
     specifications: 'Specifications',
@@ -499,50 +508,23 @@ export const translations = {
     // Category labels
     categories: {
       all: 'All Projects',
-      buitenconstructies: 'Outdoor Constructions',
-      dakwerken: 'Roofing',
-      timmerwerk: 'Carpentry',
-      renovaties: 'Extensions & Renovations',
-      verduurzaming: 'Sustainability',
-      houtConstructies: 'Wood Constructions'
+      'plc-software': 'PLC Software',
+      'schakelkast-engineering': 'Control Panel Engineering',
+      'elektrische-installatie': 'Electrical Installation',
+      'aandrijving-configuratie': 'Drive Configuration',
+      'machine-upgrades': 'Machine Upgrades',
+      inbedrijfstelling: 'Commissioning'
     },
 
     // Specification labels
     specs: {
-      material: 'Material',
-      surfaceArea: 'Surface Area',
-      executionTime: 'Execution Time',
-      warranty: 'Warranty'
+      material: 'Technology',
+      surfaceArea: 'Scope',
+      executionTime: 'Duration',
+      warranty: 'Support'
     },
 
-    // Project items
-    items: {
-      project1: {
-        title: 'Wooden Canopy with Terrace Floor',
-        description: 'Realization of a beautiful wooden canopy with solid oak columns and a durable terrace floor.',
-        detailDescription:
-          'For this client we realized a beautiful wooden canopy that fits perfectly with the existing home. The construction is made of sustainable oak with robust columns that ensure a solid and long-lasting solution. The canopy not only offers protection, but also adds a warm and natural look to the outdoor space.',
-        transformationDescription:
-          'The difference between the old and new situation is clearly visible. By using modern materials and techniques, we have completely modernized the outdoor space while maintaining harmony with the existing architecture.',
-        activities: {
-          activity1: 'Massive oak columns with steel footplates',
-          activity2: 'High-quality roof covering with optimal drainage',
-          activity3: 'Seamless connection to existing level',
-          activity4: 'Durable terrace floor in harmony with the canopy',
-          activity5: 'Professional finishing with attention to detail'
-        }
-      },
-      project2: {
-        title: 'Modern Extension with Wood Cladding',
-        description: 'Complete extension with modern wood cladding, large windows and seamless integration with existing construction.',
-        detailDescription:
-          'This modern extension combines functionality with aesthetics. The wood cladding gives the extension a warm and contemporary look that integrates perfectly with the existing architecture.',
-        activities: {
-          activity1: 'Construction of the extension with modern architecture',
-          activity2: 'Installation of high-quality wood cladding',
-          activity3: 'Large windows for optimal natural light'
-        }
-      }
-    }
+    // Project items (empty for now — Phase 2)
+    items: {}
   }
 };

@@ -3,35 +3,29 @@ export const companyInfo = {
     {
       labelKey: 'forms.location',
       icon: 'tabler-map-pin',
-      value: 'Hooge-Mierde / Reusel'
+      value: 'Nederland'
     },
     {
-      labelKey: 'footer.phoneRoy',
+      labelKey: 'footer.phone',
       icon: 'tabler-phone',
-      value: '+31 (0)6 81 39 97 41',
-      href: 'tel:+31 (0)6 81 39 97 41'
-    },
-    {
-      labelKey: 'footer.phoneThijs',
-      icon: 'tabler-phone',
-      value: '+31 (0)6 57 41 59 09',
-      href: 'tel:+31 (0)6 57 41 59 09'
+      value: '+31 (0)6 00 00 00 00',
+      href: 'tel:+31600000000'
     },
     {
       labelKey: 'footer.email',
       icon: 'tabler-mail',
-      value: 'info@rothibouw.nl',
-      href: 'mailto:info@rothibouw.nl'
+      value: 'info@lft-works.nl',
+      href: 'mailto:info@lft-works.nl'
     },
     {
       labelKey: 'footer.kvkNumber',
       icon: 'tabler-building',
-      value: '96317299'
+      value: '00000000'
     },
     {
       labelKey: 'footer.btwNumber',
       icon: 'tabler-receipt-2',
-      value: 'NL867559755B01'
+      value: 'NL000000000B00'
     }
   ]
 };

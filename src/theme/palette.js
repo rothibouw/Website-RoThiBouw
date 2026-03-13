@@ -1,7 +1,7 @@
 // @project
 import { ThemeMode } from '@/config';
 
-/***************************  ROTHIBOUW - BRAND PALETTE  ***************************/
+/***************************  LFT-WORKS - BRAND PALETTE  ***************************/
 
 export default function palette(mode) {
   const textPrimary = '#1A1C1E'; // on surface
@@ -12,22 +12,22 @@ export default function palette(mode) {
   const textPrimaryDark = '#E2E2E5'; // on surface
   const textSecondaryDark = '#C2C7CE'; // on surface variant
   const dividerDark = '#42474E'; // outline variant
-  const backgroundDark = '#051519'; // RoThi Bouw brand dark
+  const backgroundDark = '#0A1628'; // LFT-Works brand dark (deep navy)
 
   const lightPalette = {
     primary: {
-      lighter: '#B3D4DC', // lighter teal variant
-      light: '#5AA2B5', // light teal
-      main: '#4a4e52', // bright teal (This is the main highlight color for RoThi Bouw)
-      dark: '#131414', // darker variant (On hover or active state)
-      darker: '#051519' // darkest variant (RoThi Bouw brand dark)
+      lighter: '#B8D4E8', // lighter blue variant
+      light: '#4A9AD9', // light blue
+      main: '#2B6CB0', // industrial blue (main highlight color for LFT-Works)
+      dark: '#1A4A7A', // darker variant (on hover or active state)
+      darker: '#0D2B4A' // darkest variant
     },
     secondary: {
-      lighter: '#D9D9D9', // lighter grey
-      light: '#ADADAD', // light grey
-      main: '#8c8a8a', // RoThi Bouw brand grey
-      dark: '#5A5858', // darker grey
-      darker: '#2E2D2D' // darkest grey
+      lighter: '#D6D8DC', // lighter steel grey
+      light: '#A0A4AB', // light steel grey
+      main: '#6B7280', // steel grey (from logo triangle)
+      dark: '#4B5058', // darker steel grey
+      darker: '#2D3138' // darkest steel grey
     },
     grey: {
       50: '#F9F9FC', // AI/neutral/98 - surface / surface bright
@@ -53,21 +53,21 @@ export default function palette(mode) {
 
   const darkPalette = {
     primary: {
-      lighter: '#030E11', // darker variant
-      light: '#051519', // RoThi Bouw brand dark
-      main: '#4A8B9E', // medium teal
-      dark: '#5AA2B5', // lighter variant
-      darker: '#7BC4D8' // lightest variant
+      lighter: '#0D2B4A', // darker variant
+      light: '#0A1628', // LFT-Works brand dark
+      main: '#4A9AD9', // medium blue
+      dark: '#6BB3E8', // lighter variant
+      darker: '#8ECBF5' // lightest variant
     },
     secondary: {
-      lighter: '#3D3C3C', // darker grey variant
-      light: '#A5A3A3', // light grey for dark mode
-      main: '#BFBDBD', // RoThi Bouw grey lighter for dark mode
-      dark: '#D9D9D9', // lighter grey
-      darker: '#F0F0F0' // lightest grey
+      lighter: '#3D4048', // darker grey variant
+      light: '#9DA1A8', // light steel grey for dark mode
+      main: '#B5B9C0', // steel grey lighter for dark mode
+      dark: '#D0D3D8', // lighter grey
+      darker: '#EBEDF0' // lightest grey
     },
     grey: {
-      50: '#101418', // AI/neutral/06 - surface / surface dim
+      50: '#0E1520', // AI/neutral/06 - surface / surface dim
       100: '#1A1C1E', // AI/neutral/10 - surface container low
       200: '#1C2024', // AI/neutral/12 - surface container
       300: '#272A2E', // AI/neutral/17 - surface container high

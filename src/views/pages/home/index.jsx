@@ -11,7 +11,7 @@ import useDataThemeMode from '@/hooks/useDataThemeMode';
 import useTranslation from '@/hooks/useTranslation';
 
 // @data
-import { heroSlides, servicesData, aboutTeaserData, projectsData, ctaData } from './data';
+import { heroSlides, servicesData, aboutTeaserData, processData, clienteleData, ctaData } from './data';
 
 /***************************  HOME PAGE  ***************************/
 
@@ -25,6 +25,23 @@ export default function HomePage() {
     title: t(slide.titleKey),
     description: t(slide.descriptionKey)
   }));
+
+  // Translate process data for Process4
+  const translatedProcessData = {
+    heading: t(processData.heading),
+    caption: t(processData.caption),
+    cards: processData.cards.map((card) => ({
+      ...card,
+      title: t(card.title),
+      description: t(card.description)
+    }))
+  };
+
+  // Translate clientele title
+  const translatedClienteleData = {
+    title: t(clienteleData.titleKey),
+    clienteleList: clienteleData.clienteleList
+  };
 
   return (
     <Stack spacing={0}>
@@ -40,8 +57,12 @@ export default function HomePage() {
             props: aboutTeaserData
           },
           {
-            importFunc: () => import('@/blocks/projects').then((module) => ({ default: module.Project1 })),
-            props: projectsData
+            importFunc: () => import('@/blocks/process').then((module) => ({ default: module.Process4 })),
+            props: translatedProcessData
+          },
+          {
+            importFunc: () => import('@/blocks/clientele').then((module) => ({ default: module.Clientele2 })),
+            props: translatedClienteleData
           },
           {
             importFunc: () => import('@/blocks/cta').then((module) => ({ default: module.Cta1 })),

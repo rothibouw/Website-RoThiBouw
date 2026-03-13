@@ -23,29 +23,34 @@ export const useNavbarData = () => {
           toggleBtn: { children: t('nav.services', 'Services'), size: 'small', sx: { color: 'text.primary', py: 1.5 } },
           menuItems: [
             {
-              icon: 'tabler-crane',
-              title: t('projects.categories.renovaties'),
-              link: '/diensten/ver-en-aanbouwen'
+              icon: 'tabler-cpu',
+              title: t('services.plcSoftware.title'),
+              link: '/diensten/plc-software'
             },
             {
-              icon: 'tabler-home',
-              title: t('projects.categories.dakwerken'),
-              link: '/diensten/dakwerken'
+              icon: 'tabler-plug',
+              title: t('services.schakelkastEngineering.title'),
+              link: '/diensten/schakelkast-engineering'
             },
             {
-              icon: 'tabler-hammer',
-              title: t('projects.categories.timmerwerk'),
-              link: '/diensten/timmerwerk'
+              icon: 'tabler-bolt',
+              title: t('services.elektrischeInstallatie.title'),
+              link: '/diensten/elektrische-installatie'
             },
             {
-              icon: 'tabler-michelin-star-green',
-              title: t('projects.categories.verduurzaming'),
-              link: '/diensten/verduurzaming'
+              icon: 'tabler-settings',
+              title: t('services.aandrijvingConfiguratie.title'),
+              link: '/diensten/aandrijving-configuratie'
             },
             {
-              icon: 'tabler-wood',
-              title: t('projects.categories.houtConstructies'),
-              link: '/diensten/hout-constructies'
+              icon: 'tabler-refresh',
+              title: t('services.machineUpgrades.title'),
+              link: '/diensten/machine-upgrades'
+            },
+            {
+              icon: 'tabler-rocket',
+              title: t('services.inbedrijfstelling.title'),
+              link: '/diensten/inbedrijfstelling'
             }
           ]
         }

@@ -52,7 +52,7 @@ export const translations = {
     projects: 'Projecten',
     contact: 'Contact',
     services: 'Diensten',
-    career: 'Carrière',
+    career: 'Carriere',
     privacyPolicy: 'Privacybeleid',
     termsConditions: 'Algemene voorwaarden'
   },
@@ -106,8 +106,7 @@ export const translations = {
     followUsOn: 'Volg Ons op',
     allRightsReserved: 'Alle rechten voorbehouden',
     email: 'E-mail',
-    phoneRoy: 'Telefoon Roy',
-    phoneThijs: 'Telefoon Thijs',
+    phone: 'Telefoon',
     kvkNumber: 'KvK Nummer',
     btwNumber: 'BTW Nummer'
   },
@@ -126,7 +125,7 @@ export const translations = {
     },
     500: {
       heading:
-        'Probeer het later opnieuw of neem gerust contact met ons op als het probleem zich blijft voordoen. Email: info@rothibouw.nl',
+        'Probeer het later opnieuw of neem gerust contact met ons op als het probleem zich blijft voordoen. Email: info@lft-works.nl',
       buttonText: 'Terug naar Homepagina'
     },
     maintenance: {
@@ -137,26 +136,22 @@ export const translations = {
   // Contact Page
   contact: {
     pageTitle: 'Contact',
-    heading: 'Neem contact met ons op',
-    caption: 'Heeft u een vraag? We horen graag van u.',
+    heading: 'Neem contact op',
+    caption: 'Heeft u een vraag over industriele automatisering? Ik hoor graag van u.',
     emailCard: {
-      title: 'E-mail ons',
-      content: 'U kunt ons altijd een e-mail sturen',
+      title: 'E-mail',
+      content: 'Stuur een e-mail voor vragen',
       buttonText: 'E-mail versturen'
     },
     phoneCard: {
-      title: 'Bel ons',
-      content: 'Bel Roy of Thijs voor direct contact',
-      buttonText: 'Bel nu',
-      roy: 'Bel Roy',
-      thijs: 'Bel Thijs'
+      title: 'Bellen',
+      content: 'Bel voor direct contact',
+      buttonText: 'Bel nu'
     },
     whatsappCard: {
-      title: 'WhatsApp ons',
+      title: 'WhatsApp',
       content: 'Snelle en gemakkelijke communicatie',
-      buttonText: 'Start chat',
-      roy: 'Chat met Roy',
-      thijs: 'Chat met Thijs'
+      buttonText: 'Start chat'
     }
   },
 
@@ -164,56 +159,83 @@ export const translations = {
   home: {
     hero: {
       slide1: {
-        title: 'RoThi, uw partner voor elk project',
-        description: 'Samen met u, gewóón mooie dingen maken!'
+        title: 'Industriele Automatisering & PLC Oplossingen',
+        description: 'Uw partner voor betrouwbare automatisering, van ontwerp tot inbedrijfstelling'
       },
       slide2: {
-        title: 'RoThi, uw partner voor elk project',
-        description: 'Samen met u, gewóón mooie dingen maken!'
+        title: 'PLC Programmering & Besturingssystemen',
+        description: 'Maatwerkoplossingen voor uw productieproces'
       },
       slide3: {
-        title: 'RoThi, uw partner voor elk project',
-        description: 'Samen met u, gewóón mooie dingen maken!'
+        title: 'Van Concept tot Inbedrijfstelling',
+        description: 'Complete automatiseringsoplossingen voor de industrie'
       }
     },
     services: {
       heading: 'Onze diensten',
-      renovations: {
-        title: 'Ver- en aanbouwen',
-        description: 'Complete ver- en aanbouwoplossingen voor uw woning of bedrijfspand'
+      plcSoftware: {
+        title: 'PLC Software',
+        description: 'Maatwerk PLC programmering voor optimale machinebesturing en procesautomatisering'
       },
-      roofing: {
-        title: 'Dakwerken',
-        description: 'Nieuwe dakconstructie, reparaties en onderhoud voor residentiële en commerciële panden'
+      schakelkastEngineering: {
+        title: 'Schakelkast Engineering',
+        description: 'Ontwerp en assemblage van schakelkasten volgens industriele standaarden'
       },
-      carpentry: {
-        title: 'Timmerwerk',
-        description: 'Hoogwaardig timmerwerk voor zowel binnen- als buitenprojecten'
+      elektrischeInstallatie: {
+        title: 'Elektrische Installatie',
+        description: 'Professionele elektrische installaties voor industriele machines en systemen'
       },
-      sustainability: {
-        title: 'Verduurzaming',
-        description: 'Professionele verduurzaming voor uw woning of bedrijfspand'
+      aandrijvingConfiguratie: {
+        title: 'Aandrijving Configuratie',
+        description: 'Configuratie en optimalisatie van frequentieregelaars en servosystemen'
       },
-      woodConstructions: {
-        title: 'Houtconstructies',
-        description: 'Vakkundige houtconstructies op maat voor elk bouwproject'
+      machineUpgrades: {
+        title: 'Machine Upgrades',
+        description: 'Moderniseer bestaande machines met nieuwe besturingssystemen en software'
+      },
+      inbedrijfstelling: {
+        title: 'Inbedrijfstelling',
+        description: 'Complete inbedrijfstelling en testen van geautomatiseerde systemen op locatie'
       }
     },
     aboutTeaser: {
-      heading: 'Van vriendschap,',
-      highlight: 'naar vakmanschap',
+      heading: 'Passie voor',
+      highlight: 'automatisering',
       caption:
-        'RoThi Bouw is opgericht door Roy en Thijs, twee jonge vakmensen met een gedeelde passie voor de bouw. Wil je ons beter leren kennen? Klik dan hieronder.',
-      button: 'Leer ons kennen'
+        'LFT-Works is gespecialiseerd in industriele automatisering en PLC programmering. Met jarenlange ervaring in de industrie lever ik betrouwbare en efficiente automatiseringsoplossingen. Van PLC software tot complete schakelkast engineering — uw project is in goede handen.',
+      button: 'Meer over ons'
+    },
+    process: {
+      heading: 'Werkwijze',
+      caption: 'Van analyse tot inbedrijfstelling, een gestructureerde aanpak voor elk project',
+      step1: {
+        title: 'Analyse',
+        description: 'Grondige analyse van uw proces en wensen. Samen bepalen we de beste automatiseringsaanpak.'
+      },
+      step2: {
+        title: 'Engineering',
+        description: "Gedetailleerd ontwerp van elektrische schema's, schakelkast layout en software architectuur."
+      },
+      step3: {
+        title: 'Programmering',
+        description: 'Ontwikkeling en testen van PLC software, HMI visualisatie en aandrijfconfiguraties.'
+      },
+      step4: {
+        title: 'Inbedrijfstelling',
+        description: 'Installatie, testen en inbedrijfstelling van het complete systeem op locatie met training voor operators.'
+      }
+    },
+    clientele: {
+      title: 'Vertrouwd door marktleiders'
     },
     projects: {
       heading: 'Uitgelichte projecten',
-      caption: 'Bekijk enkele van onze recent afgeronde bouwprojecten'
+      caption: 'Een selectie van afgeronde automatiseringsprojecten'
     },
     viewAllProjects: 'Bekijk alle projecten',
     cta: {
-      heading: 'Klaar om uw project te starten?',
-      description: 'Neem vandaag nog contact met ons op!',
+      heading: 'Klaar om uw proces te automatiseren?',
+      description: 'Neem contact op voor een vrijblijvend gesprek',
       button: 'Neem contact op'
     }
   },
@@ -221,50 +243,41 @@ export const translations = {
   // About Page
   about: {
     hero: {
-      title: 'Van vriendschap,',
-      titleHighlight: 'naar vakmanschap',
-      description: '...'
+      title: 'Engineering',
+      titleHighlight: 'met passie',
+      description: 'Betrouwbare automatiseringsoplossingen door ervaring en toewijding.'
     },
     story: {
-      heading: 'Van droom naar',
-      highlight: 'werkelijkheid',
-      p1: 'We leerden elkaar kennen op veertienjarige leeftijd. Bij onze eerste bijbaan klikte het meteen. Al snel merkten we dat we niet alleen hetzelfde plezier in het werk hadden, maar ook dezelfde werklust hadden. Na jarenlang zij aan zij te hebben gewerkt en ontzettend veel te hebben geleerd, bleek onze passie en het werkplezier zich om te zetten in interesse voor de bouw.',
-      p2: 'Om ons vakmanschap te onderbouwen met de juiste kennis, hebben we beiden de opleiding Middenkaderfunctionaris Bouw gevolgd. Roy rondde deze af in mei 2023 en Thijs volgde in januari 2025. Hoewel we in de tussentijd beiden ervaring opdeden als zelfstandig ondernemer met een eigen eenmanszaak, bleef de ambitie om samen iets op te bouwen kriebelen.',
-      p3: 'In februari 2025 was het zover: de oprichting van RoThi Bouw. Onze missie is simpel: met passie en plezier prachtige projecten realiseren en ons bedrijf laten groeien door kwaliteit te leveren waar we trots op zijn. Bij ons ben je verzekerd van vakmanschap met een persoonlijke aanpak.',
-      p4: 'Op naar nog vele mooie jaren.'
+      heading: 'Van ervaring naar',
+      highlight: 'expertise',
+      p1: 'LFT-Works is opgericht vanuit een passie voor industriele automatisering en techniek. Met een achtergrond in automatiseringstechniek heb ik ruime ervaring opgebouwd met PLC systemen, aandrijftechniek en schakelkast engineering.',
+      p2: 'Beginnend bij BTH-Holland heb ik praktijkervaring opgedaan met depaneling machines en vullijnen. Deze praktische basis is van onschatbare waarde gebleken voor het begrijpen van het volledige spectrum van industriele automatisering — van sensorniveau tot complete productielijn integratie.',
+      p3: 'Vandaag biedt LFT-Works uitgebreide automatiseringsdiensten. Of het nu gaat om nieuwe PLC software, een schakelkast upgrade of complete inbedrijfstelling — elk project wordt benaderd met dezelfde toewijding en aandacht voor kwaliteit.'
     },
     timeline: {
-      heading: 'Onze reis',
-      caption: 'Belangrijke mijlpalen die RoThi Bouw vormden tot het bedrijf dat we vandaag zijn!',
-      founded: {
-        title: '2023 - Bedrijf Opgericht',
+      heading: 'Mijn Traject',
+      caption: 'Belangrijke mijlpalen in mijn carriere als automatiseringsengineer',
+      started: {
+        title: 'Start in Automatisering',
         description:
-          'RoThi Bouw werd in 2023 opgericht door twee vrienden. Wat begon als een droom tussen twee ervaren bouwprofessionals is uitgegroeid tot een vertrouwde naam in timmerwerk, dakwerken en renovaties.'
+          'Carriere gestart in industriele automatisering, met praktijkervaring opgedaan met PLC systemen en machinebesturing bij BTH-Holland.'
       },
-      office: {
-        title: 'Nieuwe Werkplaats',
-        description: 'Verhuisd naar een nieuwe werkplaats, wat ons meer ruimte geeft om onze projecten te plannen en voor te bereiden.'
-      },
-      projects: {
-        title: '100+ Projecten',
+      experience: {
+        title: 'Groeiende Expertise',
         description:
-          'Hebben een belangrijke mijlpaal bereikt door meer dan 100 succesvolle bouwprojecten voor tevreden klanten af te ronden.'
+          'Kennis uitgebreid in aandrijftechniek, schakelkast engineering en complexe automatiseringsprojecten in diverse industrieen.'
       },
-      certification: {
-        title: 'Aannemerscertificering',
+      lftworks: {
+        title: 'LFT-Works Opgericht',
         description:
-          'Werken aan het verkrijgen van officiële aannemerscertificeringen om onze mogelijkheden voor grotere en complexere projecten uit te breiden.'
+          'LFT-Works opgericht om gespecialiseerde automatiseringsdiensten aan te bieden — PLC programmering, schakelkast engineering en inbedrijfstelling.'
       }
     },
     founders: {
-      heading: 'De vakmannen achter RoThi Bouw',
-      roy: {
-        role: 'Mede-oprichter',
-        quote: '"..."'
-      },
-      thijs: {
-        role: 'Mede-oprichter',
-        quote: '"..."'
+      heading: 'De engineer achter LFT-Works',
+      engineer: {
+        role: 'Automatiseringsengineer',
+        quote: '"Elke machine verdient software die betrouwbaar werkt. Dat is waar ik in elk project naar streef."'
       }
     }
   },
@@ -282,7 +295,7 @@ export const translations = {
       informationUsage: {
         heading: 'Hoe We Uw Informatie Gebruiken',
         caption:
-          'We gebruiken de verzamelde informatie om onze diensten te leveren, te onderhouden en te verbeteren, om met u te communiceren over onze bouwdiensten, om op uw vragen te reageren en om u technische berichten en ondersteuningsberichten te sturen. We kunnen uw informatie ook gebruiken om uw ervaring te personaliseren en om nieuwe diensten te ontwikkelen.'
+          'We gebruiken de verzamelde informatie om onze diensten te leveren, te onderhouden en te verbeteren, om met u te communiceren over onze automatiseringsdiensten, om op uw vragen te reageren en om u technische berichten en ondersteuningsberichten te sturen.'
       },
       informationSharing: {
         heading: 'Delen van Informatie',
@@ -297,22 +310,22 @@ export const translations = {
       cookies: {
         heading: 'Cookies en Tracking',
         caption:
-          'We gebruiken cookies en vergelijkbare trackingtechnologieën om activiteiten op onze website bij te houden en bepaalde informatie vast te houden. Cookies zijn bestanden met kleine hoeveelheden gegevens die op uw apparaat worden opgeslagen. U kunt uw browser instrueren om alle cookies te weigeren of aan te geven wanneer een cookie wordt verzonden.'
+          'We gebruiken cookies en vergelijkbare trackingtechnologieen om activiteiten op onze website bij te houden en bepaalde informatie vast te houden. Cookies zijn bestanden met kleine hoeveelheden gegevens die op uw apparaat worden opgeslagen. U kunt uw browser instrueren om alle cookies te weigeren of aan te geven wanneer een cookie wordt verzonden.'
       },
       yourRights: {
         heading: 'Uw Rechten',
         caption:
-          'U heeft het recht om toegang te krijgen tot, te corrigeren of te verwijderen van uw persoonlijke informatie. U kunt ook het recht hebben om bepaalde verwerking van uw gegevens te beperken of er bezwaar tegen te maken. Om deze rechten uit te oefenen, neem contact met ons op via de onderstaande informatie. We zullen reageren op uw verzoek in overeenstemming met de toepasselijke wetgeving inzake gegevensbescherming.'
+          'U heeft het recht om toegang te krijgen tot, te corrigeren of te verwijderen van uw persoonlijke informatie. U kunt ook het recht hebben om bepaalde verwerking van uw gegevens te beperken of er bezwaar tegen te maken. Om deze rechten uit te oefenen, neem contact met ons op via de onderstaande informatie.'
       },
       changesToPolicy: {
         heading: 'Wijzigingen in Dit Beleid',
         caption:
-          'We kunnen ons Privacybeleid van tijd tot tijd bijwerken. We zullen u op de hoogte stellen van eventuele wijzigingen door het nieuwe Privacybeleid op deze pagina te plaatsen en de datum "laatst bijgewerkt" bij te werken. U wordt geadviseerd dit Privacybeleid periodiek te bekijken voor eventuele wijzigingen.'
+          'We kunnen ons Privacybeleid van tijd tot tijd bijwerken. We zullen u op de hoogte stellen van eventuele wijzigingen door het nieuwe Privacybeleid op deze pagina te plaatsen en de datum "laatst bijgewerkt" bij te werken.'
       },
       contactUs: {
         heading: 'Contact',
         caption:
-          'Als u vragen heeft over dit Privacybeleid of onze gegevenspraktijken, neem dan contact met ons op via onze contactpagina of via de contactinformatie op onze website. We zijn toegewijd aan het oplossen van eventuele zorgen die u heeft over uw privacy.'
+          'Als u vragen heeft over dit Privacybeleid of onze gegevenspraktijken, neem dan contact met ons op via onze contactpagina of via de contactinformatie op onze website.'
       }
     }
   },
@@ -325,125 +338,136 @@ export const translations = {
       acceptanceOfTerms: {
         heading: 'Aanvaarding van Voorwaarden',
         caption:
-          'Door toegang te krijgen tot en gebruik te maken van de RoThi Bouw website en diensten, gaat u akkoord met deze Algemene Voorwaarden. Als u het niet eens bent met een deel van deze voorwaarden, mag u onze website of diensten niet gebruiken. Deze voorwaarden zijn van toepassing op alle bezoekers, gebruikers en anderen die toegang hebben tot of gebruik maken van onze diensten.'
+          'Door toegang te krijgen tot en gebruik te maken van de LFT-Works website en diensten, gaat u akkoord met deze Algemene Voorwaarden. Als u het niet eens bent met een deel van deze voorwaarden, mag u onze website of diensten niet gebruiken.'
       },
       servicesDescription: {
         heading: 'Beschrijving van Diensten',
         caption:
-          'RoThi Bouw biedt bouwdiensten aan, waaronder dakconstructie en -reparaties, timmerwerk, renovaties, dakkapellen, tuinoverkappingen en muurconstructie. Alle diensten zijn onder voorbehoud van beschikbaarheid en kunnen op elk moment worden gewijzigd of stopgezet. Dienstbeschrijvingen, prijzen en beschikbaarheid kunnen zonder voorafgaande kennisgeving worden gewijzigd.'
+          'LFT-Works biedt industriele automatiseringsdiensten aan, waaronder PLC programmering, schakelkast engineering, elektrische installatie, aandrijving configuratie, machine upgrades en inbedrijfstelling. Alle diensten zijn onder voorbehoud van beschikbaarheid en kunnen op elk moment worden gewijzigd of stopgezet.'
       },
       userResponsibilities: {
         heading: 'Gebruikersverantwoordelijkheden',
         caption:
-          'U stemt ermee in onze website alleen te gebruiken voor wettige doeleinden en op een manier die de rechten van anderen niet schendt, beperkt of belemmert bij het gebruik en plezier van de website. U bent verantwoordelijk voor het handhaven van de vertrouwelijkheid van uw accountinformatie en voor alle activiteiten die plaatsvinden onder uw account.'
+          'U stemt ermee in onze website alleen te gebruiken voor wettige doeleinden en op een manier die de rechten van anderen niet schendt, beperkt of belemmert bij het gebruik en plezier van de website.'
       },
       intellectualProperty: {
         heading: 'Intellectueel Eigendom',
         caption:
-          "Alle inhoud op deze website, inclusief maar niet beperkt tot tekst, afbeeldingen, logo's, afbeeldingen en software, is eigendom van RoThi Bouw of haar inhoudsleveranciers en wordt beschermd door Nederlandse en internationale auteursrechtwetten. U mag geen inhoud reproduceren, distribueren of afgeleide werken maken zonder onze uitdrukkelijke schriftelijke toestemming."
+          "Alle inhoud op deze website, inclusief maar niet beperkt tot tekst, afbeeldingen, logo's, afbeeldingen en software, is eigendom van LFT-Works of haar inhoudsleveranciers en wordt beschermd door Nederlandse en internationale auteursrechtwetten."
       },
       limitationOfLiability: {
         heading: 'Beperking van Aansprakelijkheid',
         caption:
-          'RoThi Bouw is niet aansprakelijk voor indirecte, incidentele, speciale, gevolgschade of bestraffende schade die voortvloeit uit uw gebruik van of onvermogen om onze diensten te gebruiken. Onze totale aansprakelijkheid voor eventuele claims onder deze voorwaarden mag niet meer bedragen dan het bedrag dat u voor onze diensten heeft betaald in de twaalf maanden voorafgaand aan de claim.'
+          'LFT-Works is niet aansprakelijk voor indirecte, incidentele, speciale, gevolgschade of bestraffende schade die voortvloeit uit uw gebruik van of onvermogen om onze diensten te gebruiken.'
       },
       warranties: {
         heading: 'Garanties',
         caption:
-          'We garanderen dat onze bouwdiensten op een professionele en vakkundige manier worden uitgevoerd in overeenstemming met industrienormen. We geven echter geen garanties met betrekking tot specifieke resultaten of uitkomsten. Alle garanties zijn onderworpen aan de voorwaarden van schriftelijke overeenkomsten voor specifieke projecten.'
+          'We garanderen dat onze automatiseringsdiensten op een professionele en vakkundige manier worden uitgevoerd in overeenstemming met industrienormen. We geven echter geen garanties met betrekking tot specifieke resultaten of uitkomsten.'
       },
       changesToTerms: {
         heading: 'Wijzigingen in Voorwaarden',
         caption:
-          'We behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. We zullen u op de hoogte stellen van belangrijke wijzigingen door de nieuwe voorwaarden op deze pagina te plaatsen en de datum "laatst bijgewerkt" bij te werken. Uw voortgezet gebruik van onze diensten na eventuele wijzigingen vormt acceptatie van de nieuwe voorwaarden.'
+          'We behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. We zullen u op de hoogte stellen van belangrijke wijzigingen door de nieuwe voorwaarden op deze pagina te plaatsen.'
       },
       governingLaw: {
         heading: 'Toepasselijk Recht',
         caption:
-          'Deze algemene voorwaarden worden beheerst door en geïnterpreteerd in overeenstemming met de wetten van Nederland. Eventuele geschillen die voortvloeien uit deze voorwaarden of uw gebruik van onze diensten vallen onder de exclusieve jurisdictie van de Nederlandse rechtbanken.'
+          'Deze algemene voorwaarden worden beheerst door en geinterpreteerd in overeenstemming met de wetten van Nederland. Eventuele geschillen die voortvloeien uit deze voorwaarden of uw gebruik van onze diensten vallen onder de exclusieve jurisdictie van de Nederlandse rechtbanken.'
       }
     }
   },
 
   // Service Detail Pages
   services: {
-    renovaties: {
-      title: 'Ver- en aanbouwen',
-      descriptionTitle: 'Complete renovatieoplossingen',
+    plcSoftware: {
+      title: 'PLC Software',
+      descriptionTitle: 'Maatwerk PLC Programmering',
       description:
-        'Een renovatie geeft uw woning een nieuw leven. Of u nu een enkele ruimte wilt vernieuwen of een complete verbouwing plant, wij begeleiden u van begin tot eind. Met oog voor detail en respect voor de bestaande structuur realiseren wij uw droomproject.',
+        "PLC software is het hart van elk geautomatiseerd systeem. Ik ontwikkel betrouwbare en efficiente PLC programma's afgestemd op uw specifieke procesvereisten. Van eenvoudige machinebesturing tot complexe productielijn automatisering.",
       features: {
-        f1: 'Complete woningrenovaties',
-        f2: 'Keuken- en badkamerverbouwingen',
-        f3: 'Aanbouwen en uitbreidingen',
-        f4: 'Constructieve aanpassingen',
-        f5: 'E/W-installaties'
+        f1: 'Siemens TIA Portal (S7-1200/1500)',
+        f2: 'Gestructureerd programmeren (SCL, FBD, LAD)',
+        f3: 'HMI/SCADA visualisatie',
+        f4: 'Communicatieprotocollen (Profinet, Modbus, OPC-UA)',
+        f5: 'Safety PLC programmering (SIL/PLe)'
       }
     },
-    dakwerken: {
-      title: 'Dakwerken',
-      descriptionTitle: 'Dakconstructie & Reparaties',
+    schakelkastEngineering: {
+      title: 'Schakelkast Engineering',
+      descriptionTitle: 'Professioneel Schakelkast Ontwerp',
       description:
-        'Bij RoThi Bouw zijn we gespecialiseerd in alle vormen van dakwerk. Van nieuwbouw tot renovatie, wij zorgen voor een duurzaam dak dat jarenlang meegaat. Onze ervaren vakmensen werken met hoogwaardige materialen en leveren altijd een strak en professioneel resultaat.',
+        "Van schema-ontwerp tot volledig geassembleerde schakelkast. Ik verzorg het complete engineeringproces, van componentenselectie tot bedradingsschema's volgens geldende normen en voorschriften.",
       features: {
-        f1: 'Nieuwbouw dakconstructies',
-        f2: 'Dakrenovaties en reparaties',
-        f3: 'Dakpannen aanbrengen en vervangen',
-        f4: 'Aanbrengen van dakisolatie',
-        f5: 'Dakgoten en hemelwaterafvoer',
-        f6: 'Lood- en zinkwerk'
+        f1: 'Elektrisch schema-ontwerp (EPLAN/SEE Electrical)',
+        f2: 'Componentenselectie en specificatie',
+        f3: 'Schakelkast layout en assemblage',
+        f4: 'CE-markering en documentatie',
+        f5: 'Testen en inspectie'
       }
     },
-    timmerwerk: {
-      title: 'Timmerwerk',
-      descriptionTitle: 'Vakkundig timmerwerk voor elk project',
+    elektrischeInstallatie: {
+      title: 'Elektrische Installatie',
+      descriptionTitle: 'Industriele Elektrische Installatie',
       description:
-        'Timmerwerk is de kern van wat wij doen. Of het nu gaat om het plaatsen van kozijnen, het aanbrengen van gevelbekleding of aftimmering, bij RoThi Bouw bent u verzekerd van precisie en kwaliteit. Wij werken met diverse houtsoorten en leveren maatwerk voor elke situatie.',
+        'Professionele elektrische installaties voor industriele machines en productieomgevingen. Van kabelgoten tot sensoraansluitingen — alles voor een betrouwbare en veilige elektrische infrastructuur.',
       features: {
-        f1: 'Kozijnen',
-        f2: 'Diversen gevelbekleding',
-        f3: 'Binnenbetimmering en afwerking'
+        f1: 'Machine bedrading en kabelgeleiding',
+        f2: 'Sensor- en actuatorinstallatie',
+        f3: 'Motoraansluitingen en kabelmanagement',
+        f4: 'Aarding en EMC maatregelen'
       }
     },
-    verduurzaming: {
-      title: 'Verduurzaming',
-      descriptionTitle: 'Duurzame oplossingen voor uw woning',
+    aandrijvingConfiguratie: {
+      title: 'Aandrijving Configuratie',
+      descriptionTitle: 'Aandrijftechniek & Configuratie',
       description:
-        'Bij RoThi Bouw zorgen we ervoor dat uw woning verduurzaamd wordt, van vloer tot hellend dak en van gevel tot platdak. Hierbij zorgen we uiteraard voor een nieuwe vloer, nieuw metselwerk en nieuwe dakbedekking, net wat voor u van toepassing is. Hierbij zorgen we ervoor dat uw woning klaar is voor de toekomst.',
+        'Optimale configuratie van frequentieregelaars en servosystemen voor nauwkeurige en energiezuinige motorbesturing. Van parameterinstellingen tot complexe motion control toepassingen.',
       features: {
-        f1: 'Aanbrengen vloer-, gevel- en dakisolatie',
-        f2: 'Aanpak koudebruggen',
-        f3: 'Energie besparende installaties',
-        f4: 'Zonnenpannelen',
-        f5: 'Mogelijkheid op subsidies'
+        f1: 'Frequentieregelaar parameterisering (SEW, Danfoss, Siemens)',
+        f2: 'Servo-aandrijving configuratie',
+        f3: 'Motion control toepassingen',
+        f4: 'Energieoptimalisatie en monitoring'
       }
     },
-    houtConstructies: {
-      title: 'Hout constructies',
-      descriptionTitle: 'Houtconstructies & Maatwerk',
+    machineUpgrades: {
+      title: 'Machine Upgrades',
+      descriptionTitle: 'Machine Modernisering & Retrofitting',
       description:
-        'Van houten draagconstructies tot maatwerk, RoThi Bouw levert vakkundig houtwerk. Wij werken met verschillende houtsoorten en technieken om een stevig en mooi resultaat te garanderen.',
+        'Geef uw bestaande machines een nieuw leven met moderne besturingstechnologie. Machine upgrades verlengen de levensduur van uw apparatuur en verbeteren tegelijkertijd prestaties, betrouwbaarheid en energie-efficientie.',
       features: {
-        f1: 'Houten draagconstructies',
-        f2: 'Prefab',
-        f3: 'Handgemaakt',
-        f4: 'Verschillende houtsoorten'
+        f1: 'PLC retrofit (vervanging verouderde besturingen)',
+        f2: 'HMI paneel upgrades',
+        f3: 'Aandrijfsysteem modernisering',
+        f4: 'Veiligheidssysteem upgrades (CE-conformiteit)'
+      }
+    },
+    inbedrijfstelling: {
+      title: 'Inbedrijfstelling',
+      descriptionTitle: 'Complete Systeem Inbedrijfstelling',
+      description:
+        'Grondige inbedrijfstelling en testen van uw geautomatiseerde systemen op locatie. Van I/O testen tot volledige productievalidatie — zorgen dat alles perfect werkt voor overdracht.',
+      features: {
+        f1: 'I/O testen en signaalverificatie',
+        f2: 'Functioneel testen en validatie',
+        f3: 'Prestatie-optimalisatie',
+        f4: 'Operatortraining en documentatie'
       }
     },
     process: {
       heading: 'Ons Werkproces',
-      caption: 'Van inspectie tot oplevering, wij begeleiden u bij elke stap',
+      caption: 'Van analyse tot inbedrijfstelling, een gestructureerde aanpak voor elk project',
       step1: {
-        title: 'Inspectie & Advies',
-        description: 'Wij komen bij u langs om de situatie te bekijken en geven u eerlijk en deskundig advies over de mogelijkheden.'
+        title: 'Analyse & Advies',
+        description: 'We analyseren uw proces en wensen en geven deskundig advies over de beste automatiseringsaanpak.'
       },
       step2: {
-        title: 'Uitvoering',
-        description: 'Onze vakmensen gaan aan de slag met hoogwaardige materialen en leveren vakkundig werk met aandacht voor detail.'
+        title: 'Engineering & Ontwikkeling',
+        description: "Gedetailleerd ontwerp en ontwikkeling van schema's, software en besturingssystemen."
       },
       step3: {
-        title: 'Oplevering & Garantie',
-        description: 'Na een grondige eindcontrole leveren wij het project op en bieden wij garantie op ons werk.'
+        title: 'Inbedrijfstelling & Support',
+        description: 'Inbedrijfstelling op locatie, testen en overdracht met training en doorlopende ondersteuning.'
       }
     },
     cta: {
@@ -452,11 +476,11 @@ export const translations = {
     },
     relatedProjects: {
       heading: 'Gerelateerde projecten',
-      caption: 'Bekijk projecten die wij hebben uitgevoerd in deze categorie'
+      caption: 'Bekijk projecten die zijn uitgevoerd in deze categorie'
     },
     navigation: {
       heading: 'Ontdek onze andere diensten',
-      caption: 'Ontdek al onze professionele bouwdiensten'
+      caption: 'Ontdek al onze professionele automatiseringsdiensten'
     },
     serviceNotFound: 'Dienst niet gevonden'
   },
@@ -464,7 +488,7 @@ export const translations = {
   // Projects Page
   projects: {
     heading: 'Onze projecten',
-    caption: 'Ontdek hier onze uitgevoerde projecten',
+    caption: 'Ontdek hier onze uitgevoerde automatiseringsprojecten',
     filterByCategory: 'Filter op categorie',
     noProjects: 'Geen projecten gevonden in deze categorie',
     aboutProject: 'Over dit project',
@@ -485,88 +509,15 @@ export const translations = {
     // Category labels
     categories: {
       all: 'Alle projecten',
-      renovaties: 'Ver- en aanbouwen',
-      dakwerken: 'Dakwerken',
-      timmerwerk: 'Timmerwerk',
-      verduurzaming: 'Verduurzaming',
-      houtConstructies: 'Hout constructies'
+      'plc-software': 'PLC Software',
+      'schakelkast-engineering': 'Schakelkast Engineering',
+      'elektrische-installatie': 'Elektrische Installatie',
+      'aandrijving-configuratie': 'Aandrijving Configuratie',
+      'machine-upgrades': 'Machine Upgrades',
+      inbedrijfstelling: 'Inbedrijfstelling'
     },
 
-    // Project items
-    items: {
-      project1: {
-        title: 'Kaprenovatie Hooge Mierde',
-        subtitle: 'Uw huis verduurzamen en daarbij één nieuw fris dak.',
-        detailDescription:
-          'Bij deze kaprenovatie hebben we op het woonhuis gebruik gemaakt van renovatieplaten, Renopir. ' +
-          'Dit zorgt ervoor dat wij het dakbeschot kunnen laten zitten zodat er binnen niks aan het huis wordt aangetast. ' +
-          'De klant heeft gekozen voor een OVH 206 pan. In combinatie van deze nieuwe pannen en een onderhoudsarme overstek van Rockpanel (RAL 7035) is de kap helemaal afgewerkt. ' +
-          'Uiteraard hebben we ook nieuwe zinken goten en afvoeren toegepast.',
-        transformationDescription:
-          'Het verschil tussen de oude en nieuwe situatie is duidelijk te zien. Door gebruik te maken van moderne materialen en technieken hebben we het dak volledig gemoderniseerd zonder de bewoonbaarheid van het huis tijdens de renovatie te beïnvloeden.'
-      },
-      project2: {
-        title: 'Gevelbekleding Bladel',
-        detailDescription:
-          'Bij dit project wilde de klant een nieuwe uitstraling van de tuin. ' +
-          'Er is hierbij gekozen voor padouk gevelbekleding, dit is een hoogwaardige en stabiele tropische hardhoutsoort. ' +
-          'Dit houtsoort behoort tot duurzaamheidsklasse 1 en kan wel 20 tot 25 jaar onbehandeld meegaan. ' +
-          'Verder is er gekozen voor barcode profiel.'
-      },
-      project3: {
-        title: 'Overkapping en tuinkamer',
-        subtitle: 'Twee constructies voor een upgrade in uw tuin.',
-        detailDescription:
-          'Deze klant wenste een meer connectie van binnen naar buiten. ' +
-          'Hierbij is er gekozen voor een tuinkamer en overkapping. ' +
-          'De tuinkamer is een uitbereiding van de woonkamer geworden. ' +
-          'Hierbij is een mooie zithoek gecreëerd met rondom uitzicht over de tuin. ' +
-          'De overkapping met rondom glazen schuifwanden zorgt voor een mooie plek die zowel binnen als buiten plek gezien kan worden. ' +
-          'We hebben gebruik gemaakt van prefab eiken constructies. ' +
-          'Bij de tuinkamer is eiken dakbeschot toegepast en landelijke zwarte (RAL 9005) kozijnen. ' +
-          'Het dakvlak van nieuwe eiken overkapping hebben we vlak door laten lopen met het bestaande schuurtje. ' +
-          'Als dakplaat hebben we unilin SW Light dakplaten toegepast met een witte afgewerkte onderkant. ' +
-          'Deze mensen kunnen jaren genieten van hun mooie tuin.'
-      },
-      project4: {
-        title: 'Verduurzamen platdak Hilvarenbeek',
-        subtitle: 'Deze klant zit er weer warmpjes bij.',
-        detailDescription:
-          'Dit platdak was hard aan vervanging toe. ' +
-          'Nadat we de oude dakbedekking en dakbeschot afgevoerd hadden, kon het opbouwen beginnen. ' +
-          'Hierin hebben we de klant volledig ontzorgt, van dakbeschot tot aftimmering. ' +
-          'Als platdakisolatie hebben we pir isolatie van unilin toegepast, de boei is gemaakt van trespa (RAL 9001) en vervolgens afgewerkt met een zinken kraal. ' +
-          'Deze aanbouw kan er weer jaren tegenaan.'
-      },
-      project5: {
-        title: 'Douglas overkapping Lage Mierde',
-        subtitle: 'Gezellige sfeervolle overkapping voor elk seizoen.',
-        detailDescription:
-          'Deze douglas overkapping is door RoThi handgemaakt en geplaatst. ' +
-          'Deze klant heeft gekozen voor een zadeldak met hierop de OVH 206 pan. ' +
-          'Als dakbeschot zijn douglas sponningdelen toegepast, en als wandbekleding is douglas zweeds rabat gebruikt. '
-      },
-      project6: {
-        title: 'Overstek Hooge Mierde',
-        detailDescription:
-          'Deze klant wilde de betimmerde overstek vervangen voor een onderhoudsarme oplossing. ' +
-          'Hierdoor komt het arbeidsintensieve schilderwerk te vervallen. ' +
-          'De klant heeft gekozen voor een boei van Trespa en tegen het plafond zijn keralit sponningdelen bevestigd, dit beide in RAL 9001. ' +
-          'De oude zinken goten en afvoeren zijn daarnaast vervangen.'
-      },
-      project7: {
-        title: 'Overstek Hooge Mierde',
-        detailDescription:
-          'Deze klant wilde de betimmerde overstek vervangen voor een onderhoudsarme oplossing. ' +
-          'De klant heeft gekozen voor een boei van Trespa (RAL 5011) en een overstek plafond van Keralit (RAL 9001), Ook hebben we de goten en afvoeren vervangen in zink.'
-      },
-      project8: {
-        title: 'Gevelbekleding bedrijfshal Veldhoven',
-        subtitle: 'Een simpele oplossing waardoor je hal meteen en frisse uitstraling krijgt.',
-        detailDescription:
-          'In overleg met de klant is hier gekozen voor onderhoudsarme gevelbekleding om hiermee het aanzicht een frisse look en warme uitstraling te geven. ' +
-          'Dit Facade blokprofiel combineert het warme uiterlijk van houten latten met de duurzaamheid en het gemak van gecoat staal.'
-      }
-    }
+    // Project items (empty for now — Phase 2)
+    items: {}
   }
 };
