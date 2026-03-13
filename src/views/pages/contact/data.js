@@ -7,7 +7,7 @@ export const contactData = {
       titleKey: 'contact.emailCard.title',
       descriptionKey: 'contact.emailCard.content',
       link: {
-        href: 'mailto:info@lft-works.nl',
+        href: 'mailto:info@rothibouw.nl',
         children: 'contact.emailCard.buttonText'
       }
     },
@@ -15,19 +15,31 @@ export const contactData = {
       icon: 'tabler-phone',
       titleKey: 'contact.phoneCard.title',
       descriptionKey: 'contact.phoneCard.content',
-      link: {
-        href: 'tel:+31600000000',
-        children: 'contact.phoneCard.buttonText'
-      }
+      link: [
+        {
+          href: 'tel:+31 (0)6 81 39 97 41',
+          children: 'contact.phoneCard.roy'
+        },
+        {
+          href: 'tel:+31 (0)6 57 41 5909',
+          children: 'contact.phoneCard.thijs'
+        }
+      ]
     },
     {
       icon: 'tabler-brand-whatsapp',
       titleKey: 'contact.whatsappCard.title',
       descriptionKey: 'contact.whatsappCard.content',
-      link: {
-        href: 'https://wa.me/31600000000',
-        children: 'contact.whatsappCard.buttonText'
-      }
+      link: [
+        {
+          href: 'https://wa.me/31681399741',
+          children: 'contact.whatsappCard.roy'
+        },
+        {
+          href: 'https://wa.me/31657415909',
+          children: 'contact.whatsappCard.thijs'
+        }
+      ]
     }
   ]
 };
