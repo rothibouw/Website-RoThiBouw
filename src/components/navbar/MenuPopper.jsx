@@ -2,7 +2,12 @@
 import PropTypes from 'prop-types';
 
 // @react
-import { useEffect, useRef, useState } from 'react';
+import { createContext, useContext, useEffect, useRef, useState } from 'react';
+
+// Create context for menu close function
+const MenuPopperContext = createContext(null);
+
+export const useMenuPopper = () => useContext(MenuPopperContext);
 
 // @mui
 import { alpha, useTheme } from '@mui/material/styles';
@@ -111,7 +116,9 @@ export default function MenuPopper({
               }}
             >
               <ClickAwayListener onClickAway={() => setAnchorEl(null)}>
-                <Box onClick={closeMenu}>{children}</Box>
+                <MenuPopperContext.Provider value={{ closeMenu }}>
+                  <Box>{children}</Box>
+                </MenuPopperContext.Provider>
               </ClickAwayListener>
             </Card>
           </Fade>

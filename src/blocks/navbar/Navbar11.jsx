@@ -10,6 +10,8 @@ import Box from '@mui/material/Box';
 // @project
 import ContainerWrapper from '@/components/ContainerWrapper';
 
+import { BORDER_RADIUS } from '@/utils/constant';
+
 // Override media queries injected by theme.mixins.toolbar
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   '@media all': {
@@ -39,15 +41,15 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 
 export default function Navbar11({ children }) {
   return (
-    <ContainerWrapper>
-      <AppBar position="static" color="inherit" elevation={0} sx={{ background: 'transparent' }}>
+    <AppBar position="static" color="inherit" elevation={0} sx={{ background: 'transparent' }}>
+      <ContainerWrapper>
         <StyledToolbar>
-          <Box sx={{ width: 1, px: { xs: 1.5, sm: 2, md: 3 }, py: { xs: 0.5, sm: 1.5, md: 2 }, bgcolor: 'grey.100', borderRadius: 10 }}>
+          <Box sx={{ width: 1, px: { xs: 1.5, sm: 3 }, py: { xs: 0.5, sm: 2 }}}>
             {children}
           </Box>
         </StyledToolbar>
-      </AppBar>
-    </ContainerWrapper>
+      </ContainerWrapper>
+    </AppBar>
   );
 }
 

@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 // @next
 import NextLink from 'next/link';
 
+// @project
+import { useMenuPopper } from '@/components/navbar/MenuPopper';
+
 // @mui
 import { useTheme, alpha } from '@mui/material/styles';
 import Avatar from '@mui/material/Avatar';
@@ -12,13 +15,20 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
-// @project
 import SvgIcon from '@/components/SvgIcon';
 
 /***************************  MEGA MENU - 2  ***************************/
 
 export default function MegaMenu2({ menuItems }) {
   const theme = useTheme();
+  const menuPopper = useMenuPopper();
+  
+  const handleItemClick = () => {
+    // Close the menu popper if it exists (mobile menu)
+    if (menuPopper?.closeMenu) {
+      menuPopper.closeMenu();
+    }
+  };
   return (
     <List
       component="nav"
@@ -28,6 +38,7 @@ export default function MegaMenu2({ menuItems }) {
         <ListItemButton
           key={index}
           {...(item.link && { component: NextLink, href: item.link })}
+          onClick={item.link ? handleItemClick : undefined}
           sx={{
             px: { xs: 1.5, md: 2 },
             py: { xs: 0.75, md: 1.25 },

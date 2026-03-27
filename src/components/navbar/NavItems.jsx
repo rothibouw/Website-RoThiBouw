@@ -19,7 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Box from '@mui/material/Box';
 
 // @project
-import MenuPopper from './MenuPopper';
+import MenuPopper, { useMenuPopper } from './MenuPopper';
 
 import SvgIcon from '@/components/SvgIcon';
 
@@ -85,11 +85,21 @@ function ExpanedList({ item, menuTextColor }) {
 /***************************  NAVBAR - DRAWER  ***************************/
 
 function MenuDrawer({ item, menuTextColor }) {
+  const menuPopper = useMenuPopper();
+  
+  const handleLinkClick = () => {
+    // Close the menu popper if it exists
+    if (menuPopper?.closeMenu) {
+      menuPopper.closeMenu();
+    }
+  };
+  
   return (
     <>
       {!item.megaMenu ? (
         <ListItemButton
           {...(item.link && { component: NextLink, href: item.link, underline: 'none', ...(item?.target && { target: item.target }) })}
+          onClick={item.link ? handleLinkClick : undefined}
           sx={navItemSX}
         >
           <ListItemText primary={item.title} primaryTypographyProps={{ variant: 'caption2', color: menuTextColor || 'text.primary' }} />
