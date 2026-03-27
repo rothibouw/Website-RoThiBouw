@@ -8,19 +8,14 @@ const FROM_EMAIL = 'noreply@rothibouw.nl';
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
 
 // Allowed CV file types
-const ALLOWED_TYPES = [
-  'application/pdf',
-  'application/msword',
-  'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-];
+const ALLOWED_TYPES = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
 
 /***************************  API - JOB APPLICATION FORM  ***************************/
 
 export async function POST(request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
-  const language =
-    request.headers.get('accept-language')?.split(',')[0]?.split('-')[0] || 'nl';
+  const language = request.headers.get('accept-language')?.split(',')[0]?.split('-')[0] || 'nl';
 
   const messages = {
     en: {
@@ -30,7 +25,7 @@ export async function POST(request) {
       cvTooLarge: 'CV file is too large. Maximum size is 10MB',
       cvInvalidType: 'CV must be a PDF or Word document',
       success: 'Thank you for your application! We will review it and get back to you soon.',
-      error: 'Failed to send application. Please try again later.',
+      error: 'Failed to send application. Please try again later.'
     },
     nl: {
       required: 'Naam, e-mail, functie en motivatie zijn verplicht',
@@ -39,8 +34,8 @@ export async function POST(request) {
       cvTooLarge: 'CV-bestand is te groot. Maximale grootte is 10MB',
       cvInvalidType: 'CV moet een PDF of Word-document zijn',
       success: 'Bedankt voor je sollicitatie! We bekijken deze en nemen zo snel mogelijk contact met je op.',
-      error: 'Kan sollicitatie niet verzenden. Probeer het later opnieuw.',
-    },
+      error: 'Kan sollicitatie niet verzenden. Probeer het later opnieuw.'
+    }
   };
 
   const msg = messages[language] || messages.nl;
@@ -92,8 +87,8 @@ export async function POST(request) {
       attachments: [
         {
           filename: cv.name,
-          content: cvBuffer,
-        },
+          content: cvBuffer
+        }
       ],
       html: generateEmailHTML({
         name: name.trim(),
@@ -102,8 +97,8 @@ export async function POST(request) {
         position: position.trim(),
         motivation: motivation.trim(),
         cvName: cv.name,
-        timestamp: new Date().toISOString(),
-      }),
+        timestamp: new Date().toISOString()
+      })
     });
 
     if (error) {
@@ -156,11 +151,15 @@ function generateEmailHTML({ name, email, phone, position, motivation, cvName, t
             <span class="label">E-mailadres</span>
             <div class="value"><a href="mailto:${email}">${email}</a></div>
           </div>
-          ${phone ? `
+          ${
+            phone
+              ? `
           <div class="field">
             <span class="label">Telefoonnummer</span>
             <div class="value"><a href="tel:${phone}">${phone}</a></div>
-          </div>` : ''}
+          </div>`
+              : ''
+          }
           <div class="field">
             <span class="label">Motivatie</span>
             <div class="motivation">${motivation}</div>

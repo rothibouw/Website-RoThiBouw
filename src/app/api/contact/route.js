@@ -9,22 +9,21 @@ const FROM_EMAIL = 'noreply@rothibouw.nl';
 export async function POST(request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
-  const language =
-    request.headers.get('accept-language')?.split(',')[0]?.split('-')[0] || 'nl';
+  const language = request.headers.get('accept-language')?.split(',')[0]?.split('-')[0] || 'nl';
 
   const messages = {
     en: {
       required: 'Name, email, and message are required',
       invalidEmail: 'Please enter a valid email address',
       success: "Thank you for your message! We'll get back to you soon.",
-      error: 'Failed to send message. Please try again later.',
+      error: 'Failed to send message. Please try again later.'
     },
     nl: {
       required: 'Naam, e-mail en bericht zijn verplicht',
       invalidEmail: 'Voer een geldig e-mailadres in',
       success: 'Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.',
-      error: 'Kan bericht niet verzenden. Probeer het later opnieuw.',
-    },
+      error: 'Kan bericht niet verzenden. Probeer het later opnieuw.'
+    }
   };
 
   const msg = messages[language] || messages.nl;
@@ -58,14 +57,12 @@ export async function POST(request) {
       attachments = [
         {
           filename: file.name,
-          content: fileBuffer,
-        },
+          content: fileBuffer
+        }
       ];
     }
 
-    const emailSubject = subject?.trim()
-      ? `Contactformulier: ${subject.trim()}`
-      : 'Contactformulier: Nieuw bericht';
+    const emailSubject = subject?.trim() ? `Contactformulier: ${subject.trim()}` : 'Contactformulier: Nieuw bericht';
 
     const { error } = await resend.emails.send({
       from: FROM_EMAIL,
@@ -82,8 +79,8 @@ export async function POST(request) {
         phone: phone?.trim(),
         timestamp: new Date().toISOString(),
         hasAttachment: attachments.length > 0,
-        attachmentName: file?.name,
-      }),
+        attachmentName: file?.name
+      })
     });
 
     if (error) {
@@ -99,17 +96,7 @@ export async function POST(request) {
 
 /***************************  EMAIL TEMPLATE  ***************************/
 
-function generateEmailHTML({
-  name,
-  email,
-  company,
-  phone,
-  subject,
-  message,
-  timestamp,
-  hasAttachment,
-  attachmentName,
-}) {
+function generateEmailHTML({ name, email, company, phone, subject, message, timestamp, hasAttachment, attachmentName }) {
   return `
     <!DOCTYPE html>
     <html>
@@ -144,25 +131,37 @@ function generateEmailHTML({
             <span class="label">E-mailadres</span>
             <div class="value"><a href="mailto:${email}">${email}</a></div>
           </div>
-          ${company ? `
+          ${
+            company
+              ? `
           <div class="field">
             <span class="label">Bedrijf</span>
             <div class="value">${company}</div>
-          </div>` : ''}
-          ${phone ? `
+          </div>`
+              : ''
+          }
+          ${
+            phone
+              ? `
           <div class="field">
             <span class="label">Telefoonnummer</span>
             <div class="value"><a href="tel:${phone}">${phone}</a></div>
-          </div>` : ''}
+          </div>`
+              : ''
+          }
           <div class="field">
             <span class="label">Bericht</span>
             <div class="message">${message}</div>
           </div>
-          ${hasAttachment ? `
+          ${
+            hasAttachment
+              ? `
           <div class="field">
             <span class="label">Bijlage</span>
             <div class="attachment">📎 ${attachmentName}</div>
-          </div>` : ''}
+          </div>`
+              : ''
+          }
         </div>
         <div class="footer">
           <p style="margin:0;">Ontvangen op ${new Date(timestamp).toLocaleString('nl-NL')}</p>
