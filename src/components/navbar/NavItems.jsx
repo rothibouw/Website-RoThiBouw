@@ -86,14 +86,14 @@ function ExpanedList({ item, menuTextColor }) {
 
 function MenuDrawer({ item, menuTextColor }) {
   const menuPopper = useMenuPopper();
-  
+
   const handleLinkClick = () => {
     // Close the menu popper if it exists
     if (menuPopper?.closeMenu) {
       menuPopper.closeMenu();
     }
   };
-  
+
   return (
     <>
       {!item.megaMenu ? (

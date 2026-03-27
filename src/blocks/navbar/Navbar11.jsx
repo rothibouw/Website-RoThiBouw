@@ -44,9 +44,7 @@ export default function Navbar11({ children }) {
     <AppBar position="static" color="inherit" elevation={0} sx={{ background: 'transparent' }}>
       <ContainerWrapper>
         <StyledToolbar>
-          <Box sx={{ width: 1, px: { xs: 1.5, sm: 3 }, py: { xs: 0.5, sm: 2 }}}>
-            {children}
-          </Box>
+          <Box sx={{ width: 1, px: { xs: 1.5, sm: 3 }, py: { xs: 0.5, sm: 2 } }}>{children}</Box>
         </StyledToolbar>
       </ContainerWrapper>
     </AppBar>

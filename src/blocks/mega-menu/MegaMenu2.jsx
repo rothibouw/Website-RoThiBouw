@@ -22,7 +22,7 @@ import SvgIcon from '@/components/SvgIcon';
 export default function MegaMenu2({ menuItems }) {
   const theme = useTheme();
   const menuPopper = useMenuPopper();
-  
+
   const handleItemClick = () => {
     // Close the menu popper if it exists (mobile menu)
     if (menuPopper?.closeMenu) {
