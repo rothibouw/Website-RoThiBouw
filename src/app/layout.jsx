@@ -31,6 +31,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl">
       <head>
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="acjwRHBwtFsjxogEE_qSqSJvZHKUz2XrUZ4IF-0aSLo" />
+
         {/* Preconnect and DNS Prefetch */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
