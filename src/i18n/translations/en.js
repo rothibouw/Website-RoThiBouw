@@ -298,8 +298,7 @@ export const translations = {
       },
       cookies: {
         heading: 'Cookies and Tracking',
-        caption:
-          'RoThi Bouw\'s website does not use cookies, tracking or analytics. No data about your browsing behavior is collected.'
+        caption: "RoThi Bouw's website does not use cookies, tracking or analytics. No data about your browsing behavior is collected."
       },
       thirdParties: {
         heading: 'Sharing Personal Data with Third Parties',

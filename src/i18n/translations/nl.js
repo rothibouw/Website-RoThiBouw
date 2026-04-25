@@ -288,7 +288,7 @@ export const translations = {
       automatedDecision: {
         heading: 'Geautomatiseerde besluitvorming',
         caption:
-          'RoThi Bouw neemt geen besluiten op basis van geautomatiseerde verwerkingen over zaken die (aanzienlijke) gevolgen kunnen hebben voor personen. Het gaat hier om besluiten die worden genomen door computerprogramma\'s of -systemen, zonder dat daar een mens tussen zit.'
+          "RoThi Bouw neemt geen besluiten op basis van geautomatiseerde verwerkingen over zaken die (aanzienlijke) gevolgen kunnen hebben voor personen. Het gaat hier om besluiten die worden genomen door computerprogramma's of -systemen, zonder dat daar een mens tussen zit."
       },
       retentionPeriod: {
         heading: 'Hoe lang we persoonsgegevens bewaren',
