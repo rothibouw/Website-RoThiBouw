@@ -230,7 +230,7 @@ export const translations = {
       p1: 'We got to know each other at fourteen years old. At our first part-time job, we clicked immediately. Soon we noticed that we not only had the same pleasure in the work, but also the same work ethic. After working side by side for many years and learning a tremendous amount, we found that our passion and work pleasure turned into interest in construction.',
       p2: 'To support our craftsmanship with the right knowledge, we both followed the training Middle Management Construction. Roy completed this in May 2023 and Thijs in January 2025. Although we both gained experience as self-employed entrepreneurs with our own one-man business in the meantime, the ambition to build something together kept itching.',
       p3: 'In February 2025 the moment came: the founding of RoThi Bouw. Our mission is simple: to realize beautiful projects with passion and pleasure and to grow our business by delivering quality we are proud of. With us you are assured of craftsmanship with a personal approach.',
-      p4: 'Here\'s to many more beautiful years.'
+      p4: "Here's to many more beautiful years."
     },
     timeline: {
       heading: 'Our Journey',
@@ -392,7 +392,7 @@ export const translations = {
       title: 'Wood constructions',
       descriptionTitle: 'Wood constructions & Custom work',
       description:
-        "From wooden load-bearing structures to custom work, RoThi Bouw delivers expert woodwork. We work with different types of wood and techniques to guarantee a solid and beautiful result.",
+        'From wooden load-bearing structures to custom work, RoThi Bouw delivers expert woodwork. We work with different types of wood and techniques to guarantee a solid and beautiful result.',
       features: {
         f1: 'Wooden load-bearing structures',
         f2: 'Prefab',
@@ -588,7 +588,7 @@ export const translations = {
         tasks: {
           task1: 'Working on roof constructions, rafters and roof boarding',
           task2: 'Installing window frames, doors, stairs and floors',
-          task3: "Building wood constructions such as pergolas, carports and extensions",
+          task3: 'Building wood constructions such as pergolas, carports and extensions',
           task4: 'Carrying out renovations and refurbishments',
           task5: 'Collaborating with fellow craftsmen on the construction site',
           task6: 'Working from construction drawings and ensuring quality'

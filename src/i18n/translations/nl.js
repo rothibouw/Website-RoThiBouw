@@ -592,7 +592,7 @@ export const translations = {
         tasks: {
           task1: 'Werken aan dakconstructies, kapspanten en dakbeschot',
           task2: 'Plaatsen van kozijnen, deuren, trappen en vloeren',
-          task3: 'Bouwen van houtconstructies zoals pergola\'s, carports en aanbouwen',
+          task3: "Bouwen van houtconstructies zoals pergola's, carports en aanbouwen",
           task4: 'Uitvoeren van renovaties en verbouwingen',
           task5: 'Samenwerken met collega-vakmensen op de bouwplaats',
           task6: 'Werken volgens bouwtekeningen en zorgdragen voor kwaliteit'

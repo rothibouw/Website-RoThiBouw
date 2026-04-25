@@ -88,7 +88,12 @@ export default function FileUpload({ onFileSelect }) {
         <Typography variant="body2" sx={{ color: 'primary.dark', fontWeight: 500, flex: 1, wordBreak: 'break-all' }}>
           {fileName}
         </Typography>
-        <IconButton size="small" onClick={handleRemove} aria-label="Remove file" sx={{ color: 'text.secondary', '&:hover': { color: 'error.main' } }}>
+        <IconButton
+          size="small"
+          onClick={handleRemove}
+          aria-label="Remove file"
+          sx={{ color: 'text.secondary', '&:hover': { color: 'error.main' } }}
+        >
           <SvgIcon name="tabler-x" size={18} />
         </IconButton>
         <input ref={inputRef} type="file" hidden onChange={handleFileChange} />
