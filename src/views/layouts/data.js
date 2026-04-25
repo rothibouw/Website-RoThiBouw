@@ -42,10 +42,11 @@ export const bottomBar = {
     {
       label: 'footer.privacyPolicy',
       href: '/privacy-policy'
-    },
-    {
-      label: 'footer.termsConditions',
-      href: '/terms-conditions'
     }
+    // TODO: Add terms-conditions link back once content is ready
+    // {
+    //   label: 'footer.termsConditions',
+    //   href: '/terms-conditions'
+    // }
   ]
 };

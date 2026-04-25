@@ -10,6 +10,8 @@ import { nlTranslations } from '@/i18n';
 
 /***************************  HELPERS  ***************************/
 
+// Server-side metadata uses Dutch (nl) intentionally: search engines and social
+// cards receive one language per page, and Dutch is the primary audience.
 function t(key) {
   return key.split('.').reduce((obj, k) => obj?.[k], nlTranslations) ?? key;
 }
@@ -29,7 +31,7 @@ export async function generateMetadata({ params }) {
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
-    return { title: 'Project niet gevonden' };
+    return { title: t('projects.projectNotFound') };
   }
 
   const title = t(project.titleKey);
@@ -41,7 +43,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title,
       description,
-      url: `/projecten/${project.slug}`
+      url: `/projects/${project.slug}`
     }
   };
 }

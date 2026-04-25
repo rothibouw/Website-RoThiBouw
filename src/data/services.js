@@ -1,87 +1,87 @@
 export const services = [
   {
-    slug: 'ver-en-aanbouwen',
-    titleKey: 'services.renovaties.title',
+    slug: 'renovations',
+    titleKey: 'services.renovations.title',
     icon: 'tabler-paint',
-    heroImage: '/assets/services/ver-en-aanbouw/hero.jpeg',
-    descriptionTitleKey: 'services.renovaties.descriptionTitle',
-    descriptionKey: 'services.renovaties.description',
-    descriptionImage: '/assets/services/ver-en-aanbouw/description.jpeg',
+    heroImage: '/assets/services/renovations/hero.jpeg',
+    descriptionTitleKey: 'services.renovations.descriptionTitle',
+    descriptionKey: 'services.renovations.description',
+    descriptionImage: '/assets/services/renovations/description.jpeg',
     features: [
-      'services.renovaties.features.f1',
-      'services.renovaties.features.f2',
-      'services.renovaties.features.f3',
-      'services.renovaties.features.f4',
-      'services.renovaties.features.f5'
+      'services.renovations.features.f1',
+      'services.renovations.features.f2',
+      'services.renovations.features.f3',
+      'services.renovations.features.f4',
+      'services.renovations.features.f5'
     ],
-    featureImage: '/assets/services/ver-en-aanbouw/feature.jpeg',
-    relatedCategories: ['renovaties']
+    featureImage: '/assets/services/renovations/feature.jpeg',
+    relatedCategories: ['renovations']
   },
   {
-    slug: 'dakwerken',
-    titleKey: 'services.dakwerken.title',
+    slug: 'roofing',
+    titleKey: 'services.roofing.title',
     icon: 'tabler-home',
-    heroImage: '/assets/services/dakwerken/hero.jpeg',
-    descriptionTitleKey: 'services.dakwerken.descriptionTitle',
-    descriptionKey: 'services.dakwerken.description',
-    descriptionImage: '/assets/services/dakwerken/description.jpeg',
+    heroImage: '/assets/services/roofing/hero.jpeg',
+    descriptionTitleKey: 'services.roofing.descriptionTitle',
+    descriptionKey: 'services.roofing.description',
+    descriptionImage: '/assets/services/roofing/description.jpeg',
     features: [
-      'services.dakwerken.features.f1',
-      'services.dakwerken.features.f2',
-      'services.dakwerken.features.f3',
-      'services.dakwerken.features.f4',
-      'services.dakwerken.features.f5',
-      'services.dakwerken.features.f6'
+      'services.roofing.features.f1',
+      'services.roofing.features.f2',
+      'services.roofing.features.f3',
+      'services.roofing.features.f4',
+      'services.roofing.features.f5',
+      'services.roofing.features.f6'
     ],
-    featureImage: '/assets/services/dakwerken/feature.jpeg',
-    relatedCategories: ['dakwerken']
+    featureImage: '/assets/services/roofing/feature.jpeg',
+    relatedCategories: ['roofing']
   },
   {
-    slug: 'timmerwerk',
-    titleKey: 'services.timmerwerk.title',
+    slug: 'carpentry',
+    titleKey: 'services.carpentry.title',
     icon: 'tabler-tool',
-    heroImage: '/assets/services/timmerwerk/hero.jpeg',
-    descriptionTitleKey: 'services.timmerwerk.descriptionTitle',
-    descriptionKey: 'services.timmerwerk.description',
-    descriptionImage: '/assets/services/timmerwerk/description.jpeg',
-    features: ['services.timmerwerk.features.f1', 'services.timmerwerk.features.f2', 'services.timmerwerk.features.f3'],
-    featureImage: '/assets/services/timmerwerk/feature.jpeg',
-    relatedCategories: ['timmerwerk']
+    heroImage: '/assets/services/carpentry/hero.jpeg',
+    descriptionTitleKey: 'services.carpentry.descriptionTitle',
+    descriptionKey: 'services.carpentry.description',
+    descriptionImage: '/assets/services/carpentry/description.jpeg',
+    features: ['services.carpentry.features.f1', 'services.carpentry.features.f2', 'services.carpentry.features.f3'],
+    featureImage: '/assets/services/carpentry/feature.jpeg',
+    relatedCategories: ['carpentry']
   },
   {
-    slug: 'verduurzaming',
-    titleKey: 'services.verduurzaming.title',
+    slug: 'sustainability',
+    titleKey: 'services.sustainability.title',
     icon: 'tabler-building',
-    heroImage: '/assets/services/verduurzaming/hero.jpeg',
-    descriptionTitleKey: 'services.verduurzaming.descriptionTitle',
-    descriptionKey: 'services.verduurzaming.description',
-    descriptionImage: '/assets/services/verduurzaming/description.jpeg',
+    heroImage: '/assets/services/sustainability/hero.jpeg',
+    descriptionTitleKey: 'services.sustainability.descriptionTitle',
+    descriptionKey: 'services.sustainability.description',
+    descriptionImage: '/assets/services/sustainability/description.jpeg',
     features: [
-      'services.verduurzaming.features.f1',
-      'services.verduurzaming.features.f2',
-      'services.verduurzaming.features.f3',
-      'services.verduurzaming.features.f4',
-      'services.verduurzaming.features.f5'
+      'services.sustainability.features.f1',
+      'services.sustainability.features.f2',
+      'services.sustainability.features.f3',
+      'services.sustainability.features.f4',
+      'services.sustainability.features.f5'
     ],
-    featureImage: '/assets/services/verduurzaming/feature.jpeg',
-    relatedCategories: ['verduurzaming']
+    featureImage: '/assets/services/sustainability/feature.jpeg',
+    relatedCategories: ['sustainability']
   },
   {
-    slug: 'hout-constructies',
-    titleKey: 'services.houtConstructies.title',
+    slug: 'wood-construction',
+    titleKey: 'services.woodConstruction.title',
     icon: 'tabler-wall',
-    heroImage: '/assets/services/hout-constructies/hero.jpeg',
-    descriptionTitleKey: 'services.houtConstructies.descriptionTitle',
-    descriptionKey: 'services.houtConstructies.description',
-    descriptionImage: '/assets/services/hout-constructies/description.jpeg',
+    heroImage: '/assets/services/wood-construction/hero.jpeg',
+    descriptionTitleKey: 'services.woodConstruction.descriptionTitle',
+    descriptionKey: 'services.woodConstruction.description',
+    descriptionImage: '/assets/services/wood-construction/description.jpeg',
     features: [
-      'services.houtConstructies.features.f1',
-      'services.houtConstructies.features.f2',
-      'services.houtConstructies.features.f3',
-      'services.houtConstructies.features.f4'
+      'services.woodConstruction.features.f1',
+      'services.woodConstruction.features.f2',
+      'services.woodConstruction.features.f3',
+      'services.woodConstruction.features.f4'
     ],
-    featureImage: '/assets/services/hout-constructies/feature.jpeg',
-    relatedCategories: ['houtConstructies']
+    featureImage: '/assets/services/wood-construction/feature.jpeg',
+    relatedCategories: ['woodConstruction']
   }
 ];
 
@@ -115,7 +115,7 @@ export const servicesNavigationData = {
     titleKey: service.titleKey,
     descriptionKey: service.descriptionTitleKey,
     link: {
-      href: `/diensten/${service.slug}`,
+      href: `/services/${service.slug}`,
       children: 'common.learnMore'
     }
   }))

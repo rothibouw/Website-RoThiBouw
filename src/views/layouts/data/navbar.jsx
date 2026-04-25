@@ -24,28 +24,28 @@ export const useNavbarData = () => {
           menuItems: [
             {
               icon: 'tabler-crane',
-              title: t('projects.categories.renovaties'),
-              link: '/diensten/ver-en-aanbouwen'
+              title: t('projects.categories.renovations'),
+              link: '/services/renovations'
             },
             {
               icon: 'tabler-home',
-              title: t('projects.categories.dakwerken'),
-              link: '/diensten/dakwerken'
+              title: t('projects.categories.roofing'),
+              link: '/services/roofing'
             },
             {
               icon: 'tabler-hammer',
-              title: t('projects.categories.timmerwerk'),
-              link: '/diensten/timmerwerk'
+              title: t('projects.categories.carpentry'),
+              link: '/services/carpentry'
             },
             {
               icon: 'tabler-michelin-star-green',
-              title: t('projects.categories.verduurzaming'),
-              link: '/diensten/verduurzaming'
+              title: t('projects.categories.sustainability'),
+              link: '/services/sustainability'
             },
             {
               icon: 'tabler-wood',
-              title: t('projects.categories.houtConstructies'),
-              link: '/diensten/hout-constructies'
+              title: t('projects.categories.woodConstruction'),
+              link: '/services/wood-construction'
             }
           ]
         }
@@ -53,12 +53,12 @@ export const useNavbarData = () => {
       {
         id: 'about',
         title: t('nav.about'),
-        link: '/over-ons'
+        link: '/about'
       },
       {
         id: 'projects',
         title: t('nav.projects'),
-        link: '/projecten'
+        link: '/projects'
       },
       {
         id: 'contact',

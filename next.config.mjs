@@ -30,6 +30,21 @@ const nextConfig = {
       }
     ]
   },
+  async redirects() {
+    return [
+      // Route segment renames
+      { source: '/over-ons', destination: '/about', permanent: true },
+      { source: '/projecten', destination: '/projects', permanent: true },
+      { source: '/projecten/:slug*', destination: '/projects/:slug*', permanent: true },
+      // Service route + slug renames (old Dutch path → new English path)
+      { source: '/diensten/ver-en-aanbouwen', destination: '/services/renovations', permanent: true },
+      { source: '/diensten/dakwerken', destination: '/services/roofing', permanent: true },
+      { source: '/diensten/timmerwerk', destination: '/services/carpentry', permanent: true },
+      { source: '/diensten/verduurzaming', destination: '/services/sustainability', permanent: true },
+      { source: '/diensten/hout-constructies', destination: '/services/wood-construction', permanent: true }
+    ];
+  },
+
   async headers() {
     return [
       {

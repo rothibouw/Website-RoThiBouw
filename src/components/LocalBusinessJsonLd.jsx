@@ -21,22 +21,22 @@ export function LocalBusinessJsonLd() {
     // -- Location --
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '', // TODO: Fill in street address
-      addressLocality: 'Reusel',
+      streetAddress: 'Leendestraat 28',
+      addressLocality: 'Hooge Mierde',
       addressRegion: 'Noord-Brabant',
-      postalCode: '', // TODO: Fill in postcode
+      postalCode: '5095 BE',
       addressCountry: 'NL'
     },
 
     // -- Contact --
-    telephone: '', // TODO: Fill in phone number (format: +31 6 12345678)
+    telephone: '+31681399741',
     email: 'info@rothibouw.nl',
 
     // -- Coordinates (for Google Maps) --
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 51.3609, // Reusel approximate
-      longitude: 5.1691
+      latitude: 51.3715,
+      longitude: 5.2031
     },
 
     // -- Service area --
@@ -107,12 +107,7 @@ export function LocalBusinessJsonLd() {
     ],
 
     // -- Social / profiles --
-    sameAs: [
-      // TODO: Add social media URLs
-      // 'https://www.facebook.com/rothibouw',
-      // 'https://www.instagram.com/rothibouw',
-      // 'https://www.linkedin.com/company/rothibouw',
-    ]
+    sameAs: []
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />;

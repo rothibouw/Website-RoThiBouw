@@ -5,7 +5,7 @@ export const projects = [
     slug: 'kaprenovatie-hooge-mierde',
     location: 'Hooge Mierde',
     year: 2026,
-    categories: ['dakwerken'],
+    categories: ['roofing'],
     isHighlighted: true,
     // Header info
     titleKey: 'projects.items.project1.title',
@@ -23,9 +23,9 @@ export const projects = [
     // Project information
     // projectInformationDescriptionKey: 'projects.items.project1.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Hooge Mierde' },
-      { icon: 'tabler-calendar', label: 'Jaar', value: '2026' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Dakwerken' }
+      { icon: 'tabler-map-pin', labelKey: 'projects.specs.location', value: 'Hooge Mierde' },
+      { icon: 'tabler-calendar', labelKey: 'projects.specs.year', value: '2026' },
+      { icon: 'tabler-folder', labelKey: 'projects.specs.category', valueKey: 'projects.categories.roofing' }
     ]
     // // Review/Testimonial info
     // testimonial: {
@@ -39,7 +39,7 @@ export const projects = [
     slug: 'gevelbekleding-bladel',
     location: 'Bladel',
     year: 2026,
-    categories: ['timmerwerk'],
+    categories: ['carpentry'],
     isHighlighted: false,
     // Header info
     titleKey: 'projects.items.project2.title',
@@ -51,9 +51,9 @@ export const projects = [
     // Project information
     // projectInformationDescriptionKey: 'projects.items.project2.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Bladel' },
-      { icon: 'tabler-calendar', label: 'Jaar', value: '2026' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Timmerwerk' }
+      { icon: 'tabler-map-pin', labelKey: 'projects.specs.location', value: 'Bladel' },
+      { icon: 'tabler-calendar', labelKey: 'projects.specs.year', value: '2026' },
+      { icon: 'tabler-folder', labelKey: 'projects.specs.category', valueKey: 'projects.categories.carpentry' }
     ]
     // // Review/Testimonial info
     // testimonial: {
@@ -66,7 +66,7 @@ export const projects = [
     id: 'project-3',
     slug: 'overkapping-tuinkamer-schijndel',
     year: 2025,
-    categories: ['houtConstructies', 'renovaties'],
+    categories: ['woodConstruction', 'renovations'],
     isHighlighted: true,
     // Header info
     titleKey: 'projects.items.project3.title',
@@ -85,8 +85,8 @@ export const projects = [
     // Project information
     // projectInformationDescriptionKey: 'projects.items.project3.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Hout constructies & Ver- en aanbouw' }
+      { icon: 'tabler-calendar', labelKey: 'projects.specs.year', value: '2025' },
+      { icon: 'tabler-folder', labelKey: 'projects.specs.category', value: 'Wood Construction & Renovations' }
     ]
     // // Review/Testimonial info
     // testimonial: {
@@ -100,7 +100,7 @@ export const projects = [
     slug: 'verduurzamen-platdak-hilvarenbeek',
     location: 'Hilvarenbeek',
     year: 2025,
-    categories: ['verduurzaming'],
+    categories: ['sustainability'],
     isHighlighted: false,
     // Header info
     titleKey: 'projects.items.project4.title',
@@ -119,9 +119,9 @@ export const projects = [
     // Project information
     // projectInformationDescriptionKey: 'projects.items.project4.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Hilvarenbeek' },
-      { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Verduurzaming' }
+      { icon: 'tabler-map-pin', labelKey: 'projects.specs.location', value: 'Hilvarenbeek' },
+      { icon: 'tabler-calendar', labelKey: 'projects.specs.year', value: '2025' },
+      { icon: 'tabler-folder', labelKey: 'projects.specs.category', valueKey: 'projects.categories.sustainability' }
     ]
     // // Review/Testimonial info
     // testimonial: {
@@ -135,7 +135,7 @@ export const projects = [
     slug: 'douglas-overkapping-lage-mierde',
     location: 'Lage Mierde',
     year: 2024,
-    categories: ['verduurzaming', 'houtConstructies', 'timmerwerk'],
+    categories: ['sustainability', 'woodConstruction', 'carpentry'],
     isHighlighted: false,
     // Header info
     titleKey: 'projects.items.project5.title',
@@ -153,9 +153,9 @@ export const projects = [
     // Project information
     // projectInformationDescriptionKey: 'projects.items.project5.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Lage Mierde' },
-      { icon: 'tabler-calendar', label: 'Jaar', value: '2024' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Hout constructies & Timmerwerk' }
+      { icon: 'tabler-map-pin', labelKey: 'projects.specs.location', value: 'Lage Mierde' },
+      { icon: 'tabler-calendar', labelKey: 'projects.specs.year', value: '2024' },
+      { icon: 'tabler-folder', labelKey: 'projects.specs.category', value: 'Wood Construction & Carpentry' }
     ]
     // // Review/Testimonial info
     // testimonial: {
@@ -169,7 +169,7 @@ export const projects = [
     slug: 'overstek-hooge-mierde',
     location: 'Hooge Mierde',
     year: 2025,
-    categories: ['timmerwerk'],
+    categories: ['carpentry'],
     isHighlighted: false,
     // Header info
     titleKey: 'projects.items.project6.title',
@@ -181,9 +181,9 @@ export const projects = [
     // Project information
     // projectInformationDescriptionKey: 'projects.items.project6.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Hooge Mierde' },
-      { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Timmerwerk' }
+      { icon: 'tabler-map-pin', labelKey: 'projects.specs.location', value: 'Hooge Mierde' },
+      { icon: 'tabler-calendar', labelKey: 'projects.specs.year', value: '2025' },
+      { icon: 'tabler-folder', labelKey: 'projects.specs.category', valueKey: 'projects.categories.carpentry' }
     ]
     // // Review/Testimonial info
     // testimonial: {
@@ -197,7 +197,7 @@ export const projects = [
     slug: 'overstek-hooge-mierde-2',
     location: 'Hooge Mierde',
     year: 2025,
-    categories: ['timmerwerk'],
+    categories: ['carpentry'],
     isHighlighted: false,
     // Header info
     titleKey: 'projects.items.project7.title',
@@ -209,9 +209,9 @@ export const projects = [
     // Project information
     // projectInformationDescriptionKey: 'projects.items.project7.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Hooge Mierde' },
-      { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Timmerwerk' }
+      { icon: 'tabler-map-pin', labelKey: 'projects.specs.location', value: 'Hooge Mierde' },
+      { icon: 'tabler-calendar', labelKey: 'projects.specs.year', value: '2025' },
+      { icon: 'tabler-folder', labelKey: 'projects.specs.category', valueKey: 'projects.categories.carpentry' }
     ]
     // Review/Testimonial info
     // // Review/Testimonial info
@@ -226,7 +226,7 @@ export const projects = [
     slug: 'gevelbekleding-bedrijfshal-veldhoven',
     location: 'Veldhoven',
     year: 2025,
-    categories: ['verduurzaming'],
+    categories: ['sustainability'],
     isHighlighted: false,
     // Header info
     titleKey: 'projects.items.project8.title',
@@ -245,9 +245,9 @@ export const projects = [
     // Project information
     // projectInformationDescriptionKey: 'projects.items.project8.projectInformationDescription',
     primaryInfo: [
-      { icon: 'tabler-map-pin', label: 'Locatie', value: 'Veldhoven' },
-      { icon: 'tabler-calendar', label: 'Jaar', value: '2025' },
-      { icon: 'tabler-folder', label: 'Categorie', value: 'Timmerwerk' }
+      { icon: 'tabler-map-pin', labelKey: 'projects.specs.location', value: 'Veldhoven' },
+      { icon: 'tabler-calendar', labelKey: 'projects.specs.year', value: '2025' },
+      { icon: 'tabler-folder', labelKey: 'projects.specs.category', valueKey: 'projects.categories.sustainability' }
     ]
     // // Review/Testimonial info
     // testimonial: {

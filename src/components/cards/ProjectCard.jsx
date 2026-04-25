@@ -163,7 +163,7 @@ export default function ProjectCard({ project, index = 0 }) {
           </Stack>
 
           {/* Navigation Button */}
-          <Button component={NextLink} href={`/projecten/${project.slug}`} variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
+          <Button component={NextLink} href={`/projects/${project.slug}`} variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
             {t('common.readMore')}
           </Button>
         </Stack>

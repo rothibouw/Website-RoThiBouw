@@ -178,6 +178,7 @@ export const translations = {
     },
     services: {
       heading: 'Onze diensten',
+      caption: 'Professionele bouwdiensten afgestemd op uw wensen',
       renovations: {
         title: 'Ver- en aanbouwen',
         description: 'Complete ver- en aanbouwoplossingen voor uw woning of bedrijfspand'
@@ -272,102 +273,67 @@ export const translations = {
   // Privacy Policy Page
   privacyPolicy: {
     heading: 'Privacybeleid',
-    subtitle: 'Uw privacy is voor ons belangrijk. Lees hoe we uw gegevens verzamelen, gebruiken en beschermen.',
+    subtitle: 'RoThi Bouw is verantwoordelijk voor de verwerking van uw persoonsgegevens.',
     sections: {
       informationCollection: {
-        heading: 'Verzameling van Informatie',
+        heading: 'Persoonsgegevens die wij verwerken',
         caption:
-          'We verzamelen informatie die u direct aan ons verstrekt bij het gebruik van onze diensten, waaronder uw naam, e-mailadres, telefoonnummer en alle andere informatie die u ervoor kiest te verstrekken. We kunnen ook automatisch bepaalde informatie over uw apparaat verzamelen en hoe u met onze website omgaat, zoals IP-adres, browsertype en gebruiksgegevens.'
+          'RoThi Bouw verwerkt uw persoonsgegevens doordat u gebruik maakt van onze diensten en/of omdat u deze zelf aan ons verstrekt.\n\nVia het contactformulier verwerken wij: voornaam, achternaam, e-mailadres, inhoud van het bericht en eventuele bijlagen.\n\nVia het sollicitatieformulier verwerken wij: voornaam, achternaam, e-mailadres, telefoonnummer, curriculum vitae (CV) en eventuele motivatiebrief of overige bijlagen.'
       },
-      informationUsage: {
-        heading: 'Hoe We Uw Informatie Gebruiken',
+      processingPurpose: {
+        heading: 'Met welk doel en op basis van welke grondslag wij persoonsgegevens verwerken',
         caption:
-          'We gebruiken de verzamelde informatie om onze diensten te leveren, te onderhouden en te verbeteren, om met u te communiceren over onze bouwdiensten, om op uw vragen te reageren en om u technische berichten en ondersteuningsberichten te sturen. We kunnen uw informatie ook gebruiken om uw ervaring te personaliseren en om nieuwe diensten te ontwikkelen.'
+          'RoThi Bouw verwerkt uw persoonsgegevens voor de volgende doelen:\n• Het afhandelen van uw contactverzoek of vraag (grondslag: gerechtvaardigd belang)\n• Het beoordelen van uw sollicitatie en het doorlopen van de sollicitatieprocedure (grondslag: uitvoering van precontractuele maatregelen)\n• Het verzenden van een bevestigingsmail via onze e-maildienst Resend (grondslag: gerechtvaardigd belang)'
       },
-      informationSharing: {
-        heading: 'Delen van Informatie',
+      automatedDecision: {
+        heading: 'Geautomatiseerde besluitvorming',
         caption:
-          'We verkopen, verhandelen of dragen uw persoonlijke informatie niet over aan derden zonder uw toestemming, behalve zoals beschreven in dit beleid. We kunnen uw informatie delen met vertrouwde dienstverleners die ons helpen bij het beheren van onze website en het uitvoeren van ons bedrijf, zolang zij ermee instemmen deze informatie vertrouwelijk te houden.'
+          'RoThi Bouw neemt geen besluiten op basis van geautomatiseerde verwerkingen over zaken die (aanzienlijke) gevolgen kunnen hebben voor personen. Het gaat hier om besluiten die worden genomen door computerprogramma\'s of -systemen, zonder dat daar een mens tussen zit.'
+      },
+      retentionPeriod: {
+        heading: 'Hoe lang we persoonsgegevens bewaren',
+        caption:
+          'RoThi Bouw bewaart uw persoonsgegevens niet langer dan strikt noodzakelijk is om de doelen te realiseren waarvoor uw gegevens worden verzameld:\n• Contactformuliergegevens: maximaal 1 jaar na afhandeling van uw verzoek\n• Sollicitatiegegevens: maximaal 4 weken na afronding van de sollicitatieprocedure, tenzij u toestemming geeft voor een langere bewaartermijn (maximaal 1 jaar)'
       },
       dataSecurity: {
-        heading: 'Gegevensbeveiliging',
+        heading: 'Hoe wij persoonsgegevens beveiligen',
         caption:
-          'We implementeren passende technische en organisatorische maatregelen om uw persoonlijke informatie te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging. Er is echter geen enkele methode van verzending via internet of elektronische opslag 100% veilig, en we kunnen geen absolute beveiliging garanderen.'
+          'RoThi Bouw neemt de bescherming van uw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. Als u de indruk heeft dat uw gegevens niet goed beveiligd zijn of er aanwijzingen zijn van misbruik, neem dan contact op via info@rothibouw.nl.'
       },
       cookies: {
-        heading: 'Cookies en Tracking',
+        heading: 'Cookies en tracking',
         caption:
-          'We gebruiken cookies en vergelijkbare trackingtechnologieën om activiteiten op onze website bij te houden en bepaalde informatie vast te houden. Cookies zijn bestanden met kleine hoeveelheden gegevens die op uw apparaat worden opgeslagen. U kunt uw browser instrueren om alle cookies te weigeren of aan te geven wanneer een cookie wordt verzonden.'
+          'De website van RoThi Bouw maakt geen gebruik van cookies, tracking of analytics. Er worden geen gegevens over uw surfgedrag verzameld.'
+      },
+      thirdParties: {
+        heading: 'Delen van persoonsgegevens met derden',
+        caption:
+          'RoThi Bouw deelt uw persoonsgegevens alleen met derden als dit noodzakelijk is voor de uitvoering van de hierboven beschreven doelen of om te voldoen aan een wettelijke verplichting. Met bedrijven die uw gegevens verwerken in onze opdracht sluiten wij een verwerkersovereenkomst om te zorgen voor eenzelfde niveau van beveiliging en vertrouwelijkheid van uw gegevens.\n\nWij maken gebruik van de volgende dienstverlener(s):\n• Resend (transactionele e-mail): voor het verzenden van bevestigingsmails na het indienen van een contactformulier of sollicitatie. Resend verwerkt hierbij uw e-mailadres.\n• Vercel (websitehosting): voor het hosten van onze website. Vercel kan technische loggegevens verwerken (zoals IP-adressen) in het kader van de dienstverlening.'
       },
       yourRights: {
-        heading: 'Uw Rechten',
+        heading: 'Gegevens inzien, aanpassen of verwijderen',
         caption:
-          'U heeft het recht om toegang te krijgen tot, te corrigeren of te verwijderen van uw persoonlijke informatie. U kunt ook het recht hebben om bepaalde verwerking van uw gegevens te beperken of er bezwaar tegen te maken. Om deze rechten uit te oefenen, neem contact met ons op via de onderstaande informatie. We zullen reageren op uw verzoek in overeenstemming met de toepasselijke wetgeving inzake gegevensbescherming.'
+          'U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen. Daarnaast heeft u het recht om uw eventuele toestemming voor de gegevensverwerking in te trekken of bezwaar te maken tegen de verwerking van uw persoonsgegevens door RoThi Bouw en heeft u het recht op gegevensoverdraagbaarheid.\n\nU kunt een verzoek tot inzage, correctie, verwijdering of gegevensoverdracht van uw persoonsgegevens of een verzoek tot intrekking van uw toestemming of bezwaar op de verwerking van uw persoonsgegevens sturen naar info@rothibouw.nl.\n\nOm er zeker van te zijn dat het verzoek tot inzage door u is gedaan, vragen wij u een kopie van uw identiteitsbewijs met het verzoek mee te sturen. Maak in deze kopie uw pasfoto, MRZ (machine readable zone, de strook met nummers onderaan het paspoort), paspoortnummer en Burgerservicenummer (BSN) zwart. Dit ter bescherming van uw privacy. Wij reageren zo snel mogelijk, maar uiterlijk binnen vier weken, op uw verzoek.\n\nRoThi Bouw wil u er tevens op wijzen dat u de mogelijkheid heeft om een klacht in te dienen bij de nationale toezichthouder, de Autoriteit Persoonsgegevens. Dat kan via de volgende link: https://autoriteitpersoonsgegevens.nl/een-klacht-indienen'
       },
-      changesToPolicy: {
-        heading: 'Wijzigingen in Dit Beleid',
+      changes: {
+        heading: 'Wijzigingen',
         caption:
-          'We kunnen ons Privacybeleid van tijd tot tijd bijwerken. We zullen u op de hoogte stellen van eventuele wijzigingen door het nieuwe Privacybeleid op deze pagina te plaatsen en de datum "laatst bijgewerkt" bij te werken. U wordt geadviseerd dit Privacybeleid periodiek te bekijken voor eventuele wijzigingen.'
-      },
-      contactUs: {
-        heading: 'Contact',
-        caption:
-          'Als u vragen heeft over dit Privacybeleid of onze gegevenspraktijken, neem dan contact met ons op via onze contactpagina of via de contactinformatie op onze website. We zijn toegewijd aan het oplossen van eventuele zorgen die u heeft over uw privacy.'
+          'RoThi Bouw behoudt zich het recht voor om deze privacyverklaring aan te passen. Wijzigingen worden op deze pagina gepubliceerd. Wij raden u aan deze privacyverklaring regelmatig te raadplegen.\n\nDeze privacyverklaring is voor het laatst bijgewerkt op 25 april 2026.'
       }
     }
   },
 
   // Terms & Conditions Page
+  // TODO: Add terms and conditions content
   termsConditions: {
     heading: 'Algemene Voorwaarden',
-    subtitle: 'Controleer onze algemene voorwaarden die uw gebruik van onze diensten bepalen.',
-    sections: {
-      acceptanceOfTerms: {
-        heading: 'Aanvaarding van Voorwaarden',
-        caption:
-          'Door toegang te krijgen tot en gebruik te maken van de RoThi Bouw website en diensten, gaat u akkoord met deze Algemene Voorwaarden. Als u het niet eens bent met een deel van deze voorwaarden, mag u onze website of diensten niet gebruiken. Deze voorwaarden zijn van toepassing op alle bezoekers, gebruikers en anderen die toegang hebben tot of gebruik maken van onze diensten.'
-      },
-      servicesDescription: {
-        heading: 'Beschrijving van Diensten',
-        caption:
-          'RoThi Bouw biedt bouwdiensten aan, waaronder dakconstructie en -reparaties, timmerwerk, renovaties, dakkapellen, tuinoverkappingen en muurconstructie. Alle diensten zijn onder voorbehoud van beschikbaarheid en kunnen op elk moment worden gewijzigd of stopgezet. Dienstbeschrijvingen, prijzen en beschikbaarheid kunnen zonder voorafgaande kennisgeving worden gewijzigd.'
-      },
-      userResponsibilities: {
-        heading: 'Gebruikersverantwoordelijkheden',
-        caption:
-          'U stemt ermee in onze website alleen te gebruiken voor wettige doeleinden en op een manier die de rechten van anderen niet schendt, beperkt of belemmert bij het gebruik en plezier van de website. U bent verantwoordelijk voor het handhaven van de vertrouwelijkheid van uw accountinformatie en voor alle activiteiten die plaatsvinden onder uw account.'
-      },
-      intellectualProperty: {
-        heading: 'Intellectueel Eigendom',
-        caption:
-          "Alle inhoud op deze website, inclusief maar niet beperkt tot tekst, afbeeldingen, logo's, afbeeldingen en software, is eigendom van RoThi Bouw of haar inhoudsleveranciers en wordt beschermd door Nederlandse en internationale auteursrechtwetten. U mag geen inhoud reproduceren, distribueren of afgeleide werken maken zonder onze uitdrukkelijke schriftelijke toestemming."
-      },
-      limitationOfLiability: {
-        heading: 'Beperking van Aansprakelijkheid',
-        caption:
-          'RoThi Bouw is niet aansprakelijk voor indirecte, incidentele, speciale, gevolgschade of bestraffende schade die voortvloeit uit uw gebruik van of onvermogen om onze diensten te gebruiken. Onze totale aansprakelijkheid voor eventuele claims onder deze voorwaarden mag niet meer bedragen dan het bedrag dat u voor onze diensten heeft betaald in de twaalf maanden voorafgaand aan de claim.'
-      },
-      warranties: {
-        heading: 'Garanties',
-        caption:
-          'We garanderen dat onze bouwdiensten op een professionele en vakkundige manier worden uitgevoerd in overeenstemming met industrienormen. We geven echter geen garanties met betrekking tot specifieke resultaten of uitkomsten. Alle garanties zijn onderworpen aan de voorwaarden van schriftelijke overeenkomsten voor specifieke projecten.'
-      },
-      changesToTerms: {
-        heading: 'Wijzigingen in Voorwaarden',
-        caption:
-          'We behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. We zullen u op de hoogte stellen van belangrijke wijzigingen door de nieuwe voorwaarden op deze pagina te plaatsen en de datum "laatst bijgewerkt" bij te werken. Uw voortgezet gebruik van onze diensten na eventuele wijzigingen vormt acceptatie van de nieuwe voorwaarden.'
-      },
-      governingLaw: {
-        heading: 'Toepasselijk Recht',
-        caption:
-          'Deze algemene voorwaarden worden beheerst door en geïnterpreteerd in overeenstemming met de wetten van Nederland. Eventuele geschillen die voortvloeien uit deze voorwaarden of uw gebruik van onze diensten vallen onder de exclusieve jurisdictie van de Nederlandse rechtbanken.'
-      }
-    }
+    subtitle: 'Algemene voorwaarden - inhoud volgt',
+    sections: {}
   },
 
   // Service Detail Pages
   services: {
-    renovaties: {
+    renovations: {
       title: 'Ver- en aanbouwen',
       descriptionTitle: 'Complete renovatieoplossingen',
       description:
@@ -380,7 +346,7 @@ export const translations = {
         f5: 'E/W-installaties'
       }
     },
-    dakwerken: {
+    roofing: {
       title: 'Dakwerken',
       descriptionTitle: 'Dakconstructie & Reparaties',
       description:
@@ -394,7 +360,7 @@ export const translations = {
         f6: 'Lood- en zinkwerk'
       }
     },
-    timmerwerk: {
+    carpentry: {
       title: 'Timmerwerk',
       descriptionTitle: 'Vakkundig timmerwerk voor elk project',
       description:
@@ -405,7 +371,7 @@ export const translations = {
         f3: 'Binnenbetimmering en afwerking'
       }
     },
-    verduurzaming: {
+    sustainability: {
       title: 'Verduurzaming',
       descriptionTitle: 'Duurzame oplossingen voor uw woning',
       description:
@@ -418,7 +384,7 @@ export const translations = {
         f5: 'Mogelijkheid op subsidies'
       }
     },
-    houtConstructies: {
+    woodConstruction: {
       title: 'Hout constructies',
       descriptionTitle: 'Houtconstructies & Maatwerk',
       description:
@@ -482,14 +448,25 @@ export const translations = {
       after: 'Na'
     },
 
+    // Specification labels
+    specs: {
+      material: 'Materiaal',
+      surfaceArea: 'Oppervlakte',
+      executionTime: 'Uitvoeringstijd',
+      warranty: 'Garantie',
+      location: 'Locatie',
+      year: 'Jaar',
+      category: 'Categorie'
+    },
+
     // Category labels
     categories: {
       all: 'Alle projecten',
-      renovaties: 'Ver- en aanbouwen',
-      dakwerken: 'Dakwerken',
-      timmerwerk: 'Timmerwerk',
-      verduurzaming: 'Verduurzaming',
-      houtConstructies: 'Hout constructies'
+      renovations: 'Ver- en aanbouwen',
+      roofing: 'Dakwerken',
+      carpentry: 'Timmerwerk',
+      sustainability: 'Verduurzaming',
+      woodConstruction: 'Hout constructies'
     },
 
     // Project items

@@ -27,7 +27,7 @@ export const servicesData = {
       titleKey: 'home.services.renovations.title',
       descriptionKey: 'home.services.renovations.description',
       link: {
-        href: '/diensten/ver-en-aanbouwen',
+        href: '/services/renovations',
         children: 'common.learnMore'
       }
     },
@@ -36,7 +36,7 @@ export const servicesData = {
       titleKey: 'home.services.roofing.title',
       descriptionKey: 'home.services.roofing.description',
       link: {
-        href: '/diensten/dakwerken',
+        href: '/services/roofing',
         children: 'common.learnMore'
       }
     },
@@ -45,7 +45,7 @@ export const servicesData = {
       titleKey: 'home.services.carpentry.title',
       descriptionKey: 'home.services.carpentry.description',
       link: {
-        href: '/diensten/timmerwerk',
+        href: '/services/carpentry',
         children: 'common.learnMore'
       }
     },
@@ -54,7 +54,7 @@ export const servicesData = {
       titleKey: 'home.services.sustainability.title',
       descriptionKey: 'home.services.sustainability.description',
       link: {
-        href: '/diensten/verduurzaming',
+        href: '/services/sustainability',
         children: 'common.learnMore'
       }
     },
@@ -63,7 +63,7 @@ export const servicesData = {
       titleKey: 'home.services.woodConstructions.title',
       descriptionKey: 'home.services.woodConstructions.description',
       link: {
-        href: '/diensten/hout-constructies',
+        href: '/services/wood-construction',
         children: 'common.learnMore'
       }
     }
@@ -76,7 +76,7 @@ export const aboutTeaserData = {
   captionKey: 'home.aboutTeaser.caption',
   image: '/assets/home/about.jpeg',
   primaryBtn: {
-    href: '/over-ons',
+    href: '/about',
     children: 'home.aboutTeaser.button'
   }
 };

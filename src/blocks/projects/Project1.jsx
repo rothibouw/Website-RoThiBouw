@@ -65,7 +65,7 @@ export default function Project1({
           <MotionWrapper delay={0.3}>
             <Stack direction="row" justifyContent="center">
               <ButtonAnimationWrapper>
-                <Button component={NextLink} href="/projecten" variant="outlined" size="large" sx={{ px: 4 }}>
+                <Button component={NextLink} href="/projects" variant="outlined" size="large" sx={{ px: 4 }}>
                   {t(viewAllBtnKey)}
                 </Button>
               </ButtonAnimationWrapper>

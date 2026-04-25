@@ -222,7 +222,7 @@ export const translations = {
     hero: {
       title: 'Two friends,',
       titleHighlight: 'one mission',
-      description: 'Craftsmanship, integrity and personal attention — that is what RoThi Bouw stands for.'
+      description: '...'
     },
     story: {
       heading: 'From dream to',
@@ -230,19 +230,6 @@ export const translations = {
       p1: 'RoThi Bouw was founded out of the shared passion of Roy and Thijs for construction and craftsmanship. Two friends who believed that quality work and personal attention should go hand in hand.',
       p2: 'What started as small jobs for friends and family quickly grew into a fully fledged construction company. Today we are proud to have completed many projects, always with the same dedication and eye for detail.',
       p3: 'We specialise in carpentry, roofing, renovations and extensions — and we approach every project as if it were our own.'
-    },
-    founders: {
-      headingKey: 'Who is RoThi Bouw?',
-      captionKey:
-        'The skilled craftsmen behind RoThi Bouw - two friends with a shared vision to deliver exceptional craftsmanship and quality construction',
-      roy: {
-        role: 'Co-founder',
-        quote: '"Building is more than stacking bricks. It is craftsmanship, trust and delivering something people can truly be proud of."'
-      },
-      thijs: {
-        role: 'Co-founder',
-        quote: '"Quality is in the details. I am not satisfied until every joint, every edge and every finish is exactly right."'
-      }
     },
     timeline: {
       heading: 'Our Journey',
@@ -270,11 +257,11 @@ export const translations = {
       heading: 'The people behind RoThi Bouw',
       roy: {
         role: 'Co-founder',
-        quote: '"..."'
+        quote: '"Building is more than stacking bricks. It is craftsmanship, trust and delivering something people can truly be proud of."'
       },
       thijs: {
         role: 'Co-founder',
-        quote: '"..."'
+        quote: '"Quality is in the details. I am not satisfied until every joint, every edge and every finish is exactly right."'
       }
     }
   },
@@ -282,102 +269,67 @@ export const translations = {
   // Privacy Policy Page
   privacyPolicy: {
     heading: 'Privacy Policy',
-    subtitle: 'Your privacy is important to us. Learn how we collect, use, and protect your data.',
+    subtitle: 'RoThi Bouw is responsible for processing your personal data.',
     sections: {
       informationCollection: {
-        heading: 'Information Collection',
+        heading: 'Personal Data We Process',
         caption:
-          'We collect information that you provide directly to us when using our services, including your name, email address, phone number, and any other information you choose to provide. We may also automatically collect certain information about your device and how you interact with our website, such as IP address, browser type, and usage data.'
+          'RoThi Bouw processes your personal data because you use our services and/or because you provide it to us directly.\n\nVia the contact form we process: first name, last name, email address, message content and any attachments.\n\nVia the job application form we process: first name, last name, email address, phone number, curriculum vitae (CV) and any motivation letter or other attachments.'
       },
-      informationUsage: {
-        heading: 'How We Use Your Information',
+      processingPurpose: {
+        heading: 'Purpose and Legal Basis for Processing',
         caption:
-          'We use the information we collect to provide, maintain, and improve our services, to communicate with you about our construction services, to respond to your inquiries, and to send you technical notices and support messages. We may also use your information to personalize your experience and to develop new services.'
+          'RoThi Bouw processes your personal data for the following purposes:\n• Handling your contact request or inquiry (legal basis: legitimate interest)\n• Assessing your job application and processing the application procedure (legal basis: execution of pre-contractual measures)\n• Sending a confirmation email via our Resend email service (legal basis: legitimate interest)'
       },
-      informationSharing: {
-        heading: 'Information Sharing',
+      automatedDecision: {
+        heading: 'Automated Decision-Making',
         caption:
-          'We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy. We may share your information with trusted service providers who assist us in operating our website and conducting our business, as long as they agree to keep this information confidential.'
+          'RoThi Bouw does not make decisions based on automated processing that could have significant consequences for individuals. This refers to decisions made by computer programs or systems without human involvement.'
+      },
+      retentionPeriod: {
+        heading: 'How Long We Retain Personal Data',
+        caption:
+          'RoThi Bouw does not retain your personal data longer than strictly necessary to achieve the purposes for which your data is collected:\n• Contact form data: maximum 1 year after handling your request\n• Job application data: maximum 4 weeks after completion of the application procedure, unless you give permission for a longer retention period (maximum 1 year)'
       },
       dataSecurity: {
-        heading: 'Data Security',
+        heading: 'How We Protect Personal Data',
         caption:
-          'We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.'
+          'RoThi Bouw takes the protection of your data seriously and implements appropriate measures to prevent misuse, loss, unauthorized access, unwanted disclosure and unauthorized modification. If you believe your data is not properly secured or there are indications of misuse, please contact us at info@rothibouw.nl.'
       },
       cookies: {
         heading: 'Cookies and Tracking',
         caption:
-          'We use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with small amounts of data that are stored on your device. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.'
+          'RoThi Bouw\'s website does not use cookies, tracking or analytics. No data about your browsing behavior is collected.'
+      },
+      thirdParties: {
+        heading: 'Sharing Personal Data with Third Parties',
+        caption:
+          'RoThi Bouw only shares your personal data with third parties when necessary to fulfill the purposes described above or to comply with a legal obligation. We sign a data processing agreement with companies that process your data on our behalf to ensure the same level of security and confidentiality of your data.\n\nWe use the following service provider(s):\n• Resend (transactional email): for sending confirmation emails after submitting a contact form or job application. Resend processes your email address for this purpose.\n• Vercel (website hosting): for hosting our website. Vercel may process technical log data (such as IP addresses) in the context of providing the service.'
       },
       yourRights: {
-        heading: 'Your Rights',
+        heading: 'Access, Correction and Deletion of Data',
         caption:
-          'You have the right to access, correct, or delete your personal information. You may also have the right to restrict or object to certain processing of your data. To exercise these rights, please contact us using the information provided below. We will respond to your request in accordance with applicable data protection laws.'
+          'You have the right to access, correct or delete your personal data. You also have the right to withdraw any consent for data processing, object to the processing of your personal data by RoThi Bouw, and you have the right to data portability.\n\nYou can submit a request to access, correct, delete or transfer your personal data, or a request to withdraw your consent or object to the processing of your personal data to info@rothibouw.nl.\n\nTo ensure that the request for access is made by you, we ask you to include a copy of your identity document with the request. In this copy, please blacken out your photo, MRZ (machine readable zone, the strip of numbers at the bottom of your passport), passport number and Citizen Service Number (BSN). This is to protect your privacy. We will respond to your request as quickly as possible, but within four weeks.\n\nRoThi Bouw also wishes to inform you that you have the option to file a complaint with the national supervisory authority, the Dutch Data Protection Authority. You can do so via the following link: https://autoriteitpersoonsgegevens.nl/en/complaints'
       },
-      changesToPolicy: {
-        heading: 'Changes to This Policy',
+      changes: {
+        heading: 'Changes',
         caption:
-          'We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "last updated" date. You are advised to review this Privacy Policy periodically for any changes.'
-      },
-      contactUs: {
-        heading: 'Contact Us',
-        caption:
-          'If you have any questions about this Privacy Policy or our data practices, please contact us through our contact page or using the contact information provided on our website. We are committed to resolving any concerns you may have about your privacy.'
+          'RoThi Bouw reserves the right to modify this privacy statement. Changes will be published on this page. We recommend that you review this privacy statement regularly.\n\nThis privacy statement was last updated on April 25, 2026.'
       }
     }
   },
 
   // Terms & Conditions Page
+  // TODO: Add terms and conditions content
   termsConditions: {
     heading: 'Terms & Conditions',
-    subtitle: 'Please review our terms and conditions that govern your use of our services.',
-    sections: {
-      acceptanceOfTerms: {
-        heading: 'Acceptance of Terms',
-        caption:
-          'By accessing and using the RoThi Bouw website and services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website or services. These terms apply to all visitors, users, and others who access or use our services.'
-      },
-      servicesDescription: {
-        heading: 'Services Description',
-        caption:
-          'RoThi Bouw provides construction services including roof construction and repairs, timber work, renovations, dormer windows, garden canopies, and wall construction. All services are subject to availability and may be modified or discontinued at any time. Service descriptions, pricing, and availability are subject to change without notice.'
-      },
-      userResponsibilities: {
-        heading: 'User Responsibilities',
-        caption:
-          "You agree to use our website only for lawful purposes and in a manner that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the website. You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account."
-      },
-      intellectualProperty: {
-        heading: 'Intellectual Property',
-        caption:
-          'All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of RoThi Bouw or its content suppliers and is protected by Dutch and international copyright laws. You may not reproduce, distribute, or create derivative works from any content without our express written permission.'
-      },
-      limitationOfLiability: {
-        heading: 'Limitation of Liability',
-        caption:
-          'RoThi Bouw shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use our services. Our total liability for any claims under these terms shall not exceed the amount paid by you for our services in the twelve months preceding the claim.'
-      },
-      warranties: {
-        heading: 'Warranties and Guarantees',
-        caption:
-          'We warrant that our construction services will be performed in a professional and workmanlike manner in accordance with industry standards. However, we make no warranties regarding specific results or outcomes. All warranties are subject to the terms of any written agreements for specific projects.'
-      },
-      changesToTerms: {
-        heading: 'Changes to Terms',
-        caption:
-          'We reserve the right to modify these terms at any time. We will notify you of any material changes by posting the new terms on this page and updating the "last updated" date. Your continued use of our services after any changes constitutes acceptance of the new terms.'
-      },
-      governingLaw: {
-        heading: 'Governing Law',
-        caption:
-          'These terms and conditions are governed by and construed in accordance with the laws of the Netherlands. Any disputes arising from these terms or your use of our services shall be subject to the exclusive jurisdiction of the Dutch courts.'
-      }
-    }
+    subtitle: 'Terms and conditions - content coming soon',
+    sections: {}
   },
 
   // Service Detail Pages
   services: {
-    renovaties: {
+    renovations: {
       title: 'Extensions & Renovations',
       descriptionTitle: 'Complete Renovation Solutions',
       description:
@@ -391,7 +343,7 @@ export const translations = {
         f6: 'Structural modifications'
       }
     },
-    dakwerken: {
+    roofing: {
       title: 'Roofing',
       descriptionTitle: 'Professional Roof Construction & Repairs',
       description:
@@ -405,7 +357,7 @@ export const translations = {
         f6: 'Lead and zinc work'
       }
     },
-    timmerwerk: {
+    carpentry: {
       title: 'Timber Work',
       descriptionTitle: 'Expert Carpentry for Every Project',
       description:
@@ -416,7 +368,7 @@ export const translations = {
         f3: 'Wood cladding for facades'
       }
     },
-    verduurzaming: {
+    sustainability: {
       title: 'Sustainability',
       descriptionTitle: 'Sustainable Construction Solutions',
       description:
@@ -430,7 +382,7 @@ export const translations = {
         f6: 'Sustainable renovation techniques'
       }
     },
-    houtConstructies: {
+    woodConstruction: {
       title: 'Wood Construction',
       descriptionTitle: 'Expert Wood Construction Services',
       description:
@@ -499,12 +451,11 @@ export const translations = {
     // Category labels
     categories: {
       all: 'All Projects',
-      buitenconstructies: 'Outdoor Constructions',
-      dakwerken: 'Roofing',
-      timmerwerk: 'Carpentry',
-      renovaties: 'Extensions & Renovations',
-      verduurzaming: 'Sustainability',
-      houtConstructies: 'Wood Constructions'
+      roofing: 'Roofing',
+      carpentry: 'Carpentry',
+      renovations: 'Extensions & Renovations',
+      sustainability: 'Sustainability',
+      woodConstruction: 'Wood Constructions'
     },
 
     // Specification labels
@@ -512,7 +463,10 @@ export const translations = {
       material: 'Material',
       surfaceArea: 'Surface Area',
       executionTime: 'Execution Time',
-      warranty: 'Warranty'
+      warranty: 'Warranty',
+      location: 'Location',
+      year: 'Year',
+      category: 'Category'
     },
 
     // Project items

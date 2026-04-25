@@ -32,6 +32,7 @@ export const mainMetadata = {
     'timmerbedrijf',
     'timmerman',
     'aannemer',
+    'Hooge Mierde',
     'Reusel',
     'Eindhoven',
     'Tilburg',
@@ -74,20 +75,7 @@ export const aboutMetadata = {
   openGraph: {
     title: 'Over ons',
     description: 'Vakmanschap en persoonlijke aanpak. Leer het team achter RoThi Bouw kennen.',
-    url: '/over-ons',
-    ...ogCommon
-  }
-};
-
-// SERVICES — ready for when a /services index page is created
-export const servicesMetadata = {
-  title: 'Diensten',
-  description:
-    'RoThi Bouw biedt nieuwbouw, verbouwingen, dakwerk en afbouw in de regio Reusel, Eindhoven en Tilburg. Bekijk onze diensten en vraag een vrijblijvende offerte aan.',
-  openGraph: {
-    title: 'Onze diensten',
-    description: 'Nieuwbouw, verbouwingen, dakwerk en afbouw in Noord-Brabant. Bekijk wat wij voor u kunnen betekenen.',
-    url: '/diensten',
+    url: '/about',
     ...ogCommon
   }
 };
@@ -100,7 +88,7 @@ export const projectsMetadata = {
   openGraph: {
     title: 'Projecten',
     description: "Foto's en beschrijvingen van afgeronde bouwprojecten door RoThi Bouw.",
-    url: '/projecten',
+    url: '/projects',
     ...ogCommon
   }
 };

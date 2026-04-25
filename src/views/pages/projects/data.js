@@ -7,23 +7,23 @@ export const projectCategories = [
     labelKey: 'projects.categories.all'
   },
   {
-    id: 'renovaties',
-    labelKey: 'projects.categories.renovaties'
+    id: 'renovations',
+    labelKey: 'projects.categories.renovations'
   },
   {
-    id: 'dakwerken',
-    labelKey: 'projects.categories.dakwerken'
+    id: 'roofing',
+    labelKey: 'projects.categories.roofing'
   },
   {
-    id: 'timmerwerk',
-    labelKey: 'projects.categories.timmerwerk'
+    id: 'carpentry',
+    labelKey: 'projects.categories.carpentry'
   },
   {
-    id: 'verduurzaming',
-    labelKey: 'projects.categories.verduurzaming'
+    id: 'sustainability',
+    labelKey: 'projects.categories.sustainability'
   },
   {
-    id: 'houtConstructies',
-    labelKey: 'projects.categories.houtConstructies'
+    id: 'woodConstruction',
+    labelKey: 'projects.categories.woodConstruction'
   }
 ];

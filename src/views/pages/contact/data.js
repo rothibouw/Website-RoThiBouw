@@ -21,7 +21,7 @@ export const contactData = {
           children: 'contact.phoneCard.roy'
         },
         {
-          href: 'tel:+31 (0)6 57 41 5909',
+          href: 'tel:+31 (0)6 57 41 59 09',
           children: 'contact.phoneCard.thijs'
         }
       ]

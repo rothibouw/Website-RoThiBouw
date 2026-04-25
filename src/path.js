@@ -2,10 +2,9 @@
 
 export const PAGE_PATH = {
   homePage: '/',
-  aboutPage: '/over-ons',
-  projectsPage: '/projecten',
+  aboutPage: '/about',
+  projectsPage: '/projects',
   contactPage: '/contact',
-  servicesPage: '/diensten',
   privacyPolicyPage: '/privacy-policy',
   termsConditionsPage: '/terms-conditions'
 };
