@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 // @react
 import { createContext, useContext, useEffect, useRef, useState } from 'react';
 
+// @next
+import { usePathname } from 'next/navigation';
+
 // Create context for menu close function
 const MenuPopperContext = createContext(null);
 
@@ -34,6 +37,7 @@ export default function MenuPopper({
   menuTextColor
 }) {
   const theme = useTheme();
+  const pathname = usePathname();
 
   const anchorRef = useRef(null);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -49,6 +53,11 @@ export default function MenuPopper({
   useEffect(() => {
     defaultOpen && setAnchorEl(anchorRef.current);
   }, [defaultOpen]);
+
+  // Close menu when route changes
+  useEffect(() => {
+    closeMenu();
+  }, [pathname]);
 
   const open = Boolean(anchorEl);
   const id = open ? 'menu-popper' : undefined;

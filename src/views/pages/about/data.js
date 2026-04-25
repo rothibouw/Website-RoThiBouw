@@ -54,7 +54,7 @@ export const teamData = {
       quoteKey: 'about.founders.roy.quote',
       avatar: '/assets/about/roy.png',
       phone: '+31 (0)6 81 39 97 41',
-      email: 'roy@rothibouw.nl'
+      email: 'royvanstrijdhoven@rothibouw.nl'
       // linkedin: 'https://linkedin.com/in/roy-van-strijdhoven'
     },
     {
@@ -63,7 +63,7 @@ export const teamData = {
       quoteKey: 'about.founders.thijs.quote',
       avatar: '/assets/about/thijs.jpeg',
       phone: '+31 (0)6 57 41 59 09',
-      email: 'thijs@rothibouw.nl'
+      email: 'thijsvangisbergen@rothibouw.nl'
       // linkedin: 'https://linkedin.com/in/thijs-van-gisbergen'
     }
   ]

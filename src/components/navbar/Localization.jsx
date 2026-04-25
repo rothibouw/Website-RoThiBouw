@@ -2,7 +2,10 @@
 import PropTypes from 'prop-types';
 
 // @react
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
+// @next
+import { usePathname } from 'next/navigation';
 
 // @mui
 import { useTheme } from '@mui/material/styles';
@@ -27,6 +30,7 @@ import { useTranslation, SUPPORTED_LANGUAGES } from '@/i18n';
 
 export default function Localization({ ...rest }) {
   const theme = useTheme();
+  const pathname = usePathname();
   const { onChangeLanguage } = useConfig();
   const { language } = useTranslation();
 
@@ -35,6 +39,16 @@ export default function Localization({ ...rest }) {
   const handleClick = (event) => {
     setAnchorEl(anchorEl ? null : event.currentTarget);
   };
+
+  const handleLanguageChange = (languageCode) => {
+    onChangeLanguage(languageCode);
+    setAnchorEl(null);
+  };
+
+  // Close menu when route changes
+  useEffect(() => {
+    setAnchorEl(null);
+  }, [pathname]);
 
   const open = Boolean(anchorEl);
   const id = open ? 'menu-popper' : undefined;
@@ -82,7 +96,7 @@ export default function Localization({ ...rest }) {
                         key={index}
                         sx={{ borderRadius: 4, mb: 0.5 }}
                         selected={language === locale.code}
-                        onClick={() => onChangeLanguage(locale.code)}
+                        onClick={() => handleLanguageChange(locale.code)}
                       >
                         <ListItemText primary={`${locale.name} (${locale.nativeName})`} primaryTypographyProps={{ variant: 'subtitle1' }} />
                       </ListItemButton>

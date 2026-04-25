@@ -29,7 +29,7 @@ export const createProjectDetailSections = (project) => {
     sections.push({
       importFunc: () => import('@/blocks/about').then((m) => ({ default: m.OurStory1 })),
       props: {
-        headingKey: 'projects.whatWeDidForThisProject',
+        headingKey: 'projects.aboutThisProject',
         highlightKey: '',
         paragraphKeys: [project.detailDescriptionKey]
       }

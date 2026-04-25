@@ -272,49 +272,55 @@ export const translations = {
     heading: 'Privacy Policy',
     subtitle: 'RoThi Bouw is responsible for processing your personal data.',
     sections: {
+      dataController: {
+        heading: 'Identity of the Data Controller',
+        caption:
+          'RoThi Bouw, established in the Netherlands, is responsible for processing personal data as described in this privacy statement.\n\nContact: info@rothibouw.nl'
+      },
       informationCollection: {
         heading: 'Personal Data We Process',
         caption:
-          'RoThi Bouw processes your personal data because you use our services and/or because you provide it to us directly.\n\nVia the contact form we process: first name, last name, email address, message content and any attachments.\n\nVia the job application form we process: first name, last name, email address, phone number, curriculum vitae (CV) and any motivation letter or other attachments.'
+          'RoThi Bouw processes personal data that you provide to us yourself or that is generated through the use of our services and website.\n\nVia the contact form:\n• First name\n• Last name\n• Email address\n• Message content\n• Any attachments\n\nVia the job application form:\n• First name\n• Last name\n• Email address\n• Phone number\n• Curriculum vitae (CV)\n• Motivation letter and/or other attachments'
       },
       processingPurpose: {
-        heading: 'Purpose and Legal Basis for Processing',
+        heading: 'Purposes and Legal Basis for Processing',
         caption:
-          'RoThi Bouw processes your personal data for the following purposes:\n• Handling your contact request or inquiry (legal basis: legitimate interest)\n• Assessing your job application and processing the application procedure (legal basis: execution of pre-contractual measures)\n• Sending a confirmation email via our Resend email service (legal basis: legitimate interest)'
-      },
-      automatedDecision: {
-        heading: 'Automated Decision-Making',
-        caption:
-          'RoThi Bouw does not make decisions based on automated processing that could have significant consequences for individuals. This refers to decisions made by computer programs or systems without human involvement.'
+          'We process personal data solely for the following purposes and based on the legal grounds stated:\n\n• Responding to and handling contact requests (legal basis: legitimate interest)\n• Processing job applications and conducting the application procedure (legal basis: pre-contractual measures)\n• Sending system and confirmation emails via our email service (legal basis: legitimate interest)'
       },
       retentionPeriod: {
-        heading: 'How Long We Retain Personal Data',
+        heading: 'Retention Periods',
         caption:
-          'RoThi Bouw does not retain your personal data longer than strictly necessary to achieve the purposes for which your data is collected:\n• Contact form data: maximum 1 year after handling your request\n• Job application data: maximum 4 weeks after completion of the application procedure, unless you give permission for a longer retention period (maximum 1 year)'
-      },
-      dataSecurity: {
-        heading: 'How We Protect Personal Data',
-        caption:
-          'RoThi Bouw takes the protection of your data seriously and implements appropriate measures to prevent misuse, loss, unauthorized access, unwanted disclosure and unauthorized modification. If you believe your data is not properly secured or there are indications of misuse, please contact us at info@rothibouw.nl.'
-      },
-      cookies: {
-        heading: 'Cookies and Tracking',
-        caption: "RoThi Bouw's website does not use cookies, tracking or analytics. No data about your browsing behavior is collected."
+          'RoThi Bouw does not retain personal data longer than necessary for the purposes for which it was collected:\n\n• Contact forms: maximum 12 months after handling the request\n• Application data: maximum 4 weeks after completion of the procedure, unless consent has been given for extension up to a maximum of 12 months'
       },
       thirdParties: {
         heading: 'Sharing Personal Data with Third Parties',
         caption:
-          'RoThi Bouw only shares your personal data with third parties when necessary to fulfill the purposes described above or to comply with a legal obligation. We sign a data processing agreement with companies that process your data on our behalf to ensure the same level of security and confidentiality of your data.\n\nWe use the following service provider(s):\n• Resend (transactional email): for sending confirmation emails after submitting a contact form or job application. Resend processes your email address for this purpose.\n• Vercel (website hosting): for hosting our website. Vercel may process technical log data (such as IP addresses) in the context of providing the service.'
+          'RoThi Bouw only shares personal data with third parties if necessary for the provision of our services or to comply with a legal obligation.\n\nWe conclude data processing agreements with processors to ensure an appropriate level of security and confidentiality.\n\nWe use the following processors:\n• Resend – for sending transactional emails\n• Vercel – for hosting and technical infrastructure of the website (whereby technical log data such as IP addresses may be processed)'
+      },
+      cookies: {
+        heading: 'Cookies and Tracking',
+        caption:
+          'Our website only uses functional cookies that are necessary for the correct functioning of the website.\n\nNo tracking cookies or analytical cookies are placed and no profiling of visitors takes place.'
+      },
+      automatedDecision: {
+        heading: 'Automated Decision-Making',
+        caption:
+          'RoThi Bouw does not make decisions based on automated processing that have legal consequences or could otherwise have a significant impact on individuals.'
       },
       yourRights: {
-        heading: 'Access, Correction and Deletion of Data',
+        heading: 'Rights of Individuals',
         caption:
-          'You have the right to access, correct or delete your personal data. You also have the right to withdraw any consent for data processing, object to the processing of your personal data by RoThi Bouw, and you have the right to data portability.\n\nYou can submit a request to access, correct, delete or transfer your personal data, or a request to withdraw your consent or object to the processing of your personal data to info@rothibouw.nl.\n\nTo ensure that the request for access is made by you, we ask you to include a copy of your identity document with the request. In this copy, please blacken out your photo, MRZ (machine readable zone, the strip of numbers at the bottom of your passport), passport number and Citizen Service Number (BSN). This is to protect your privacy. We will respond to your request as quickly as possible, but within four weeks.\n\nRoThi Bouw also wishes to inform you that you have the option to file a complaint with the national supervisory authority, the Dutch Data Protection Authority. You can do so via the following link: https://autoriteitpersoonsgegevens.nl/en/complaints'
+          'Under the General Data Protection Regulation (GDPR), you have the following rights:\n\n• Right to access\n• Right to rectification\n• Right to erasure\n• Right to restrict processing\n• Right to object\n• Right to data portability\n\nRequests can be submitted to info@rothibouw.nl.\n\nTo verify your identity, you may be asked to provide a copy of your identity document with sensitive data (such as BSN, MRZ and photo) redacted.\n\nWe will respond to your request within four weeks.'
+      },
+      dataSecurity: {
+        heading: 'Security of Personal Data',
+        caption:
+          'RoThi Bouw takes appropriate technical and organizational measures to protect personal data against loss, unauthorized access, misuse or unlawful processing.\n\nIf there is evidence of misuse or a data breach, you can contact us at info@rothibouw.nl.'
       },
       changes: {
         heading: 'Changes',
         caption:
-          'RoThi Bouw reserves the right to modify this privacy statement. Changes will be published on this page. We recommend that you review this privacy statement regularly.\n\nThis privacy statement was last updated on April 25, 2026.'
+          'RoThi Bouw reserves the right to modify this privacy statement. The most current version will always be published on the website.\n\nVersion: April 2026'
       }
     }
   },
@@ -437,7 +443,7 @@ export const translations = {
     aboutProject: 'About this Project',
     information: 'Project Information',
     projectNotFound: 'Project not found',
-    whatWeDidForThisProject: 'What we did for this project',
+    aboutThisProject: 'What we did for this project',
     seeOurOtherProjects: 'See Our Other Projects',
 
     // Transformation section
@@ -549,6 +555,15 @@ export const translations = {
     filterByType: 'Filter by type',
     noVacancies: 'There are currently no open vacancies.',
     apply: 'Apply',
+    viewVacancy: 'View vacancy',
+    vacancyNotFound: 'Vacancy not found',
+    detail: {
+      applyNow: 'Apply now',
+      backToVacancies: 'Back to vacancies',
+      tasksHeading: 'Your tasks',
+      requirementsHeading: 'What we ask',
+      offerHeading: 'What we offer'
+    },
     intro: {
       heading: 'Join the team at',
       highlight: 'RoThi Bouw',
@@ -566,8 +581,32 @@ export const translations = {
         title: 'Carpenter',
         description:
           'As a carpenter at RoThi Bouw, you work on diverse projects: from roof constructions to wood constructions and renovations. You work in a close-knit team of craftsmen where quality and enjoyment come first.',
+        intro:
+          'As a carpenter at RoThi Bouw, you are the craftsmanship behind our projects. From roof constructions and window frames to wood constructions and complete renovations — you make sure everything is right. You work together in a close-knit, young team where quality and enjoyment go hand in hand. No two days are the same, which makes the work so varied and challenging.',
         hours: '32-40 hours per week',
-        contract: 'Permanent employment'
+        contract: 'Permanent employment',
+        tasks: {
+          task1: 'Working on roof constructions, rafters and roof boarding',
+          task2: 'Installing window frames, doors, stairs and floors',
+          task3: "Building wood constructions such as pergolas, carports and extensions",
+          task4: 'Carrying out renovations and refurbishments',
+          task5: 'Collaborating with fellow craftsmen on the construction site',
+          task6: 'Working from construction drawings and ensuring quality'
+        },
+        requirements: {
+          req1: 'MBO diploma Carpentry level 3 or 4',
+          req2: 'Minimum 2 years of work experience in the carpentry trade',
+          req3: "Driver's licence B (own transport preferred)",
+          req4: 'Ability to work independently and accurately',
+          req5: 'Team player with a positive attitude'
+        },
+        offer: {
+          item1: 'Market-competitive salary in line with your experience',
+          item2: '25 holiday days per year',
+          item3: 'Lease car or travel allowance',
+          item4: 'Personal guidance and training opportunities',
+          item5: 'A friendly, informal team at a young and growing company'
+        }
       }
     },
     applyForm: {

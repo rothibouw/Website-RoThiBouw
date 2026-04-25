@@ -2,10 +2,11 @@
 import PropTypes from 'prop-types';
 
 // @react
-import { useCallback, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 
 // @mui
 import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
 
@@ -20,6 +21,7 @@ export default function FileUpload({ onFileSelect }) {
   const { t } = useTranslation();
   const [isDragging, setIsDragging] = useState(false);
   const [fileName, setFileName] = useState('');
+  const inputRef = useRef(null);
 
   const handleDragEnter = (e) => {
     e.preventDefault();
@@ -61,13 +63,46 @@ export default function FileUpload({ onFileSelect }) {
     }
   };
 
+  const handleRemove = (e) => {
+    e.stopPropagation();
+    setFileName('');
+    onFileSelect(null);
+    if (inputRef.current) inputRef.current.value = '';
+  };
+
+  if (fileName) {
+    return (
+      <Box
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 1.5,
+          p: 2,
+          border: '2px solid',
+          borderColor: 'primary.main',
+          borderRadius: 4,
+          bgcolor: 'primary.lighter'
+        }}
+      >
+        <SvgIcon name="tabler-file-check" size={24} color="primary.main" />
+        <Typography variant="body2" sx={{ color: 'primary.dark', fontWeight: 500, flex: 1, wordBreak: 'break-all' }}>
+          {fileName}
+        </Typography>
+        <IconButton size="small" onClick={handleRemove} aria-label="Remove file" sx={{ color: 'text.secondary', '&:hover': { color: 'error.main' } }}>
+          <SvgIcon name="tabler-x" size={18} />
+        </IconButton>
+        <input ref={inputRef} type="file" hidden onChange={handleFileChange} />
+      </Box>
+    );
+  }
+
   return (
     <Box
       onDrop={handleDrop}
       onDragOver={handleDragOver}
       onDragEnter={handleDragEnter}
       onDragLeave={handleDragLeave}
-      onClick={() => document.getElementById('file-upload-input').click()}
+      onClick={() => inputRef.current?.click()}
       sx={{
         border: '2px dashed',
         borderColor: isDragging ? theme.palette.primary.main : theme.palette.divider,
@@ -81,10 +116,10 @@ export default function FileUpload({ onFileSelect }) {
         }
       }}
     >
-      <input id="file-upload-input" type="file" hidden onChange={handleFileChange} />
+      <input ref={inputRef} id="file-upload-input" type="file" hidden onChange={handleFileChange} />
       <SvgIcon name="tabler-upload" size={48} sx={{ mb: 1, color: 'text.secondary' }} />
       <Typography variant="h6" sx={{ color: 'text.primary' }}>
-        {fileName || t('forms.attachmentDrop')}
+        {t('forms.attachmentDrop')}
       </Typography>
       <Typography variant="body2" sx={{ color: 'text.secondary' }}>
         {t('forms.attachmentSize')}

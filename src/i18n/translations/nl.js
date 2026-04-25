@@ -275,50 +275,55 @@ export const translations = {
     heading: 'Privacybeleid',
     subtitle: 'RoThi Bouw is verantwoordelijk voor de verwerking van uw persoonsgegevens.',
     sections: {
+      dataController: {
+        heading: 'Identiteit van de verwerkingsverantwoordelijke',
+        caption:
+          'RoThi Bouw, gevestigd in Nederland, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.\n\nContact: info@rothibouw.nl'
+      },
       informationCollection: {
         heading: 'Persoonsgegevens die wij verwerken',
         caption:
-          'RoThi Bouw verwerkt uw persoonsgegevens doordat u gebruik maakt van onze diensten en/of omdat u deze zelf aan ons verstrekt.\n\nVia het contactformulier verwerken wij: voornaam, achternaam, e-mailadres, inhoud van het bericht en eventuele bijlagen.\n\nVia het sollicitatieformulier verwerken wij: voornaam, achternaam, e-mailadres, telefoonnummer, curriculum vitae (CV) en eventuele motivatiebrief of overige bijlagen.'
+          'RoThi Bouw verwerkt persoonsgegevens die u zelf aan ons verstrekt of die worden gegenereerd bij het gebruik van onze diensten en website.\n\nVia het contactformulier:\n• Voornaam\n• Achternaam\n• E-mailadres\n• Inhoud van het bericht\n• Eventuele bijlagen\n\nVia het sollicitatieformulier:\n• Voornaam\n• Achternaam\n• E-mailadres\n• Telefoonnummer\n• Curriculum vitae (CV)\n• Motivatiebrief en/of overige bijlagen'
       },
       processingPurpose: {
-        heading: 'Met welk doel en op basis van welke grondslag wij persoonsgegevens verwerken',
+        heading: 'Doeleinden en rechtsgronden van verwerking',
         caption:
-          'RoThi Bouw verwerkt uw persoonsgegevens voor de volgende doelen:\n• Het afhandelen van uw contactverzoek of vraag (grondslag: gerechtvaardigd belang)\n• Het beoordelen van uw sollicitatie en het doorlopen van de sollicitatieprocedure (grondslag: uitvoering van precontractuele maatregelen)\n• Het verzenden van een bevestigingsmail via onze e-maildienst Resend (grondslag: gerechtvaardigd belang)'
-      },
-      automatedDecision: {
-        heading: 'Geautomatiseerde besluitvorming',
-        caption:
-          "RoThi Bouw neemt geen besluiten op basis van geautomatiseerde verwerkingen over zaken die (aanzienlijke) gevolgen kunnen hebben voor personen. Het gaat hier om besluiten die worden genomen door computerprogramma's of -systemen, zonder dat daar een mens tussen zit."
+          'Wij verwerken persoonsgegevens uitsluitend voor de volgende doeleinden en op basis van de daarbij genoemde rechtsgronden:\n\n• Het beantwoorden en afhandelen van contactverzoeken (rechtsgrond: gerechtvaardigd belang)\n• Het behandelen van sollicitaties en het uitvoeren van de sollicitatieprocedure (rechtsgrond: precontractuele maatregelen)\n• Het versturen van systeem- en bevestigingsmails via onze e-maildienst (rechtsgrond: gerechtvaardigd belang)'
       },
       retentionPeriod: {
-        heading: 'Hoe lang we persoonsgegevens bewaren',
+        heading: 'Bewaartermijnen',
         caption:
-          'RoThi Bouw bewaart uw persoonsgegevens niet langer dan strikt noodzakelijk is om de doelen te realiseren waarvoor uw gegevens worden verzameld:\n• Contactformuliergegevens: maximaal 1 jaar na afhandeling van uw verzoek\n• Sollicitatiegegevens: maximaal 4 weken na afronding van de sollicitatieprocedure, tenzij u toestemming geeft voor een langere bewaartermijn (maximaal 1 jaar)'
-      },
-      dataSecurity: {
-        heading: 'Hoe wij persoonsgegevens beveiligen',
-        caption:
-          'RoThi Bouw neemt de bescherming van uw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. Als u de indruk heeft dat uw gegevens niet goed beveiligd zijn of er aanwijzingen zijn van misbruik, neem dan contact op via info@rothibouw.nl.'
-      },
-      cookies: {
-        heading: 'Cookies en tracking',
-        caption:
-          'De website van RoThi Bouw maakt geen gebruik van cookies, tracking of analytics. Er worden geen gegevens over uw surfgedrag verzameld.'
+          'RoThi Bouw bewaart persoonsgegevens niet langer dan noodzakelijk is voor de doeleinden waarvoor deze zijn verzameld:\n\n• Contactformulieren: maximaal 12 maanden na afhandeling van het verzoek\n• Sollicitatiegegevens: maximaal 4 weken na afronding van de procedure, tenzij toestemming is gegeven voor verlenging tot maximaal 12 maanden'
       },
       thirdParties: {
         heading: 'Delen van persoonsgegevens met derden',
         caption:
-          'RoThi Bouw deelt uw persoonsgegevens alleen met derden als dit noodzakelijk is voor de uitvoering van de hierboven beschreven doelen of om te voldoen aan een wettelijke verplichting. Met bedrijven die uw gegevens verwerken in onze opdracht sluiten wij een verwerkersovereenkomst om te zorgen voor eenzelfde niveau van beveiliging en vertrouwelijkheid van uw gegevens.\n\nWij maken gebruik van de volgende dienstverlener(s):\n• Resend (transactionele e-mail): voor het verzenden van bevestigingsmails na het indienen van een contactformulier of sollicitatie. Resend verwerkt hierbij uw e-mailadres.\n• Vercel (websitehosting): voor het hosten van onze website. Vercel kan technische loggegevens verwerken (zoals IP-adressen) in het kader van de dienstverlening.'
+          'RoThi Bouw verstrekt persoonsgegevens uitsluitend aan derden indien dit noodzakelijk is voor de uitvoering van onze dienstverlening of om te voldoen aan een wettelijke verplichting.\n\nMet verwerkers sluiten wij verwerkersovereenkomsten om een passend beveiligings- en vertrouwelijkheidsniveau te waarborgen.\n\nWij maken gebruik van de volgende verwerkers:\n• Resend – voor het verzenden van transactionele e-mails\n• Vercel – voor hosting en technische infrastructuur van de website (waarbij technische loggegevens zoals IP-adressen kunnen worden verwerkt)'
+      },
+      cookies: {
+        heading: 'Cookies en tracking',
+        caption:
+          'Onze website maakt uitsluitend gebruik van functionele cookies die noodzakelijk zijn voor een correcte werking van de website.\n\nEr worden geen trackingcookies of analytische cookies geplaatst en er vindt geen profilering plaats van bezoekers.'
+      },
+      automatedDecision: {
+        heading: 'Geautomatiseerde besluitvorming',
+        caption:
+          'RoThi Bouw neemt geen besluiten op basis van geautomatiseerde verwerkingen die rechtsgevolgen hebben of anderszins een significante impact kunnen hebben op personen.'
       },
       yourRights: {
-        heading: 'Gegevens inzien, aanpassen of verwijderen',
+        heading: 'Rechten van betrokkenen',
         caption:
-          'U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te verwijderen. Daarnaast heeft u het recht om uw eventuele toestemming voor de gegevensverwerking in te trekken of bezwaar te maken tegen de verwerking van uw persoonsgegevens door RoThi Bouw en heeft u het recht op gegevensoverdraagbaarheid.\n\nU kunt een verzoek tot inzage, correctie, verwijdering of gegevensoverdracht van uw persoonsgegevens of een verzoek tot intrekking van uw toestemming of bezwaar op de verwerking van uw persoonsgegevens sturen naar info@rothibouw.nl.\n\nOm er zeker van te zijn dat het verzoek tot inzage door u is gedaan, vragen wij u een kopie van uw identiteitsbewijs met het verzoek mee te sturen. Maak in deze kopie uw pasfoto, MRZ (machine readable zone, de strook met nummers onderaan het paspoort), paspoortnummer en Burgerservicenummer (BSN) zwart. Dit ter bescherming van uw privacy. Wij reageren zo snel mogelijk, maar uiterlijk binnen vier weken, op uw verzoek.\n\nRoThi Bouw wil u er tevens op wijzen dat u de mogelijkheid heeft om een klacht in te dienen bij de nationale toezichthouder, de Autoriteit Persoonsgegevens. Dat kan via de volgende link: https://autoriteitpersoonsgegevens.nl/een-klacht-indienen'
+          'Je hebt op grond van de Algemene Verordening Gegevensbescherming (AVG) de volgende rechten:\n\n• Recht op inzage\n• Recht op rectificatie\n• Recht op gegevenswissing\n• Recht op beperking van verwerking\n• Recht op bezwaar\n• Recht op overdraagbaarheid van gegevens\n\nVerzoeken kunnen worden ingediend via info@rothibouw.nl.\n\nTer verificatie van je identiteit kan worden gevraagd om een kopie van een identiteitsbewijs waarbij gevoelige gegevens (zoals BSN, MRZ en pasfoto) zijn afgeschermd.\n\nWij reageren uiterlijk binnen vier weken op een verzoek.'
+      },
+      dataSecurity: {
+        heading: 'Beveiliging van persoonsgegevens',
+        caption:
+          'RoThi Bouw neemt passende technische en organisatorische maatregelen om persoonsgegevens te beveiligen tegen verlies, onbevoegde toegang, misbruik of onrechtmatige verwerking.\n\nIndien er aanwijzingen zijn van misbruik of een datalek, kan contact worden opgenomen via info@rothibouw.nl.'
       },
       changes: {
         heading: 'Wijzigingen',
         caption:
-          'RoThi Bouw behoudt zich het recht voor om deze privacyverklaring aan te passen. Wijzigingen worden op deze pagina gepubliceerd. Wij raden u aan deze privacyverklaring regelmatig te raadplegen.\n\nDeze privacyverklaring is voor het laatst bijgewerkt op 25 april 2026.'
+          'RoThi Bouw behoudt zich het recht voor deze privacyverklaring te wijzigen. De meest actuele versie wordt altijd op de website gepubliceerd.\n\nVersie: april 2026'
       }
     }
   },
@@ -375,7 +380,7 @@ export const translations = {
       title: 'Verduurzaming',
       descriptionTitle: 'Duurzame oplossingen voor uw woning',
       description:
-        'Bij RoThi Bouw zorgen we ervoor dat uw woning verduurzaamd wordt, van vloer tot hellend dak en van gevel tot platdak. Hierbij zorgen we uiteraard voor een nieuwe vloer, nieuw metselwerk en nieuwe dakbedekking, net wat voor u van toepassing is. Hierbij zorgen we ervoor dat uw woning klaar is voor de toekomst.',
+        'Bij RoThi Bouw zorgen we ervoor dat uw woning verduurzaamd wordt, van vloer tot hellend dak en van gevel tot plat dak. Hierbij zorgen we uiteraard voor een nieuwe vloer, nieuw metselwerk en nieuwe dakbedekking, net wat voor u van toepassing is. Hierbij zorgen we ervoor dat uw woning klaar is voor de toekomst.',
       features: {
         f1: 'Aanbrengen vloer-, gevel- en dakisolatie',
         f2: 'Aanpak koudebruggen',
@@ -436,7 +441,7 @@ export const translations = {
     aboutProject: 'Over dit project',
     information: 'Projectinformatie',
     projectNotFound: 'Project niet gevonden',
-    whatWeDidForThisProject: 'Wat we voor dit project hebben gedaan',
+    aboutThisProject: 'Over dit project',
     seeOurOtherProjects: 'Bekijk onze andere projecten',
     viewAllProjects: 'Bekijk alle projecten',
 
@@ -475,9 +480,9 @@ export const translations = {
         title: 'Kaprenovatie Hooge Mierde',
         subtitle: 'Uw huis verduurzamen en daarbij één nieuw fris dak.',
         detailDescription:
-          'Bij deze kaprenovatie hebben we op het woonhuis gebruik gemaakt van renovatieplaten, Renopir. ' +
-          'Dit zorgt ervoor dat wij het dakbeschot kunnen laten zitten zodat er binnen niks aan het huis wordt aangetast. ' +
-          'De klant heeft gekozen voor een OVH 206 pan. In combinatie van deze nieuwe pannen en een onderhoudsarme overstek van Rockpanel (RAL 7035) is de kap helemaal afgewerkt. ' +
+          'Bij deze kaprenovatie hebben we op het woonhuis gebruikgemaakt van renovatieplaten, Renopir. ' +
+          'Dit zorgt ervoor dat wij het dakbeschot kunnen laten zitten, zodat er binnen niets aan het huis wordt aangetast. ' +
+          'De klant heeft gekozen voor een OVH 206-pan. In combinatie met deze nieuwe pannen en een onderhoudsarme overstek van Rockpanel (RAL 7035) is de kap helemaal afgewerkt. ' +
           'Uiteraard hebben we ook nieuwe zinken goten en afvoeren toegepast.',
         transformationDescription:
           'Het verschil tussen de oude en nieuwe situatie is duidelijk te zien. Door gebruik te maken van moderne materialen en technieken hebben we het dak volledig gemoderniseerd zonder de bewoonbaarheid van het huis tijdens de renovatie te beïnvloeden.'
@@ -486,33 +491,33 @@ export const translations = {
         title: 'Gevelbekleding Bladel',
         detailDescription:
           'Bij dit project wilde de klant een nieuwe uitstraling van de tuin. ' +
-          'Er is hierbij gekozen voor padouk gevelbekleding, dit is een hoogwaardige en stabiele tropische hardhoutsoort. ' +
-          'Dit houtsoort behoort tot duurzaamheidsklasse 1 en kan wel 20 tot 25 jaar onbehandeld meegaan. ' +
-          'Verder is er gekozen voor barcode profiel.'
+          'Er is hierbij gekozen voor padouk gevelbekleding; dit is een hoogwaardige en stabiele tropische hardhoutsoort. ' +
+          'Deze houtsoort behoort tot duurzaamheidsklasse 1 en kan wel 20 tot 25 jaar onbehandeld meegaan. ' +
+          'Verder is er gekozen voor een barcodeprofiel.'
       },
       project3: {
         title: 'Overkapping en tuinkamer',
         subtitle: 'Twee constructies voor een upgrade in uw tuin.',
         detailDescription:
-          'Deze klant wenste een meer connectie van binnen naar buiten. ' +
+          'Deze klant wenste meer connectie van binnen naar buiten. ' +
           'Hierbij is er gekozen voor een tuinkamer en overkapping. ' +
-          'De tuinkamer is een uitbereiding van de woonkamer geworden. ' +
+          'De tuinkamer is een uitbreiding van de woonkamer geworden. ' +
           'Hierbij is een mooie zithoek gecreëerd met rondom uitzicht over de tuin. ' +
-          'De overkapping met rondom glazen schuifwanden zorgt voor een mooie plek die zowel binnen als buiten plek gezien kan worden. ' +
-          'We hebben gebruik gemaakt van prefab eiken constructies. ' +
+          'De overkapping met rondom glazen schuifwanden zorgt voor een mooie plek die zowel als binnen- en buitenplek gezien kan worden. ' +
+          'We hebben gebruikgemaakt van prefab eiken constructies. ' +
           'Bij de tuinkamer is eiken dakbeschot toegepast en landelijke zwarte (RAL 9005) kozijnen. ' +
-          'Het dakvlak van nieuwe eiken overkapping hebben we vlak door laten lopen met het bestaande schuurtje. ' +
-          'Als dakplaat hebben we unilin SW Light dakplaten toegepast met een witte afgewerkte onderkant. ' +
+          'Het dakvlak van de nieuwe eiken overkapping hebben we vlak door laten lopen met het bestaande schuurtje. ' +
+          'Als dakplaat hebben we Unilin SW Light-dakplaten toegepast met een wit afgewerkte onderkant. ' +
           'Deze mensen kunnen jaren genieten van hun mooie tuin.'
       },
       project4: {
         title: 'Verduurzamen platdak Hilvarenbeek',
         subtitle: 'Deze klant zit er weer warmpjes bij.',
         detailDescription:
-          'Dit platdak was hard aan vervanging toe. ' +
-          'Nadat we de oude dakbedekking en dakbeschot afgevoerd hadden, kon het opbouwen beginnen. ' +
-          'Hierin hebben we de klant volledig ontzorgt, van dakbeschot tot aftimmering. ' +
-          'Als platdakisolatie hebben we pir isolatie van unilin toegepast, de boei is gemaakt van trespa (RAL 9001) en vervolgens afgewerkt met een zinken kraal. ' +
+          'Dit plat dak was hard aan vervanging toe. ' +
+          'Nadat we de oude dakbedekking en het dakbeschot afgevoerd hadden, kon het opbouwen beginnen. ' +
+          'Hierin hebben we de klant volledig ontzorgd, van dakbeschot tot aftimmering. ' +
+          'Als platdakisolatie hebben we PIR-isolatie van Unilin toegepast, de boei is gemaakt van Trespa (RAL 9001) en vervolgens afgewerkt met een zinken kraal. ' +
           'Deze aanbouw kan er weer jaren tegenaan.'
       },
       project5: {
@@ -520,29 +525,29 @@ export const translations = {
         subtitle: 'Gezellige sfeervolle overkapping voor elk seizoen.',
         detailDescription:
           'Deze douglas overkapping is door RoThi handgemaakt en geplaatst. ' +
-          'Deze klant heeft gekozen voor een zadeldak met hierop de OVH 206 pan. ' +
-          'Als dakbeschot zijn douglas sponningdelen toegepast, en als wandbekleding is douglas zweeds rabat gebruikt. '
+          'Deze klant heeft gekozen voor een zadeldak met hierop de OVH 206-pan. ' +
+          'Als dakbeschot zijn douglas sponningdelen toegepast en als wandbekleding is douglas Zweeds rabat gebruikt.'
       },
       project6: {
         title: 'Overstek Hooge Mierde',
         detailDescription:
-          'Deze klant wilde de betimmerde overstek vervangen voor een onderhoudsarme oplossing. ' +
+          'Deze klant wilde de betimmerde overstek vervangen door een onderhoudsarme oplossing. ' +
           'Hierdoor komt het arbeidsintensieve schilderwerk te vervallen. ' +
-          'De klant heeft gekozen voor een boei van Trespa en tegen het plafond zijn keralit sponningdelen bevestigd, dit beide in RAL 9001. ' +
+          'De klant heeft gekozen voor een boei van Trespa en tegen het plafond zijn Keralit-sponningdelen bevestigd, beide in RAL 9001. ' +
           'De oude zinken goten en afvoeren zijn daarnaast vervangen.'
       },
       project7: {
         title: 'Overstek Hooge Mierde',
         detailDescription:
-          'Deze klant wilde de betimmerde overstek vervangen voor een onderhoudsarme oplossing. ' +
-          'De klant heeft gekozen voor een boei van Trespa (RAL 5011) en een overstek plafond van Keralit (RAL 9001), Ook hebben we de goten en afvoeren vervangen in zink.'
+          'Deze klant wilde de betimmerde overstek vervangen door een onderhoudsarme oplossing. ' +
+          'De klant heeft gekozen voor een boei van Trespa (RAL 5011) en een overstekplafond van Keralit (RAL 9001). Ook hebben we de goten en afvoeren in zink vervangen.'
       },
       project8: {
         title: 'Gevelbekleding bedrijfshal Veldhoven',
         subtitle: 'Een simpele oplossing waardoor je hal meteen en frisse uitstraling krijgt.',
         detailDescription:
           'In overleg met de klant is hier gekozen voor onderhoudsarme gevelbekleding om hiermee het aanzicht een frisse look en warme uitstraling te geven. ' +
-          'Dit Facade blokprofiel combineert het warme uiterlijk van houten latten met de duurzaamheid en het gemak van gecoat staal.'
+          'Dit Facade-blokprofiel combineert het warme uiterlijk van houten latten met de duurzaamheid en het gemak van gecoat staal.'
       }
     }
   },
@@ -550,10 +555,19 @@ export const translations = {
   // Vacancies Page
   vacancies: {
     heading: 'Openstaande vacatures',
-    caption: 'Kom werken bij RoThi Bouw — een gedreven familiebedrijf in de bouwsector op zoek naar vakkundige mensen.',
+    caption: 'Kom werken bij RoThi Bouw, een jong en gedreven bedrijf in de bouwsector op zoek naar vakmensen.',
     filterByType: 'Filteren op type',
     noVacancies: 'Er zijn momenteel geen openstaande vacatures.',
     apply: 'Solliciteer',
+    viewVacancy: 'Bekijk vacature',
+    vacancyNotFound: 'Vacature niet gevonden',
+    detail: {
+      applyNow: 'Solliciteer direct',
+      backToVacancies: 'Terug naar vacatures',
+      tasksHeading: 'Jouw taken',
+      requirementsHeading: 'Wat wij vragen',
+      offerHeading: 'Wat wij bieden'
+    },
     intro: {
       heading: 'Kom werken bij',
       highlight: 'RoThi Bouw',
@@ -571,8 +585,32 @@ export const translations = {
         title: 'Timmerman',
         description:
           'Als timmerman bij RoThi Bouw werk je aan gevarieerde projecten: van dakconstructies tot houtconstructies en verbouwingen. Je werkt in een hecht team van vakmensen waar kwaliteit en plezier voorop staan.',
+        intro:
+          'Als timmerman bij RoThi Bouw ben jij het vakmanschap achter onze projecten. Van dakconstructies en kozijnen tot houtconstructies en complete verbouwingen — jij zorgt ervoor dat alles klopt. Je werkt samen in een hecht, jong team waar kwaliteit en plezier hand in hand gaan. Geen dag is hetzelfde en dat maakt het werk zo gevarieerd en uitdagend.',
         hours: '32-40 uur per week',
-        contract: 'Vast dienstverband'
+        contract: 'Vast dienstverband',
+        tasks: {
+          task1: 'Werken aan dakconstructies, kapspanten en dakbeschot',
+          task2: 'Plaatsen van kozijnen, deuren, trappen en vloeren',
+          task3: 'Bouwen van houtconstructies zoals pergola\'s, carports en aanbouwen',
+          task4: 'Uitvoeren van renovaties en verbouwingen',
+          task5: 'Samenwerken met collega-vakmensen op de bouwplaats',
+          task6: 'Werken volgens bouwtekeningen en zorgdragen voor kwaliteit'
+        },
+        requirements: {
+          req1: 'MBO-diploma Timmerwerk niveau 3 of 4',
+          req2: 'Minimaal 2 jaar werkervaring in de timmerbranche',
+          req3: 'Rijbewijs B (eigen vervoer gewenst)',
+          req4: 'Zelfstandig en nauwkeurig kunnen werken',
+          req5: 'Teamspeler met een positieve werkhouding'
+        },
+        offer: {
+          item1: 'Marktconform salaris passend bij je ervaring',
+          item2: '25 vakantiedagen per jaar',
+          item3: 'Leaseauto of reiskostenvergoeding',
+          item4: 'Persoonlijke begeleiding en opleidingsmogelijkheden',
+          item5: 'Een gezellig, informeel team bij een jong en groeiend bedrijf'
+        }
       }
     },
     applyForm: {

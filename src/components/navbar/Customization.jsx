@@ -1,5 +1,8 @@
 import PropTypes from 'prop-types';
 
+// @react
+import { useCallback } from 'react';
+
 // @mui
 import { useTheme } from '@mui/material/styles';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -9,7 +12,7 @@ import ListItem from '@mui/material/ListItem';
 import Switch from '@mui/material/Switch';
 
 // @project
-import MenuPopper from './MenuPopper';
+import MenuPopper, { useMenuPopper } from './MenuPopper';
 
 import SvgIcon from '@/components/SvgIcon';
 
@@ -24,11 +27,35 @@ import { SUPPORTED_LANGUAGES } from '@/i18n';
 
 export default function Customization({ showThemeToggle = true, showDirectionToggle = true, showLanguageSelector = true }) {
   const theme = useTheme();
+  const menuPopper = useMenuPopper();
   const { onChangeThemeMode, onChangeThemeDirection, onChangeLanguage } = useConfig();
   const { t, language } = useTranslation();
 
   // Get the inactive language (the one not currently selected)
   const inactiveLanguage = SUPPORTED_LANGUAGES.find((locale) => locale.code !== language);
+
+  const handleThemeModeChange = useCallback(() => {
+    onChangeThemeMode(theme.palette.mode === ThemeMode.DARK ? ThemeMode.LIGHT : ThemeMode.DARK);
+    if (menuPopper?.closeMenu) {
+      menuPopper.closeMenu();
+    }
+  }, [theme.palette.mode, onChangeThemeMode, menuPopper]);
+
+  const handleThemeDirectionChange = useCallback(() => {
+    onChangeThemeDirection(theme.direction === ThemeDirection.RTL ? ThemeDirection.LTR : ThemeDirection.RTL);
+    if (menuPopper?.closeMenu) {
+      menuPopper.closeMenu();
+    }
+  }, [theme.direction, onChangeThemeDirection, menuPopper]);
+
+  const handleLanguageChange = useCallback(() => {
+    if (inactiveLanguage) {
+      onChangeLanguage(inactiveLanguage.code);
+      if (menuPopper?.closeMenu) {
+        menuPopper.closeMenu();
+      }
+    }
+  }, [inactiveLanguage, onChangeLanguage, menuPopper]);
 
   // Don't render if all options are disabled
   if (!showThemeToggle && !showDirectionToggle && !showLanguageSelector) {
@@ -59,7 +86,7 @@ export default function Customization({ showThemeToggle = true, showDirectionTog
             <Switch
               inputProps={{ 'aria-label': 'dark-mode' }}
               checked={theme.palette.mode === ThemeMode.DARK}
-              onChange={() => onChangeThemeMode(theme.palette.mode === ThemeMode.DARK ? ThemeMode.LIGHT : ThemeMode.DARK)}
+              onChange={handleThemeModeChange}
             />
           </ListItem>
         )}
@@ -74,7 +101,7 @@ export default function Customization({ showThemeToggle = true, showDirectionTog
             <Switch
               inputProps={{ 'aria-label': 'direction-ltr' }}
               checked={theme.direction === ThemeDirection.RTL}
-              onChange={() => onChangeThemeDirection(theme.direction === ThemeDirection.RTL ? ThemeDirection.LTR : ThemeDirection.RTL)}
+              onChange={handleThemeDirectionChange}
             />
           </ListItem>
         )}
@@ -83,7 +110,7 @@ export default function Customization({ showThemeToggle = true, showDirectionTog
         {showLanguageSelector && inactiveLanguage && (
           <ListItem
             component="button"
-            onClick={() => onChangeLanguage(inactiveLanguage.code)}
+            onClick={handleLanguageChange}
             sx={{
               px: 1,
               cursor: 'pointer',
