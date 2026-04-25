@@ -39,11 +39,13 @@ export default function ProfileCard5({ name, roleKey, quoteKey, avatar, phone, e
           {t(roleKey)}
         </Typography>
       </Stack>
+      {/* TODO: Uncomment when quotes are available
       <GraphicsCard sx={{ p: { xs: 2.5, md: 3 } }}>
         <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8, fontStyle: 'italic' }}>
           {t(quoteKey)}
         </Typography>
       </GraphicsCard>
+      */}
       <Stack spacing={1.5}>
         {phone && (
           <Stack

@@ -162,47 +162,47 @@ export const translations = {
   home: {
     hero: {
       slide1: {
-        title: 'Quality Craftsmanship in Wood Construction',
-        description: 'Professional timber work and construction services for your project'
+        title: 'RoThi, your partner for every project',
+        description: 'Together with you, simply making beautiful things!'
       },
       slide2: {
-        title: 'From Renovation to New Construction',
-        description: 'Complete solutions for all your construction needs'
+        title: 'RoThi, your partner for every project',
+        description: 'Together with you, simply making beautiful things!'
       },
       slide3: {
-        title: 'Durable and Beautiful Results',
-        description: 'Years of experience in carpentry and construction'
+        title: 'RoThi, your partner for every project',
+        description: 'Together with you, simply making beautiful things!'
       }
     },
     services: {
-      heading: 'Our Services',
+      heading: 'Our services',
       caption: 'Professional construction services tailored to your needs',
+      renovations: {
+        title: 'Extensions & Renovations',
+        description: 'Complete extension and renovation solutions for your home or business'
+      },
       roofing: {
         title: 'Roofing',
-        description: 'Expert roof construction, repairs, and maintenance for residential and commercial properties'
+        description: 'New roof construction, repairs and maintenance for residential and commercial properties'
       },
       carpentry: {
         title: 'Timber Work',
-        description: 'High-quality carpentry services for both interior and exterior projects'
-      },
-      renovations: {
-        title: 'Extensions & Renovations',
-        description: 'Complete renovation and extension services to transform your home or business'
+        description: 'High-quality timber work for both interior and exterior projects'
       },
       sustainability: {
         title: 'Sustainability',
         description: 'Professional sustainability work for your home or business'
       },
       woodConstructions: {
-        title: 'Wood Construction',
+        title: 'Wood Constructions',
         description: 'Expert wood construction services tailored to your project needs'
       }
     },
     aboutTeaser: {
-      heading: 'Two friends,',
-      highlight: 'one mission',
+      heading: 'From friendship,',
+      highlight: 'to craftsmanship',
       caption:
-        'RoThi Bouw was founded by Roy and Thijs — two young craftsmen with a shared passion for quality construction. What started as a dream has grown into a trusted name in carpentry, roofing, and renovations. With an eye for detail and a personal approach to every project, we deliver craftsmanship you can build on.',
+        'RoThi Bouw was founded by Roy and Thijs, two young craftsmen with a shared passion for construction. Do you want to get to know us better? Click below.',
       button: 'Get to Know Us'
     },
     projects: {
@@ -220,16 +220,17 @@ export const translations = {
   // About Page
   about: {
     hero: {
-      title: 'Two friends,',
-      titleHighlight: 'one mission',
+      title: 'From friendship,',
+      titleHighlight: 'to craftsmanship',
       description: '...'
     },
     story: {
       heading: 'From dream to',
       highlight: 'reality',
-      p1: 'RoThi Bouw was founded out of the shared passion of Roy and Thijs for construction and craftsmanship. Two friends who believed that quality work and personal attention should go hand in hand.',
-      p2: 'What started as small jobs for friends and family quickly grew into a fully fledged construction company. Today we are proud to have completed many projects, always with the same dedication and eye for detail.',
-      p3: 'We specialise in carpentry, roofing, renovations and extensions — and we approach every project as if it were our own.'
+      p1: 'We got to know each other at fourteen years old. At our first part-time job, we clicked immediately. Soon we noticed that we not only had the same pleasure in the work, but also the same work ethic. After working side by side for many years and learning a tremendous amount, we found that our passion and work pleasure turned into interest in construction.',
+      p2: 'To support our craftsmanship with the right knowledge, we both followed the training Middle Management Construction. Roy completed this in May 2023 and Thijs in January 2025. Although we both gained experience as self-employed entrepreneurs with our own one-man business in the meantime, the ambition to build something together kept itching.',
+      p3: 'In February 2025 the moment came: the founding of RoThi Bouw. Our mission is simple: to realize beautiful projects with passion and pleasure and to grow our business by delivering quality we are proud of. With us you are assured of craftsmanship with a personal approach.',
+      p4: 'Here\'s to many more beautiful years.'
     },
     timeline: {
       heading: 'Our Journey',
@@ -254,14 +255,14 @@ export const translations = {
       }
     },
     founders: {
-      heading: 'The people behind RoThi Bouw',
+      heading: 'The craftsmen behind RoThi Bouw',
       roy: {
         role: 'Co-founder',
-        quote: '"Building is more than stacking bricks. It is craftsmanship, trust and delivering something people can truly be proud of."'
+        quote: '"..."'
       },
       thijs: {
         role: 'Co-founder',
-        quote: '"Quality is in the details. I am not satisfied until every joint, every edge and every finish is exactly right."'
+        quote: '"..."'
       }
     }
   },
@@ -330,69 +331,69 @@ export const translations = {
   services: {
     renovations: {
       title: 'Extensions & Renovations',
-      descriptionTitle: 'Complete Renovation Solutions',
+      descriptionTitle: 'Complete renovation solutions',
       description:
         'A renovation gives your home a new life. Whether you want to refresh a single room or plan a complete remodel, we guide you from start to finish. With an eye for detail and respect for the existing structure, we realize your dream project.',
       features: {
         f1: 'Complete home renovations',
         f2: 'Kitchen and bathroom remodels',
         f3: 'Extensions and additions',
-        f4: 'Floor and wall renewals',
-        f5: 'Insulation and energy efficiency',
-        f6: 'Structural modifications'
+        f4: 'Structural modifications',
+        f5: 'Electrical and water installations',
+        f6: 'Flooring and wall renewals'
       }
     },
     roofing: {
       title: 'Roofing',
-      descriptionTitle: 'Professional Roof Construction & Repairs',
+      descriptionTitle: 'Roof construction & Repairs',
       description:
         'At RoThi Bouw, we specialize in all forms of roofing work. From new construction to renovation, we ensure a waterproof and durable roof that lasts for years. Our experienced craftsmen work with high-quality materials and always deliver a clean and professional result.',
       features: {
         f1: 'New roof constructions',
         f2: 'Roof renovations and repairs',
         f3: 'Roof tile installation and replacement',
-        f4: 'Roof insulation and ventilation',
+        f4: 'Roof insulation installation',
         f5: 'Gutters and rainwater drainage',
         f6: 'Lead and zinc work'
       }
     },
     carpentry: {
       title: 'Timber Work',
-      descriptionTitle: 'Expert Carpentry for Every Project',
+      descriptionTitle: 'Expert carpentry for every project',
       description:
         "Carpentry is at the core of what we do. Whether it's installing window frames, building a wooden structure, or finishing an interior - at RoThi Bouw you are assured of precision and quality. We work with various types of wood and deliver custom solutions for every situation.",
       features: {
-        f1: 'Window and door frames',
-        f2: 'Wooden structures and support beams',
-        f3: 'Wood cladding for facades'
+        f1: 'Window frames',
+        f2: 'Various facade cladding',
+        f3: 'Interior cladding and finishing'
       }
     },
     sustainability: {
       title: 'Sustainability',
-      descriptionTitle: 'Sustainable Construction Solutions',
+      descriptionTitle: 'Sustainable solutions for your home',
       description:
-        'Sustainability is increasingly important in construction. We offer various sustainable solutions, from energy-efficient insulation to the use of environmentally friendly materials. Together we look at how we can make your project more sustainable without compromising on quality or aesthetics.',
+        'At RoThi Bouw, we ensure that your home is made sustainable, from floor to sloped roof and from facade to flat roof. This includes installing new flooring, new masonry and new roof covering, whatever is applicable to you. We ensure your home is ready for the future.',
       features: {
-        f1: 'Energy-efficient insulation',
-        f2: 'Use of sustainable materials',
-        f3: 'Solar panel installation',
-        f4: 'Green roofs and walls',
-        f5: 'Water-saving solutions',
-        f6: 'Sustainable renovation techniques'
+        f1: 'Installation of floor, facade and roof insulation',
+        f2: 'Addressing cold bridges',
+        f3: 'Energy-saving installations',
+        f4: 'Solar panels',
+        f5: 'Possibility of subsidies',
+        f6: 'Other sustainability measures'
       }
     },
     woodConstruction: {
-      title: 'Wood Construction',
-      descriptionTitle: 'Expert Wood Construction Services',
+      title: 'Wood constructions',
+      descriptionTitle: 'Wood constructions & Custom work',
       description:
-        "Wood is a versatile and beautiful material for construction. Whether it's a wooden canopy, a garden structure, or a custom wood project, we have the expertise to bring your vision to life. With attention to detail and a focus on quality, we create durable and aesthetically pleasing wood constructions that fit perfectly with your home or business.",
+        "From wooden load-bearing structures to custom work, RoThi Bouw delivers expert woodwork. We work with different types of wood and techniques to guarantee a solid and beautiful result.",
       features: {
-        f1: 'Custom wooden canopies',
-        f2: 'Garden structures and pergolas',
-        f3: 'Wooden carports and garages',
-        f4: 'Custom wood projects',
-        f5: 'Wooden facades and cladding',
-        f6: 'Wooden interior structures'
+        f1: 'Wooden load-bearing structures',
+        f2: 'Prefab',
+        f3: 'Handmade',
+        f4: 'Various types of wood',
+        f5: 'Custom wooden projects',
+        f6: 'Wooden facades and cladding'
       }
     },
     process: {
@@ -412,7 +413,7 @@ export const translations = {
       }
     },
     cta: {
-      heading: 'Interested in This Service?',
+      heading: 'Interested in this service?',
       button: 'Get in Touch'
     },
     relatedProjects: {
@@ -420,7 +421,7 @@ export const translations = {
       caption: 'View projects we have completed in this category'
     },
     navigation: {
-      heading: 'Our Services',
+      heading: 'Our services',
       caption: 'Discover all our professional construction services'
     },
     serviceNotFound: 'Service not found'
@@ -471,30 +472,119 @@ export const translations = {
     // Project items
     items: {
       project1: {
-        title: 'Wooden Canopy with Terrace Floor',
-        description: 'Realization of a beautiful wooden canopy with solid oak columns and a durable terrace floor.',
+        title: 'Roof Renovation Hooge Mierde',
         detailDescription:
-          'For this client we realized a beautiful wooden canopy that fits perfectly with the existing home. The construction is made of sustainable oak with robust columns that ensure a solid and long-lasting solution. The canopy not only offers protection, but also adds a warm and natural look to the outdoor space.',
+          'During this roof renovation, we used renovation panels, Renopir, on the residential building. ' +
+          'This allows us to leave the roof sheathing in place so that nothing inside the house is affected. ' +
+          'The client chose an OVH 206 tile. Combined with these new tiles and a low-maintenance soffit made of Rockpanel (RAL 7035), the roof is completely finished. ' +
+          'Of course, we also installed new zinc gutters and downspouts.',
         transformationDescription:
-          'The difference between the old and new situation is clearly visible. By using modern materials and techniques, we have completely modernized the outdoor space while maintaining harmony with the existing architecture.',
-        activities: {
-          activity1: 'Massive oak columns with steel footplates',
-          activity2: 'High-quality roof covering with optimal drainage',
-          activity3: 'Seamless connection to existing level',
-          activity4: 'Durable terrace floor in harmony with the canopy',
-          activity5: 'Professional finishing with attention to detail'
-        }
+          'The difference between the old and new situation is clearly visible. By using modern materials and techniques, we completely modernized the roof without affecting the livability of the house during the renovation.'
       },
       project2: {
-        title: 'Modern Extension with Wood Cladding',
-        description: 'Complete extension with modern wood cladding, large windows and seamless integration with existing construction.',
+        title: 'Facade Cladding Bladel',
         detailDescription:
-          'This modern extension combines functionality with aesthetics. The wood cladding gives the extension a warm and contemporary look that integrates perfectly with the existing architecture.',
-        activities: {
-          activity1: 'Construction of the extension with modern architecture',
-          activity2: 'Installation of high-quality wood cladding',
-          activity3: 'Large windows for optimal natural light'
-        }
+          'With this project, the client wanted a new look for the garden. ' +
+          'We chose padouk facade cladding, which is a high-quality and stable tropical hardwood. ' +
+          'This type of wood belongs to durability class 1 and can last 20 to 25 years without treatment. ' +
+          'We also chose barcode profile.'
+      },
+      project3: {
+        title: 'Canopy and garden room',
+        detailDescription:
+          'This client wanted more connection from inside to outside. ' +
+          'We chose a garden room and a canopy. ' +
+          'The garden room became an extension of the living room. ' +
+          'A beautiful seating area was created with views over the garden. ' +
+          'The canopy with sliding glass panels all around provides a beautiful place that can be seen both inside and outside. ' +
+          'We used prefab oak structures. ' +
+          'For the garden room, we applied oak roof sheathing and rustic black (RAL 9005) frames. ' +
+          'The roof surface of the new oak canopy runs flush with the existing shed. ' +
+          'As roof panel, we used Unilin SW Light roof panels with a white finished underside. ' +
+          'These people can enjoy their beautiful garden for years to come.'
+      },
+      project4: {
+        title: 'Sustainable flat roof Hilvarenbeek',
+        detailDescription:
+          'This flat roof was long overdue for replacement. ' +
+          'After we removed the old roof covering and roof sheathing, we could start building. ' +
+          'With this, we completely relieved the client, from roof sheathing to finishing. ' +
+          'As flat roof insulation, we used PIR insulation from Unilin, the trim was made of Trespa (RAL 9001) and finished with a zinc bead. ' +
+          'This extension can stand the test of time again for years to come.'
+      },
+      project5: {
+        title: 'Douglas canopy Lage Mierde',
+        detailDescription:
+          'This Douglas canopy was handmade and installed by RoThi. ' +
+          'This client chose a gable roof with the OVH 206 tile on it. ' +
+          'Douglas groove planks were used as roof sheathing, and Douglas Swedish rabbet was used as wall cladding.'
+      },
+      project6: {
+        title: 'Soffit Hooge Mierde',
+        detailDescription:
+          'This client wanted to replace the timber soffit with a low-maintenance solution. ' +
+          'This eliminates labor-intensive painting work. ' +
+          'The client chose a Trespa soffit and against the ceiling, Keralit groove boards were attached, both in RAL 9001. ' +
+          'The old zinc gutters and downspouts were also replaced.'
+      },
+      project7: {
+        title: 'Soffit Hooge Mierde',
+        detailDescription:
+          'This client wanted to replace the timber soffit with a low-maintenance solution. ' +
+          'The client chose a Trespa soffit (RAL 5011) and a soffit ceiling made of Keralit (RAL 9001). We also replaced the gutters and downspouts in zinc.'
+      },
+      project8: {
+        title: 'Facade Cladding Business Hall Veldhoven',
+        detailDescription:
+          'In consultation with the client, we chose low-maintenance facade cladding to give the hall a fresh look and warm appearance. ' +
+          'This Facade block profile combines the warm appearance of wooden slats with the durability and ease of coated steel.'
+      }
+    }
+  },
+
+  // Vacancies Page
+  vacancies: {
+    heading: 'Open Vacancies',
+    caption: 'Join the RoThi Bouw team — a driven family business in the construction sector looking for skilled professionals.',
+    filterByType: 'Filter by type',
+    noVacancies: 'There are currently no open vacancies.',
+    apply: 'Apply',
+    intro: {
+      heading: 'Join the team at',
+      highlight: 'RoThi Bouw',
+      caption:
+        'Are you a motivated professional who loves varied work, a personal approach, and working in a close-knit team? Then we are looking for you!',
+      button: 'Apply directly'
+    },
+    types: {
+      all: 'All vacancies',
+      executive: 'Executive',
+      office: 'Office'
+    },
+    items: {
+      vacancy1: {
+        title: 'Carpenter',
+        description:
+          'As a carpenter at RoThi Bouw, you work on diverse projects: from roof constructions to wood constructions and renovations. You work in a close-knit team of craftsmen where quality and enjoyment come first.',
+        hours: '32-40 hours per week',
+        contract: 'Permanent employment'
+      }
+    },
+    applyForm: {
+      heading: 'Apply Now',
+      caption: 'Fill in the form and we will get back to you as soon as possible.',
+      position: 'Apply for position',
+      positionPlaceholder: 'Choose a position...',
+      motivation: 'Motivation',
+      motivationPlaceholder: 'Tell us why you want to work at RoThi Bouw and what you would like to do here...',
+      cv: 'CV (PDF or Word)',
+      cvHelper: 'Drag your CV here or click to upload (PDF or Word, max 10MB)',
+      submit: 'Send application',
+      openApplication: 'Open application',
+      validation: {
+        positionRequired: 'Please select a position',
+        motivationRequired: 'Motivation is required',
+        cvRequired: 'Please attach your CV'
       }
     }
   }

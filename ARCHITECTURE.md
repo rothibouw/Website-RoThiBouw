@@ -377,12 +377,14 @@ TypeN.propTypes = {
 |---|---|
 | `headingKey` | i18n key for the section heading |
 | `captionKey` | i18n key for the subtitle/caption |
+| `highlightKey` | i18n key for a highlighted/coloured word within a heading (rendered in `primary.main`) |
 | `heading` | i18n key for heading (used when template block uses this name — treat identically) |
 | `caption` | i18n key for caption (same as above) |
 | `primaryBtn` | Object `{ children: 'i18n.key', href: '/path' }` — block adds `component={NextLink}` |
 | `reverse` | Boolean to flip a two-column layout |
 | `items` / `list` | Array of data objects |
 | `featureKeys` | Array of i18n key strings for a bullet list (block calls `t()` on each) |
+| `paragraphKeys` | Array of i18n key strings for sequential body paragraphs (block maps `t()` over them) |
 | `image` | String path to a static image asset |
 
 **Critical:** Props named `heading`, `caption`, `title`, `content`, `children` on buttons, and any `*Key` props **all receive i18n key strings**. The block calls `t()` on all of them.
@@ -458,8 +460,8 @@ Ask these questions in order:
 |---|---|---|
 | Team section with heading, grid of cards | Block (`Team1`) | Full-width section, owns its padding |
 | Individual team member card | Component (`ProfileCard1`) | Used inside `Team1`, no section padding |
-| Services overview cards | Block (`ContactUs3`) | Full-width section |
-| Single info card inside that section | Private sub-component (`ContactCard` in `ContactUs3.jsx`) | Only used in one block, kept in same file |
+| Services overview cards | Block (`ContactUs4`) | Full-width section |
+| Single info card inside that section | Private sub-component (`ContactCard` in `ContactUs4.jsx`) | Only used in one block, kept in same file |
 | Project grid with category filter | Block (`Project2`) | Full-width section |
 | Single project card | Component (`ProjectCard`) | Used in `Project1` and `Project2` |
 | Specs + description panel | **Block** (`ProjectSpecsDescription`) with `ContainerWrapper` | Used as a standalone page section |
@@ -590,7 +592,7 @@ export const translations = {
   },
   about: { team: { heading: '...', caption: '...' } },
   services: {
-    dakwerken: {
+    roofing: {
       title: '...',
       description: '...',
       features: { f1: '...', f2: '...' }
@@ -605,18 +607,26 @@ export const translations = {
 };
 ```
 
+### Dutch is the leading language
+
+Dutch (`nl.js`) is the **primary language** for this site. When adding or updating translations:
+
+- Write the Dutch (`nl.js`) text first; it is the authoritative version
+- The English (`en.js`) entry must follow the Dutch — if `nl.js` contains a `'...'` placeholder, `en.js` must also have `'...'`
+- i18n **keys** are always English identifiers (e.g. `services.roofing.title`, `projects.categories.carpentry`) — only the **values** are language-specific
+
 ### i18n rules for keys
 
-1. Every visible string must have an entry in **both** `en.js` and `nl.js`
-2. i18n keys use dot notation with lowercase segments: `'services.dakwerken.features.f1'`
+1. Every visible string must have an entry in **both** `nl.js` and `en.js`
+2. i18n keys use dot notation with lowercase English segments: `'services.roofing.features.f1'`
 3. Never store translated strings in data files — only store the key
 4. Blocks and components call `t()` at render time — this ensures language switching works without page reload
 5. The only exception: hero slides in `home/index.jsx` where `HeroSlideshow` requires pre-translated strings. This is a block-level contract, not a general pattern
 
 ### Adding a new translation key
 
-1. Add the key and English value to `src/i18n/translations/en.js`
-2. Add the same key and Dutch value to `src/i18n/translations/nl.js`
+1. Add the key and Dutch value to `src/i18n/translations/nl.js` (Dutch leads)
+2. Add the same key and English value to `src/i18n/translations/en.js`
 3. Use the key string in the data file
 4. The block will call `t()` on it at render time
 
@@ -777,6 +787,16 @@ Wraps a button to add hover animation:
   </Button>
 </ButtonAnimationWrapper>
 ```
+
+### `GraphicsImage`
+Responsive image container with `object-fit: cover`. Used for editorial/hero images inside blocks:
+```jsx
+<GraphicsImage
+  image="/assets/services/roofing/hero.jpeg"
+  sx={{ height: { xs: 300, sm: 400, md: 480 }, borderRadius: BORDER_RADIUS.xs, overflow: 'hidden' }}
+/>
+```
+Accepts `image` (string path) and an `sx` prop for sizing and shape. The `overflow: 'hidden'` on the wrapper enforces the border radius.
 
 ### `ProjectCard`
 Displays a project summary card with image carousel. Used in `Project1` and `Project2`:
@@ -1126,7 +1146,9 @@ Add the block to `src/blocks/{type}/index.js`.
 - `children` on button objects = i18n key
 
 ### i18n rules
-- Every displayed string has an entry in both `en.js` and `nl.js`
+- **Dutch is the leading language** — write `nl.js` first; `en.js` follows the same placeholder state
+- Every displayed string has an entry in both `nl.js` and `en.js`
+- i18n keys are always English identifiers; only values are language-specific
 - Key missing → `t()` returns the key string (safe, but add the key)
 - Never call `t()` in data files or sections factories
 - `t()` is called at render time in blocks and components

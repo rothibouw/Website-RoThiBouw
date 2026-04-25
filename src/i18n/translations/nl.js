@@ -545,5 +545,52 @@ export const translations = {
           'Dit Facade blokprofiel combineert het warme uiterlijk van houten latten met de duurzaamheid en het gemak van gecoat staal.'
       }
     }
+  },
+
+  // Vacancies Page
+  vacancies: {
+    heading: 'Openstaande vacatures',
+    caption: 'Kom werken bij RoThi Bouw — een gedreven familiebedrijf in de bouwsector op zoek naar vakkundige mensen.',
+    filterByType: 'Filteren op type',
+    noVacancies: 'Er zijn momenteel geen openstaande vacatures.',
+    apply: 'Solliciteer',
+    intro: {
+      heading: 'Kom werken bij',
+      highlight: 'RoThi Bouw',
+      caption:
+        'Ben jij een gemotiveerde vakman die houdt van gevarieerd werk, een persoonlijke aanpak en werken in een hecht team? Dan zijn wij op zoek naar jou!',
+      button: 'Direct solliciteren'
+    },
+    types: {
+      all: 'Alle vacatures',
+      executive: 'Uitvoerend',
+      office: 'Kantoor'
+    },
+    items: {
+      vacancy1: {
+        title: 'Timmerman',
+        description:
+          'Als timmerman bij RoThi Bouw werk je aan gevarieerde projecten: van dakconstructies tot houtconstructies en verbouwingen. Je werkt in een hecht team van vakmensen waar kwaliteit en plezier voorop staan.',
+        hours: '32-40 uur per week',
+        contract: 'Vast dienstverband'
+      }
+    },
+    applyForm: {
+      heading: 'Solliciteer nu',
+      caption: 'Vul het formulier in en we nemen zo snel mogelijk contact met je op.',
+      position: 'Solliciteer op functie',
+      positionPlaceholder: 'Kies een functie...',
+      motivation: 'Motivatie',
+      motivationPlaceholder: 'Vertel ons waarom je bij RoThi Bouw wilt werken en wat je bij ons wilt komen doen...',
+      cv: 'CV (PDF of Word)',
+      cvHelper: 'Sleep hier je CV of klik om te uploaden (PDF of Word, max 10MB)',
+      submit: 'Verstuur sollicitatie',
+      openApplication: 'Open sollicitatie',
+      validation: {
+        positionRequired: 'Selecteer een functie',
+        motivationRequired: 'Motivatie is verplicht',
+        cvRequired: 'Voeg je CV toe'
+      }
+    }
   }
 };

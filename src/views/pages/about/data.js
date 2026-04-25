@@ -52,7 +52,7 @@ export const teamData = {
       name: 'Roy van Strijdhoven',
       roleKey: 'about.founders.roy.role',
       quoteKey: 'about.founders.roy.quote',
-      avatar: '/assets/about/roy.jpeg',
+      avatar: '/assets/about/roy.png',
       phone: '+31 (0)6 81 39 97 41',
       email: 'roy@rothibouw.nl'
       // linkedin: 'https://linkedin.com/in/roy-van-strijdhoven'
@@ -61,7 +61,7 @@ export const teamData = {
       name: 'Thijs van Gisbergen',
       roleKey: 'about.founders.thijs.role',
       quoteKey: 'about.founders.thijs.quote',
-      avatar: '/assets/about/thijs.jpg',
+      avatar: '/assets/about/thijs.jpeg',
       phone: '+31 (0)6 57 41 59 09',
       email: 'thijs@rothibouw.nl'
       // linkedin: 'https://linkedin.com/in/thijs-van-gisbergen'
