@@ -5,6 +5,7 @@ export const PAGE_PATH = {
   aboutPage: '/about',
   projectsPage: '/projects',
   contactPage: '/contact',
+  vacanciesPage: '/vacancies',
   privacyPolicyPage: '/privacy-policy',
   termsConditionsPage: '/terms-conditions'
 };

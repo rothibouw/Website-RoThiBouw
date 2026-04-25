@@ -64,6 +64,11 @@ export const useNavbarData = () => {
         id: 'contact',
         title: t('nav.contact'),
         link: '/contact'
+      },
+      {
+        id: 'vacancies',
+        title: t('nav.career'),
+        link: '/vacancies'
       }
     ]
   };

@@ -18,7 +18,7 @@ export default function palette(mode) {
     primary: {
       lighter: '#B3D4DC', // lighter teal variant
       light: '#5AA2B5', // light teal
-      main: '#4a4e52', // bright teal (This is the main highlight color for RoThi Bouw)
+      main: '#4a4e52', // light teal (This is the main highlight color for RoThi Bouw) (main: '#5AA2B5',)
       dark: '#131414', // darker variant (On hover or active state)
       darker: '#051519' // darkest variant (RoThi Bouw brand dark)
     },
