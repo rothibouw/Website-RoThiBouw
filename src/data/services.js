@@ -1,6 +1,3 @@
-// Source of truth for all service data.
-// Import from here in any file that needs service data.
-
 export const services = [
   {
     slug: 'ver-en-aanbouwen',
@@ -9,7 +6,7 @@ export const services = [
     heroImage: '/assets/services/ver-en-aanbouw/hero.jpeg',
     descriptionTitleKey: 'services.renovaties.descriptionTitle',
     descriptionKey: 'services.renovaties.description',
-    descriptionImage: '/assets/temp/placeholder.png',
+    descriptionImage: '/assets/services/ver-en-aanbouw/description.jpeg',
     features: [
       'services.renovaties.features.f1',
       'services.renovaties.features.f2',
@@ -17,7 +14,7 @@ export const services = [
       'services.renovaties.features.f4',
       'services.renovaties.features.f5'
     ],
-    featureImage: '/assets/temp/placeholder.png',
+    featureImage: '/assets/services/ver-en-aanbouw/feature.jpeg',
     relatedCategories: ['renovaties']
   },
   {
