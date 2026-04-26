@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import NextLink from 'next/link';
 
 // @mui
+import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid2';
@@ -24,7 +25,9 @@ import { SECTION_COMMON_PY, BORDER_RADIUS } from '@/utils/constant';
 /***************************  ABOUT - 4  ***************************/
 
 export default function About4({ headingKey, highlightKey, captionKey, image, primaryBtn }) {
+  const theme = useTheme();
   const { t } = useTranslation();
+  const highlightColor = theme.palette.mode === 'light' ? theme.palette.primary.light : theme.palette.primary.main;
 
   return (
     <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>
@@ -46,7 +49,7 @@ export default function About4({ headingKey, highlightKey, captionKey, image, pr
             <Stack spacing={3}>
               <Typography variant="h2">
                 {t(headingKey)}{' '}
-                <Box component="span" sx={{ color: 'primary.main' }}>
+                <Box component="span" sx={{ color: highlightColor }}>
                   {t(highlightKey)}
                 </Box>
               </Typography>

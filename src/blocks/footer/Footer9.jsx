@@ -32,7 +32,7 @@ function InfoItem({ labelKey, icon, value, href }) {
   const itemContent = (
     <Stack direction="row" sx={{ gap: 1, alignItems: 'center' }}>
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
-        <SvgIcon name={icon} color="text.secondary" size={18} />
+        <SvgIcon name={icon} color="primary.main" size={18} />
       </Box>
       <Stack sx={{ gap: 0 }}>
         <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 500, lineHeight: 1 }}>

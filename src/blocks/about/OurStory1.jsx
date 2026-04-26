@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types';
 
 // @mui
+import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
@@ -18,7 +19,9 @@ import { SECTION_COMMON_PY } from '@/utils/constant';
 /***************************  ABOUT - OUR STORY 1  ***************************/
 
 export default function OurStory1({ headingKey, highlightKey, paragraphKeys }) {
+  const theme = useTheme();
   const { t } = useTranslation();
+  const highlightColor = theme.palette.mode === 'light' ? theme.palette.primary.light : theme.palette.primary.main;
 
   return (
     <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>
@@ -28,7 +31,7 @@ export default function OurStory1({ headingKey, highlightKey, paragraphKeys }) {
             heading={
               <>
                 {t(headingKey)}{' '}
-                <Box component="span" sx={{ color: 'primary.main' }}>
+                <Box component="span" sx={{ color: highlightColor }}>
                   {t(highlightKey)}
                 </Box>
               </>

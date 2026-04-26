@@ -49,7 +49,7 @@ function ContactCard({ icon, titleKey, descriptionKey, link }) {
     <GraphicsCard sx={{ height: 1 }}>
       <Stack direction={{ xs: 'row', sm: 'column' }} sx={{ gap: { xs: 2, sm: 4, md: 5 }, height: 1, p: { xs: 2, sm: 3, md: 4 } }}>
         <Avatar sx={{ width: 60, height: 60, bgcolor: 'grey.300' }}>
-          <SvgIcon {...(typeof icon === 'string' ? { name: icon, color: 'text.primary' } : { ...icon, color: 'text.primary' })} />
+          <SvgIcon {...(typeof icon === 'string' ? { name: icon } : { ...icon })} />
         </Avatar>
         <Stack sx={{ alignItems: 'flex-start', justifyContent: 'space-between', height: 1, gap: { xs: 2, md: 3 } }}>
           <Typeset
@@ -62,7 +62,7 @@ function ContactCard({ icon, titleKey, descriptionKey, link }) {
             }}
           />
           {link && (
-            <Button color="primary" variant="contained" {...(link.href && { component: NextLink })} {...link} children={t(link.children)} />
+            <Button color="primary" variant="outlined" {...(link.href && { component: NextLink })} {...link} children={t(link.children)} />
           )}
         </Stack>
       </Stack>

@@ -44,7 +44,7 @@ export default function ScrollFab() {
               onClick={scrollToTop}
               sx={{ width: { xs: 40, lg: 52 }, height: { xs: 40, lg: 52 } }}
             >
-              <SvgIcon name="tabler-arrow-up" color="background.default" />
+              <SvgIcon name="tabler-arrow-up" color="primary.contrastText" />
             </Fab>
           </motion.div>
         </Box>

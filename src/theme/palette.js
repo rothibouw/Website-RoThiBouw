@@ -18,9 +18,10 @@ export default function palette(mode) {
     primary: {
       lighter: '#B3D4DC', // lighter teal variant
       light: '#5AA2B5', // light teal
-      main: '#4a4e52', // bright teal (This is the main highlight color for RoThi Bouw)
-      dark: '#131414', // darker variant (On hover or active state)
-      darker: '#051519' // darkest variant (RoThi Bouw brand dark)
+      main: '#4a4e52', // dark grey — used for buttons and accents
+      dark: '#131414', // darker variant (on hover or active state)
+      darker: '#051519', // darkest variant (RoThi Bouw brand dark)
+      contrastText: '#fff' // icon/text color on primary-colored surfaces (buttons, FAB)
     },
     secondary: {
       lighter: '#D9D9D9', // lighter grey
@@ -57,7 +58,8 @@ export default function palette(mode) {
       light: '#051519', // RoThi Bouw brand dark
       main: '#4A8B9E', // medium teal
       dark: '#5AA2B5', // lighter variant
-      darker: '#7BC4D8' // lightest variant
+      darker: '#7BC4D8', // lightest variant
+      contrastText: '#fff' // icon/text color on primary-colored surfaces (buttons, FAB)
     },
     secondary: {
       lighter: '#3D3C3C', // darker grey variant

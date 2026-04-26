@@ -1,6 +1,6 @@
 'use client';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 // @next
 import NextLink from 'next/link';
@@ -27,6 +27,7 @@ export default function ProjectCard({ project, index = 0 }) {
   const theme = useTheme();
   const { t } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const touchStartX = useRef(null);
 
   const images = project.images || [project.thumbnail];
   const currentImage = images[currentImageIndex];
@@ -48,11 +49,28 @@ export default function ProjectCard({ project, index = 0 }) {
     setCurrentImageIndex(index);
   };
 
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const delta = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(delta) > 40) {
+      setCurrentImageIndex((prev) => (delta > 0 ? (prev === images.length - 1 ? 0 : prev + 1) : prev === 0 ? images.length - 1 : prev - 1));
+    }
+    touchStartX.current = null;
+  };
+
   return (
     <MotionWrapper delay={0.2 + index * 0.1}>
       <GraphicsCard sx={{ height: 1, display: 'flex', flexDirection: 'column' }}>
         {/* Project Image with Navigation */}
-        <Box sx={{ position: 'relative', width: '100%', height: 380, overflow: 'hidden', bgcolor: 'grey.200' }}>
+        <Box
+          onTouchStart={hasMultipleImages ? handleTouchStart : undefined}
+          onTouchEnd={hasMultipleImages ? handleTouchEnd : undefined}
+          sx={{ position: 'relative', width: '100%', height: 380, overflow: 'hidden', bgcolor: 'grey.200', touchAction: 'pan-y' }}
+        >
           <Image src={currentImage} alt={t(project.titleKey)} fill style={{ objectFit: 'cover' }} priority={index === 0} />
 
           {/* Navigation Arrows & Dots (only if multiple images) */}
@@ -69,7 +87,7 @@ export default function ProjectCard({ project, index = 0 }) {
                 }}
               >
                 <Fab color="primary" size="small" onClick={handlePrevImage} aria-label="previous image" sx={{ width: 40, height: 40 }}>
-                  <SvgIcon name="tabler-chevron-left" color="background.default" size={20} />
+                  <SvgIcon name="tabler-chevron-left" color="primary.contrastText" size={20} />
                 </Fab>
               </Box>
 
@@ -84,7 +102,7 @@ export default function ProjectCard({ project, index = 0 }) {
                 }}
               >
                 <Fab color="primary" size="small" onClick={handleNextImage} aria-label="next image" sx={{ width: 40, height: 40 }}>
-                  <SvgIcon name="tabler-chevron-right" color="background.default" size={20} />
+                  <SvgIcon name="tabler-chevron-right" color="primary.contrastText" size={20} />
                 </Fab>
               </Box>
 
@@ -163,7 +181,7 @@ export default function ProjectCard({ project, index = 0 }) {
           </Stack>
 
           {/* Navigation Button */}
-          <Button component={NextLink} href={`/projects/${project.slug}`} variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
+          <Button component={NextLink} href={`/projects/${project.slug}`} variant="outlined" color="primary" fullWidth sx={{ mt: 2 }}>
             {t('common.readMore')}
           </Button>
         </Stack>

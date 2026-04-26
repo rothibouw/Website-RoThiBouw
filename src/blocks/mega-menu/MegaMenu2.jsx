@@ -61,7 +61,7 @@ export default function MegaMenu2({ menuItems }) {
           {item.icon && (
             <ListItemAvatar sx={{ minWidth: 60 }}>
               <Avatar variant="rounded" sx={{ width: 48, height: 48, borderRadius: 3, bgcolor: 'grey.100' }}>
-                <SvgIcon color="text.primary" {...(typeof item.icon === 'string' ? { name: item.icon } : { ...item.icon })} />
+                <SvgIcon {...(typeof item.icon === 'string' ? { name: item.icon } : { ...item.icon })} />
               </Avatar>
             </ListItemAvatar>
           )}

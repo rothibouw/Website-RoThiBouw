@@ -80,7 +80,7 @@ export default function Customization({ showThemeToggle = true, showDirectionTog
         {showThemeToggle && (
           <ListItem sx={{ px: 1 }}>
             <ListItemIcon sx={{ minWidth: 32 }}>
-              <SvgIcon name="tabler-sun-moon" color="text.primary" stroke={1} />
+              <SvgIcon name="tabler-sun-moon" stroke={1} />
             </ListItemIcon>
             <ListItemText color="grey.100">{t('customization.darkMode')}</ListItemText>
             <Switch
@@ -95,7 +95,7 @@ export default function Customization({ showThemeToggle = true, showDirectionTog
         {showDirectionToggle && (
           <ListItem sx={{ px: 1 }}>
             <ListItemIcon sx={{ minWidth: 32 }}>
-              <SvgIcon name="tabler-text-direction-ltr" color="text.primary" stroke={1} />
+              <SvgIcon name="tabler-text-direction-ltr" stroke={1} />
             </ListItemIcon>
             <ListItemText color="grey.100">{t('customization.rtl')}</ListItemText>
             <Switch
@@ -121,7 +121,7 @@ export default function Customization({ showThemeToggle = true, showDirectionTog
             }}
           >
             <ListItemIcon sx={{ minWidth: 32 }}>
-              <SvgIcon name="tabler-language" color="text.primary" stroke={1} />
+              <SvgIcon name="tabler-language" stroke={1} />
             </ListItemIcon>
             <ListItemText color="grey.100">{inactiveLanguage.name}</ListItemText>
           </ListItem>

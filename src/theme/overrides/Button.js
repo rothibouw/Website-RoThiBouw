@@ -20,6 +20,14 @@ export default function Button(theme) {
           textTransform: 'none',
           '&:focus-visible': generateFocusVisibleStyles(theme.palette.primary.main)
         },
+        outlinedPrimary: {
+          ...(theme.palette.mode === 'dark' && {
+            color: theme.palette.primary.contrastText,
+            '&:hover': {
+              color: theme.palette.primary.contrastText
+            }
+          })
+        },
         sizeSmall: {
           padding: '10px 24px',
           '&.MuiButton-outlined': { padding: '9px 24px' }

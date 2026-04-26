@@ -18,8 +18,6 @@ import useTranslation from '@/hooks/useTranslation';
 
 import { BORDER_RADIUS } from '@/utils/constant';
 
-import { IconType } from '@/enum';
-
 /***************************  CARDS - PROFILE CARD 5  ***************************/
 
 export default function ProfileCard5({ name, roleKey, quoteKey, avatar, phone, email, linkedin, reverse }) {
@@ -35,7 +33,7 @@ export default function ProfileCard5({ name, roleKey, quoteKey, avatar, phone, e
     <Stack spacing={3} sx={{ justifyContent: 'center', height: '100%' }}>
       <Stack spacing={0.5}>
         <Typography variant="h3">{name}</Typography>
-        <Typography variant="body1" sx={{ color: 'primary.main' }}>
+        <Typography variant="body1" sx={{ color: 'text.secondary' }}>
           {t(roleKey)}
         </Typography>
       </Stack>
@@ -56,7 +54,7 @@ export default function ProfileCard5({ name, roleKey, quoteKey, avatar, phone, e
             href={`tel:${phone}`}
             sx={{ textDecoration: 'none', color: 'inherit', '&:hover': { color: 'primary.main' }, transition: 'color 0.3s' }}
           >
-            <SvgIcon name="tabler-filled-phone" size={20} type={IconType.FILL} />
+            <SvgIcon name="tabler-phone" size={20} />
             <Typography variant="body2">{phone}</Typography>
           </Stack>
         )}
@@ -69,7 +67,7 @@ export default function ProfileCard5({ name, roleKey, quoteKey, avatar, phone, e
             href={`mailto:${email}`}
             sx={{ textDecoration: 'none', color: 'inherit', '&:hover': { color: 'primary.main' }, transition: 'color 0.3s' }}
           >
-            <SvgIcon name="tabler-filled-mail" size={20} type={IconType.FILL} />
+            <SvgIcon name="tabler-mail" size={20} />
             <Typography variant="body2">{email}</Typography>
           </Stack>
         )}
@@ -84,7 +82,7 @@ export default function ProfileCard5({ name, roleKey, quoteKey, avatar, phone, e
             rel="noopener noreferrer"
             sx={{ textDecoration: 'none', color: 'inherit', '&:hover': { color: 'primary.main' }, transition: 'color 0.3s' }}
           >
-            <SvgIcon name="tabler-filled-linkedin" size={20} type={IconType.FILL} />
+            <SvgIcon name="tabler-brand-linkedin" size={20} />
             <Typography variant="body2">LinkedIn</Typography>
           </Stack>
         )}

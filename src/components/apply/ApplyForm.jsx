@@ -98,7 +98,12 @@ export default function ApplyForm({ vacancies = [], defaultPosition = '' }) {
       formData.append('name', `${data.firstName} ${data.lastName}`);
       formData.append('email', data.email);
       if (data.phone) formData.append('phone', data.phone);
-      formData.append('position', data.position === 'open' ? t('vacancies.applyForm.openApplication') : t(activeVacancies.find((v) => v.slug === data.position)?.titleKey || data.position));
+      formData.append(
+        'position',
+        data.position === 'open'
+          ? t('vacancies.applyForm.openApplication')
+          : t(activeVacancies.find((v) => v.slug === data.position)?.titleKey || data.position)
+      );
       formData.append('motivation', data.motivation);
       formData.append('cv', cvFile);
 
@@ -256,7 +261,12 @@ export default function ApplyForm({ vacancies = [], defaultPosition = '' }) {
                   <Typography variant="body2" sx={{ color: 'primary.dark', fontWeight: 500, flex: 1, wordBreak: 'break-all' }}>
                     {cvFile.name}
                   </Typography>
-                  <IconButton size="small" onClick={handleCvRemove} aria-label="Remove CV" sx={{ color: 'text.secondary', '&:hover': { color: 'error.main' } }}>
+                  <IconButton
+                    size="small"
+                    onClick={handleCvRemove}
+                    aria-label="Remove CV"
+                    sx={{ color: 'text.secondary', '&:hover': { color: 'error.main' } }}
+                  >
                     <SvgIcon name="tabler-x" size={18} />
                   </IconButton>
                 </Box>

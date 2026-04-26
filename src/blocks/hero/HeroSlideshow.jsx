@@ -31,6 +31,7 @@ export default function HeroSlideshow({ slides, height = { xs: 400, sm: 500, md:
   const theme = useTheme();
   const sliderRef = useRef(null);
   const { t } = useTranslation();
+  const highlightColor = theme.palette.mode === 'light' ? theme.palette.primary.light : theme.palette.primary.main;
 
   // If only one slide, render static header image
   const isSingleSlide = slides.length === 1;
@@ -45,6 +46,8 @@ export default function HeroSlideshow({ slides, height = { xs: 400, sm: 500, md:
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
+    swipe: true,
+    touchThreshold: 10,
     pauseOnHover: true
   };
 
@@ -128,7 +131,7 @@ export default function HeroSlideshow({ slides, height = { xs: 400, sm: 500, md:
                         {slides[0].titleHighlight && (
                           <>
                             {' '}
-                            <Box component="span" sx={{ color: 'primary.main' }}>
+                            <Box component="span" sx={{ color: highlightColor }}>
                               {t(slides[0].titleHighlight)}
                             </Box>
                           </>
@@ -216,7 +219,7 @@ export default function HeroSlideshow({ slides, height = { xs: 400, sm: 500, md:
                               {slide.titleHighlight && (
                                 <>
                                   {' '}
-                                  <Box component="span" sx={{ color: 'primary.main' }}>
+                                  <Box component="span" sx={{ color: highlightColor }}>
                                     {t(slide.titleHighlight)}
                                   </Box>
                                 </>

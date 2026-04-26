@@ -33,7 +33,7 @@ export default function SlickArrows({ sliderRef, variant = 'outlined' }) {
   };
 
   const buttonStyle = variant === 'contained' ? containedStyle : outlinedStyle;
-  const iconColor = variant === 'contained' ? 'background.default' : 'currentColor';
+  const iconColor = variant === 'contained' ? 'primary.contrastText' : 'currentColor';
 
   return (
     <Box

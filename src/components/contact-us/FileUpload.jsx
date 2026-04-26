@@ -80,12 +80,11 @@ export default function FileUpload({ onFileSelect }) {
           p: 2,
           border: '2px solid',
           borderColor: 'primary.main',
-          borderRadius: 4,
-          bgcolor: 'primary.lighter'
+          borderRadius: 4
         }}
       >
         <SvgIcon name="tabler-file-check" size={24} color="primary.main" />
-        <Typography variant="body2" sx={{ color: 'primary.dark', fontWeight: 500, flex: 1, wordBreak: 'break-all' }}>
+        <Typography variant="body2" sx={{ color: 'text.primary', fontWeight: 500, flex: 1, wordBreak: 'break-all' }}>
           {fileName}
         </Typography>
         <IconButton
