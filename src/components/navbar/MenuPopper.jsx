@@ -59,6 +59,21 @@ export default function MenuPopper({
     closeMenu();
   }, [pathname]);
 
+  // Close menu on Escape and return focus to the toggle
+  useEffect(() => {
+    if (!anchorEl) return undefined;
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        closeMenu();
+        anchorRef.current?.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [anchorEl]);
+
   const open = Boolean(anchorEl);
   const id = open ? 'menu-popper' : undefined;
 
@@ -67,6 +82,8 @@ export default function MenuPopper({
       <Button
         ref={anchorRef}
         aria-describedby={id}
+        aria-expanded={Boolean(anchorEl)}
+        aria-haspopup="true"
         onClick={handleClick}
         size="small"
         {...toggleProps}
@@ -124,11 +141,13 @@ export default function MenuPopper({
                 }
               }}
             >
-              <ClickAwayListener onClickAway={() => setAnchorEl(null)}>
-                <MenuPopperContext.Provider value={{ closeMenu }}>
-                  <Box>{children}</Box>
-                </MenuPopperContext.Provider>
-              </ClickAwayListener>
+              <MenuPopperContext.Provider value={{ closeMenu }}>
+                {/* ClickAwayListener must wrap an element that accepts a ref. A context
+                    Provider does not, which silently disabled click-away closing. */}
+                <ClickAwayListener onClickAway={closeMenu}>
+                  <Box sx={{ width: 1 }}>{children}</Box>
+                </ClickAwayListener>
+              </MenuPopperContext.Provider>
             </Card>
           </Fade>
         )}
