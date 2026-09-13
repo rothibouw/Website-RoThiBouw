@@ -16,7 +16,7 @@ export const vacancies = [
     slug: 'timmerman',
     type: 'executive',
     isActive: true,
-    image: '/assets/services/carpentry/hero.jpeg',
+    location: 'Hooge Mierde',
     titleKey: 'vacancies.items.vacancy1.title',
     descriptionKey: 'vacancies.items.vacancy1.description',
     introKey: 'vacancies.items.vacancy1.intro',

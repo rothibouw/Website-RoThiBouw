@@ -50,6 +50,7 @@ function VacancyCard({ vacancy }) {
           {t(vacancy.titleKey)}
         </Typography>
         <Stack direction="row" sx={{ gap: 1, flexWrap: 'wrap' }}>
+          <Chip size="small" icon={<SvgIcon name="tabler-map-pin" size={14} />} label={vacancy.location} />
           <Chip size="small" icon={<SvgIcon name="tabler-clock" size={14} />} label={t(vacancy.hoursKey)} />
           <Chip size="small" icon={<SvgIcon name="tabler-file-text" size={14} />} label={t(vacancy.contractKey)} />
         </Stack>
