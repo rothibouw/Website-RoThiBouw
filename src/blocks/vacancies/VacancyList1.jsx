@@ -99,13 +99,16 @@ export default function VacancyList1({ headingKey, captionKey, vacancies, types 
             heading={t(headingKey)}
             caption={t(captionKey)}
             stackProps={{ sx: { textAlign: 'center', maxWidth: 600, mx: 'auto' } }}
-            headingProps={{ variant: 'h2', component: 'h1' }}
+            headingProps={{ variant: 'h3', component: 'h2' }}
             captionProps={{ variant: 'body1' }}
           />
         </MotionWrapper>
 
         {availableTypes.length > 2 && (
-          <Stack direction="row" sx={{ gap: 1, flexWrap: 'wrap', justifyContent: 'center' }}>
+          <Stack direction="row" sx={{ gap: 1, flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              {t('vacancies.filterByType')}
+            </Typography>
             {availableTypes.map((type) => (
               <Chip
                 key={type.value}

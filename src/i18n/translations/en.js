@@ -9,19 +9,7 @@ export const translations = {
     phonePlaceholder: 'Enter your phone number',
     message: 'Message',
     messagePlaceholder: 'Enter your message',
-    subject: 'Subject',
-    subjectPlaceholder: 'Enter subject',
-    company: 'Company',
-    companyPlaceholder: 'Enter your company name',
-    website: 'Website',
-    websitePlaceholder: 'Enter your website',
-    submit: 'Submit',
     send: 'Send Message',
-    sendEmail: 'Send Email',
-    getInTouch: 'Get in touch',
-    contactUs: 'Contact us',
-    fullName: 'Full name',
-    fullNamePlaceholder: 'Enter your full name',
     location: 'Location',
     locationPlaceholder: 'Enter your location',
     locationHelper: "It's very helpful if we know where the possible project or support will take place, so we can take that into account.",
@@ -51,9 +39,7 @@ export const translations = {
     projects: 'Projects',
     contact: 'Contact',
     services: 'Services',
-    career: 'Career',
-    privacyPolicy: 'Privacy Policy',
-    termsConditions: 'Terms & Conditions'
+    career: 'Career'
   },
 
   // Common actions and words
@@ -62,38 +48,13 @@ export const translations = {
     error: 'Error occurred',
     success: 'Success!',
     learnMore: 'Learn more',
-    getStarted: 'Get started',
-    readMore: 'Read more',
-    viewAll: 'View all',
-    close: 'Close',
-    open: 'Open',
-    save: 'Save',
-    cancel: 'Cancel',
-    delete: 'Delete',
-    edit: 'Edit',
-    search: 'Search',
-    filter: 'Filter',
-    sort: 'Sort',
-    next: 'Next',
-    previous: 'Previous',
-    back: 'Back',
-    continue: 'Continue'
+    readMore: 'Read more'
   },
 
   // Customization (Theme/Language settings)
   customization: {
     darkMode: 'Dark Mode',
-    rtl: 'Right to Left',
-    language: 'Language'
-  },
-
-  // Cookie settings
-  cookie: {
-    heading: 'We use cookies to enhance your experience',
-    caption: 'We use cookies to improve your browsing experience and provide personalized content.',
-    privacyLink: 'Privacy Policy',
-    acceptButton: 'Accept All',
-    rejectButton: 'Reject'
+    rtl: 'Right to Left'
   },
 
   // Footer sections
@@ -101,20 +62,11 @@ export const translations = {
     copyright: 'Copyright © 2026',
     privacyPolicy: 'Privacy Policy',
     termsConditions: 'Terms & Conditions',
-    enterEmailAddress: 'Enter your email address',
-    followUsOn: 'Follow Us on',
-    allRightsReserved: 'All rights reserved',
     email: 'Email',
     phoneRoy: 'Phone Roy',
     phoneThijs: 'Phone Thijs',
     kvkNumber: 'KvK Number',
     btwNumber: 'BTW Number'
-  },
-
-  // Language names
-  languages: {
-    en: 'English',
-    nl: 'Nederlands'
   },
 
   // Error pages
@@ -134,7 +86,6 @@ export const translations = {
 
   // Contact Page
   contact: {
-    pageTitle: 'Contact Us',
     heading: 'Get in Touch',
     caption: "Have a question? We'd love to hear from you.",
     emailCard: {
@@ -435,7 +386,6 @@ export const translations = {
     caption: 'Explore our completed construction projects and see the quality of our craftsmanship',
     filterByCategory: 'Filter by Category',
     noProjects: 'No projects found in this category',
-    aboutProject: 'About this Project',
     information: 'Project Information',
     projectNotFound: 'Project not found',
     aboutThisProject: 'What we did for this project',

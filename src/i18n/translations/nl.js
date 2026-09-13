@@ -9,19 +9,7 @@ export const translations = {
     phonePlaceholder: 'Voer je telefoonnummer in',
     message: 'Bericht',
     messagePlaceholder: 'Voer je bericht in',
-    subject: 'Onderwerp',
-    subjectPlaceholder: 'Voer onderwerp in',
-    company: 'Bedrijf',
-    companyPlaceholder: 'Voer je bedrijfsnaam in',
-    website: 'Website',
-    websitePlaceholder: 'Voer je website in',
-    submit: 'Versturen',
     send: 'Bericht versturen',
-    sendEmail: 'E-mail versturen',
-    getInTouch: 'Neem contact op',
-    contactUs: 'Contact',
-    fullName: 'Volledige naam',
-    fullNamePlaceholder: 'Voer je volledige naam in',
     location: 'Locatie',
     locationPlaceholder: 'Voer je locatie in',
     locationHelper:
@@ -52,9 +40,7 @@ export const translations = {
     projects: 'Projecten',
     contact: 'Contact',
     services: 'Diensten',
-    career: 'Carrière',
-    privacyPolicy: 'Privacybeleid',
-    termsConditions: 'Algemene voorwaarden'
+    career: 'Carrière'
   },
 
   // Common actions and words
@@ -63,38 +49,13 @@ export const translations = {
     error: 'Er is een fout opgetreden',
     success: 'Succes!',
     learnMore: 'Meer informatie',
-    getStarted: 'Begin nu',
-    readMore: 'Lees meer',
-    viewAll: 'Bekijk alles',
-    close: 'Sluiten',
-    open: 'Openen',
-    save: 'Opslaan',
-    cancel: 'Annuleren',
-    delete: 'Verwijderen',
-    edit: 'Bewerken',
-    search: 'Zoeken',
-    filter: 'Filteren',
-    sort: 'Sorteren',
-    next: 'Volgende',
-    previous: 'Vorige',
-    back: 'Terug',
-    continue: 'Doorgaan'
+    readMore: 'Lees meer'
   },
 
   // Customization
   customization: {
     darkMode: 'Donkere Modus',
-    rtl: 'Rechts naar Links',
-    language: 'Taal'
-  },
-
-  // Cookie settings
-  cookie: {
-    heading: 'We gebruiken cookies voor een betere ervaring',
-    caption: 'We gebruiken cookies om je browse-ervaring te verbeteren en persoonlijke content aan te bieden.',
-    privacyLink: 'Privacybeleid',
-    acceptButton: 'Alles Accepteren',
-    rejectButton: 'Afwijzen'
+    rtl: 'Rechts naar Links'
   },
 
   // Footer sections
@@ -102,20 +63,11 @@ export const translations = {
     copyright: 'Copyright © 2026',
     privacyPolicy: 'Privacybeleid',
     termsConditions: 'Algemene Voorwaarden',
-    enterEmailAddress: 'Voer je e-mailadres in',
-    followUsOn: 'Volg Ons op',
-    allRightsReserved: 'Alle rechten voorbehouden',
     email: 'E-mail',
     phoneRoy: 'Telefoon Roy',
     phoneThijs: 'Telefoon Thijs',
     kvkNumber: 'KvK Nummer',
     btwNumber: 'BTW Nummer'
-  },
-
-  // Language names
-  languages: {
-    en: 'English',
-    nl: 'Nederlands'
   },
 
   // Error pages
@@ -136,7 +88,6 @@ export const translations = {
 
   // Contact Page
   contact: {
-    pageTitle: 'Contact',
     heading: 'Neem contact met ons op',
     caption: 'Heeft u een vraag? We horen graag van u.',
     emailCard: {
@@ -438,7 +389,6 @@ export const translations = {
     caption: 'Ontdek hier onze uitgevoerde projecten',
     filterByCategory: 'Filter op categorie',
     noProjects: 'Geen projecten gevonden in deze categorie',
-    aboutProject: 'Over dit project',
     information: 'Projectinformatie',
     projectNotFound: 'Project niet gevonden',
     aboutThisProject: 'Over dit project',

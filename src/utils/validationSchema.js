@@ -5,11 +5,6 @@ export const getEmailSchema = (t) => ({
   pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: t('forms.validation.emailInvalid') }
 });
 
-export const getPasswordSchema = (t) => ({
-  required: t('forms.validation.passwordRequired'),
-  minLength: { value: 8, message: t('forms.validation.passwordMinLength') }
-});
-
 export const getFirstNameSchema = (t) => ({
   required: t('forms.validation.firstNameRequired'),
   pattern: { value: /^[a-zA-Z\s]+$/, message: t('forms.validation.firstNameInvalid') }
@@ -23,11 +18,6 @@ export const getLastNameSchema = (t) => ({
 export const getPhoneSchema = (t) => ({
   required: t('forms.validation.phoneRequired'),
   pattern: { value: /^[0-9()-.\s]{7,15}$/, message: t('forms.validation.phoneInvalid') }
-});
-
-export const getOtpSchema = (t) => ({
-  required: t('forms.validation.otpRequired'),
-  minLength: { value: 6, message: t('forms.validation.otpMinLength') }
 });
 
 export const getMessageSchema = (t) => ({

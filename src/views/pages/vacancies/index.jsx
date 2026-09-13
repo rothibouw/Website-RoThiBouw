@@ -4,7 +4,7 @@
 import Stack from '@mui/material/Stack';
 
 // @project
-import { VacancyList1 } from '@/blocks/vacancies';
+import { VacancyIntro1, VacancyList1 } from '@/blocks/vacancies';
 import LazySection from '@/components/LazySection';
 import useDataThemeMode from '@/hooks/useDataThemeMode';
 
@@ -18,7 +18,8 @@ export default function VacanciesPage() {
 
   return (
     <Stack spacing={0}>
-      {/* Carries the page h1 — rendered eagerly so it is server-rendered */}
+      {/* Intro carries the page h1 — both rendered eagerly so they are server-rendered */}
+      <VacancyIntro1 />
       <VacancyList1 headingKey="vacancies.heading" captionKey="vacancies.caption" vacancies={activeVacancies} types={vacancyTypes} />
       <LazySection
         sections={{
