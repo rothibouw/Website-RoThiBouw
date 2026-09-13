@@ -8,6 +8,7 @@ import Image from 'next/image';
 
 // @mui
 import { useTheme, alpha } from '@mui/material/styles';
+import { useMediaQuery } from '@mui/material';
 import Fab from '@mui/material/Fab';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -26,6 +27,7 @@ import useTranslation from '@/hooks/useTranslation';
 export default function ProjectCard({ project, index = 0 }) {
   const theme = useTheme();
   const { t } = useTranslation();
+  const hasHover = useMediaQuery('(hover: hover)');
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const touchStartX = useRef(null);
 
@@ -73,8 +75,8 @@ export default function ProjectCard({ project, index = 0 }) {
         >
           <Image src={currentImage} alt={t(project.titleKey)} fill style={{ objectFit: 'cover' }} priority={index === 0} />
 
-          {/* Navigation Arrows & Dots (only if multiple images) */}
-          {hasMultipleImages && (
+          {/* Navigation Arrows & Dots (only if multiple images and device has hover) */}
+          {hasMultipleImages && hasHover && (
             <>
               {/* Previous Image Button */}
               <Box

@@ -27,7 +27,14 @@ import { SECTION_COMMON_PY } from '@/utils/constant';
 
 /***************************  HERO SLIDESHOW  ***************************/
 
-export default function HeroSlideshow({ slides, height = { xs: 400, sm: 500, md: 600 }, showText = true }) {
+export default function HeroSlideshow({
+  slides,
+  height = { xs: 400, sm: 500, md: 600 },
+  showText = true,
+  // Semantic tag for the hero title. Pages where this hero is the main
+  // heading pass 'h1'; the visual style stays the h2 variant either way.
+  headingComponent = 'h2'
+}) {
   const theme = useTheme();
   const sliderRef = useRef(null);
   const { t } = useTranslation();
@@ -150,6 +157,7 @@ export default function HeroSlideshow({ slides, height = { xs: 400, sm: 500, md:
                     }
                   }}
                   headingProps={{
+                    component: headingComponent,
                     sx: {
                       color: 'white'
                     }
@@ -238,6 +246,7 @@ export default function HeroSlideshow({ slides, height = { xs: 400, sm: 500, md:
                           }
                         }}
                         headingProps={{
+                          component: index === 0 ? headingComponent : 'h2',
                           sx: {
                             color: 'white'
                           }
@@ -262,6 +271,7 @@ export default function HeroSlideshow({ slides, height = { xs: 400, sm: 500, md:
 }
 
 HeroSlideshow.propTypes = {
+  headingComponent: PropTypes.string,
   slides: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string.isRequired,

@@ -10,33 +10,17 @@ export const createServiceDetailSections = (service) => {
 
   const sections = [];
 
-  // 1. Hero
-  sections.push({
-    importFunc: () => import('@/blocks/hero').then((module) => ({ default: module.HeroSlideshow })),
-    props: {
-      slides: [{ image: service.heroImage, title: service.titleKey }],
-      height: { xs: 300, sm: 400, md: 500 },
-      showText: true
-    }
-  });
+  // Note: the hero is rendered eagerly by the page view so that it is
+  // server-rendered; it is deliberately not part of this list.
 
-  // 2. Service description
+  // 2. Description + feature list combined — images auto-rotate every 4s
   sections.push({
-    importFunc: () => import('@/blocks/service').then((module) => ({ default: module.ServiceDescription })),
+    importFunc: () => import('@/blocks/service').then((module) => ({ default: module.ServiceOverview1 })),
     props: {
       titleKey: service.descriptionTitleKey,
       descriptionKey: service.descriptionKey,
-      image: service.descriptionImage
-    }
-  });
-
-  // 3. Feature list — keys passed, block translates
-  sections.push({
-    importFunc: () => import('@/blocks/service').then((module) => ({ default: module.ServiceFeatureList })),
-    props: {
-      featureKeys: service.features,
-      image: service.featureImage,
-      reverse: true
+      images: [service.descriptionImage, service.featureImage],
+      featureKeys: service.features
     }
   });
 

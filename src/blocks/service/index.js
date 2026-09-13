@@ -1,2 +1,1 @@
-export { default as ServiceDescription } from './ServiceDescription';
-export { default as ServiceFeatureList } from './ServiceFeatureList';
+export { default as ServiceOverview1 } from './ServiceOverview1';

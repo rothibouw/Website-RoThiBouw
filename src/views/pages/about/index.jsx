@@ -19,7 +19,7 @@ export default function AboutPage() {
 
   return (
     <Stack spacing={0}>
-      <HeroSlideshow {...heroData} />
+      <HeroSlideshow {...heroData} headingComponent="h1" />
       <LazySection
         sections={[
           { importFunc: () => import('@/blocks/about').then((m) => ({ default: m.OurStory1 })), props: ourStoryData },

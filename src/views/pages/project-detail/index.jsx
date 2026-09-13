@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 // @project
+import { ProjectHeader } from '@/blocks/project';
 import LazySection from '@/components/LazySection';
 import ContainerWrapper from '@/components/ContainerWrapper';
 import useDataThemeMode from '@/hooks/useDataThemeMode';
@@ -33,6 +34,8 @@ export default function ProjectDetailPage({ project }) {
 
   return (
     <Stack spacing={0}>
+      {/* The header carries the page h1, so it is rendered eagerly rather than lazily */}
+      <ProjectHeader titleKey={project.titleKey} subtitleKey={project.subtitleKey} />
       <LazySection sections={sections} offset="200px" />
     </Stack>
   );

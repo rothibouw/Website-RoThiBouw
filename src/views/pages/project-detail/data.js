@@ -5,14 +5,8 @@ export const createProjectDetailSections = (project) => {
 
   const sections = [];
 
-  // Header Section with Project Title, Subtitle
-  sections.push({
-    importFunc: () => import('@/blocks/project').then((module) => ({ default: module.ProjectHeader })),
-    props: {
-      titleKey: project.titleKey,
-      subtitleKey: project.subtitleKey
-    }
-  });
+  // Note: the header (title + subtitle) is rendered eagerly by the page view so
+  // that it is server-rendered; it is deliberately not part of this list.
 
   // Project Image Gallery1 with all project images (if available)
   if (project.images && project.images.length > 0) {
@@ -25,7 +19,12 @@ export const createProjectDetailSections = (project) => {
   }
 
   // Project Detail Description (long-form)
-  if (project.detailDescriptionKey) {
+  if (project.storyItems && project.storyItems.length > 0) {
+    sections.push({
+      importFunc: () => import('@/blocks/project').then((m) => ({ default: m.ProjectStory1 })),
+      props: { items: project.storyItems }
+    });
+  } else if (project.detailDescriptionKey) {
     sections.push({
       importFunc: () => import('@/blocks/about').then((m) => ({ default: m.OurStory1 })),
       props: {

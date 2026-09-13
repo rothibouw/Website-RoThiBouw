@@ -1,11 +1,7 @@
 'use client';
 import PropTypes from 'prop-types';
 
-// @react
-import { useEffect, useState } from 'react';
-
 // @project
-import Loader from '@/components/Loader';
 import RTLLayout from '@/components/RTLLayout';
 import ThemeProvider from '@/components/ThemeProvider';
 import { ConfigProvider } from '@/contexts/ConfigContext';
@@ -13,24 +9,16 @@ import { ConfigProvider } from '@/contexts/ConfigContext';
 /***************************  COMMON - CONFIG  ***************************/
 
 export default function ProviderWrapper({ children }) {
-  const [loader, setLoader] = useState(true);
-
-  useEffect(() => {
-    setLoader(false);
-  }, []);
-
   /**
-   * A loader is needed here to initialize the configuration from localStorage and set the default theme.
-   * Without a loader, the theme palette and fontFamily don't match, resulting in an error like:
-   * "Warning: Prop className did not match".
+   * Children render straight away — no mount gate. The config starts from its
+   * defaults on both server and client (see useLocalStorage), so the theme
+   * palette and fontFamily match on hydration and every page ships real,
+   * crawlable HTML instead of a loader.
    */
-
   return (
     <ConfigProvider>
       <ThemeProvider>
-        <RTLLayout>
-          <main>{loader ? <Loader /> : children}</main>
-        </RTLLayout>
+        <RTLLayout>{children}</RTLLayout>
       </ThemeProvider>
     </ConfigProvider>
   );

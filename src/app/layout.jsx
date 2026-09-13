@@ -20,6 +20,10 @@ import { LocalBusinessJsonLd } from '@/components/LocalBusinessJsonLd';
 // @types
 const gaId = process.env.NEXT_PUBLIC_ANALYTICS_ID || '';
 
+// Keep in sync with ConfigContext's storage key and palette.js's dark background
+const CONFIG_STORAGE_KEY = 'sass-able-react-mui-next-ts';
+const DARK_BACKGROUND = '#051519';
+
 /***************************  METADATA - MAIN  ***************************/
 
 export const metadata = { ...mainMetadata };
@@ -45,6 +49,16 @@ export default function RootLayout({ children }) {
         <LocalBusinessJsonLd />
       </head>
       <body suppressHydrationWarning>
+        {/*
+          Paints the stored theme before hydration. The server renders the light
+          default (it has no localStorage), so without this a visitor who picked
+          dark mode gets a light flash. Colors mirror palette.js.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var s=localStorage.getItem('${CONFIG_STORAGE_KEY}');if(!s)return;if(JSON.parse(s).mode!=='dark')return;var h=document.documentElement;h.setAttribute('data-theme-mode','dark');h.style.colorScheme='dark';h.style.backgroundColor='${DARK_BACKGROUND}';document.body.style.backgroundColor='${DARK_BACKGROUND}';}catch(e){}})();`
+          }}
+        />
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ProviderWrapper>{children}</ProviderWrapper>
         </AppRouterCacheProvider>

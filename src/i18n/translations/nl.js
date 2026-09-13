@@ -493,7 +493,25 @@ export const translations = {
           'Bij dit project wilde de klant een nieuwe uitstraling van de tuin. ' +
           'Er is hierbij gekozen voor padouk gevelbekleding; dit is een hoogwaardige en stabiele tropische hardhoutsoort. ' +
           'Deze houtsoort behoort tot duurzaamheidsklasse 1 en kan wel 20 tot 25 jaar onbehandeld meegaan. ' +
-          'Verder is er gekozen voor een barcodeprofiel.'
+          'Verder is er gekozen voor een barcodeprofiel.',
+        story: {
+          s1: {
+            title: 'De vraag van de klant',
+            body: 'De klant wilde een nieuwe uitstraling van de tuin — warm, natuurlijk en met karakter. Een gevel die opvalt zonder te schreeuwen.'
+          },
+          s2: {
+            title: 'De keuze voor padouk',
+            body: 'We kozen voor padouk: een tropische hardhoutsoort uit duurzaamheidsklasse 1. Stabiel, hoogwaardig, en met een rijke roodbruine kleur die mooi vergrijst.'
+          },
+          quote: {
+            text: 'Padouk kan wel 20 tot 25 jaar onbehandeld meegaan — een gevel die je kinderen nog volwassen ziet worden.',
+            attribution: 'Robin & Thijs, RoThi'
+          },
+          s3: {
+            title: 'Het barcodeprofiel',
+            body: 'Verder kozen we voor een barcodeprofiel: planken in wisselende breedtes die samen een rustig, ritmisch lijnenspel vormen. Subtiel, maar onmiskenbaar.'
+          }
+        }
       },
       project3: {
         title: 'Overkapping en tuinkamer',

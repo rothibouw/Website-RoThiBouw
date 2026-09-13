@@ -12,34 +12,60 @@ import Loader from '@/components/Loader';
 
 /***************************  COMMON - LAZY SECTION  ***************************/
 
+/**
+ * Loads below-the-fold sections once they scroll into view.
+ *
+ * Anything rendered here is client-only, so it never reaches the server HTML —
+ * keep a page's first section (its heading in particular) outside of this.
+ */
 export default function LazySection({ sections, fallback = <Loader />, offset = '0px', placeholderHeight = 400 }) {
   const sectionList = useMemo(() => (Array.isArray(sections) ? sections : [sections]), [sections]);
   const [isVisible, setIsVisible] = useState(false);
-  const [loadedComponents, setLoadedComponents] = useState(Array(sectionList.length).fill(null));
+  const [loadedComponents, setLoadedComponents] = useState(null);
   const ref = useRef(null);
+  const hasLoaded = useRef(false);
 
   useEffect(() => {
+    const node = ref.current;
+    if (!node) return undefined;
+
+    const load = () => {
+      if (hasLoaded.current) return;
+      hasLoaded.current = true;
+      setIsVisible(true);
+
+      // allSettled, not all: one failing import must not blank the whole page
+      Promise.allSettled(sectionList.map((section) => section.importFunc().then((module) => module.default))).then((results) => {
+        results.forEach((result, index) => {
+          if (result.status === 'rejected') {
+            console.error(`LazySection: section ${index} failed to load`, result.reason);
+          }
+        });
+        setLoadedComponents(results.map((result) => (result.status === 'fulfilled' ? result.value : null)));
+      });
+    };
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !isVisible) {
-          setIsVisible(true);
-          Promise.all(sectionList.map((section) => section.importFunc().then((module) => module.default))).then((components) =>
-            setLoadedComponents(components)
-          );
+        if (entry.isIntersecting) {
+          load();
+          observer.disconnect();
         }
       },
       { rootMargin: offset, threshold: 0.1 }
     );
 
-    if (ref.current) observer.observe(ref.current);
+    observer.observe(node);
 
     return () => observer.disconnect();
-  }, [sectionList, offset, isVisible]);
+  }, [sectionList, offset]);
 
   return (
-    <Box ref={ref} sx={{ minHeight: placeholderHeight }}>
-      {isVisible && loadedComponents.every((component) => component)
-        ? sectionList.map((section, index) => createElement(loadedComponents[index], { key: index, ...section.props }))
+    <Box ref={ref} sx={{ ...(!loadedComponents && { minHeight: placeholderHeight }) }}>
+      {loadedComponents
+        ? sectionList.map((section, index) =>
+            loadedComponents[index] ? createElement(loadedComponents[index], { key: index, ...section.props }) : null
+          )
         : isVisible && fallback}
     </Box>
   );
@@ -48,7 +74,6 @@ export default function LazySection({ sections, fallback = <Loader />, offset = 
 LazySection.propTypes = {
   sections: PropTypes.oneOfType([PropTypes.any, PropTypes.array]),
   fallback: PropTypes.node,
-  Loader: PropTypes.any,
   offset: PropTypes.string,
   placeholderHeight: PropTypes.number
 };

@@ -87,7 +87,7 @@ export default function ContactUs4({ headingKey, captionKey, list, showForm = tr
                             heading: t(headingKey),
                             caption: t(captionKey),
                             stackProps: { sx: { alignItems: 'center', textAlign: 'center' } },
-                            headingProps: { sx: { maxWidth: { xs: '85%', sm: '80%' } } },
+                            headingProps: { component: 'h1', sx: { maxWidth: { xs: '85%', sm: '80%' } } },
                             captionProps: { sx: { maxWidth: { sm: '60%' } } }
                           }}
                         />

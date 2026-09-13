@@ -40,14 +40,25 @@ export const projects = [
     location: 'Bladel',
     year: 2026,
     categories: ['carpentry'],
-    isHighlighted: false,
+    isHighlighted: true,
     // Header info
     titleKey: 'projects.items.project2.title',
     // Gallery info
     images: ['/assets/projects/project2/image_1.jpeg', '/assets/projects/project2/image_2.jpeg'],
     thumbnail: '/assets/projects/project2/image_1.jpeg',
     // Description info
-    detailDescriptionKey: 'projects.items.project2.detailDescription',
+    storyItems: [
+      { titleKey: 'projects.items.project2.story.s1.title', bodyKey: 'projects.items.project2.story.s1.body' },
+      {
+        titleKey: 'projects.items.project2.story.s2.title',
+        bodyKey: 'projects.items.project2.story.s2.body',
+        quote: {
+          textKey: 'projects.items.project2.story.quote.text',
+          attributionKey: 'projects.items.project2.story.quote.attribution'
+        }
+      },
+      { titleKey: 'projects.items.project2.story.s3.title', bodyKey: 'projects.items.project2.story.s3.body' }
+    ],
     // Project information
     // projectInformationDescriptionKey: 'projects.items.project2.projectInformationDescription',
     primaryInfo: [
@@ -65,6 +76,7 @@ export const projects = [
     // General project info
     id: 'project-3',
     slug: 'overkapping-tuinkamer-schijndel',
+    location: '-',
     year: 2025,
     categories: ['woodConstruction', 'renovations'],
     isHighlighted: true,
@@ -86,7 +98,7 @@ export const projects = [
     // projectInformationDescriptionKey: 'projects.items.project3.projectInformationDescription',
     primaryInfo: [
       { icon: 'tabler-calendar', labelKey: 'projects.specs.year', value: '2025' },
-      { icon: 'tabler-folder', labelKey: 'projects.specs.category', value: 'Wood Construction & Renovations' }
+      { icon: 'tabler-folder', labelKey: 'projects.specs.category', valueKey: 'projects.categories.woodConstruction' }
     ]
     // // Review/Testimonial info
     // testimonial: {
@@ -101,7 +113,7 @@ export const projects = [
     location: 'Hilvarenbeek',
     year: 2025,
     categories: ['sustainability'],
-    isHighlighted: false,
+    isHighlighted: true,
     // Header info
     titleKey: 'projects.items.project4.title',
     subtitleKey: 'projects.items.project4.subtitle',
@@ -136,7 +148,7 @@ export const projects = [
     location: 'Lage Mierde',
     year: 2024,
     categories: ['sustainability', 'woodConstruction', 'carpentry'],
-    isHighlighted: false,
+    isHighlighted: true,
     // Header info
     titleKey: 'projects.items.project5.title',
     subtitleKey: 'projects.items.project5.subtitle',

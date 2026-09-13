@@ -345,8 +345,7 @@ export const translations = {
         f2: 'Kitchen and bathroom remodels',
         f3: 'Extensions and additions',
         f4: 'Structural modifications',
-        f5: 'Electrical and water installations',
-        f6: 'Flooring and wall renewals'
+        f5: 'Electrical and water installations'
       }
     },
     roofing: {
@@ -384,8 +383,7 @@ export const translations = {
         f2: 'Addressing cold bridges',
         f3: 'Energy-saving installations',
         f4: 'Solar panels',
-        f5: 'Possibility of subsidies',
-        f6: 'Other sustainability measures'
+        f5: 'Possibility of subsidies'
       }
     },
     woodConstruction: {
@@ -397,9 +395,7 @@ export const translations = {
         f1: 'Wooden load-bearing structures',
         f2: 'Prefab',
         f3: 'Handmade',
-        f4: 'Various types of wood',
-        f5: 'Custom wooden projects',
-        f6: 'Wooden facades and cladding'
+        f4: 'Various types of wood'
       }
     },
     process: {
@@ -439,12 +435,12 @@ export const translations = {
     caption: 'Explore our completed construction projects and see the quality of our craftsmanship',
     filterByCategory: 'Filter by Category',
     noProjects: 'No projects found in this category',
-    specifications: 'Specifications',
     aboutProject: 'About this Project',
     information: 'Project Information',
     projectNotFound: 'Project not found',
     aboutThisProject: 'What we did for this project',
     seeOurOtherProjects: 'See Our Other Projects',
+    viewAllProjects: 'View All Projects',
 
     // Transformation section
     transformation: {
@@ -479,6 +475,7 @@ export const translations = {
     items: {
       project1: {
         title: 'Roof Renovation Hooge Mierde',
+        subtitle: 'Making your home more sustainable, and a fresh new roof to go with it.',
         detailDescription:
           'During this roof renovation, we used renovation panels, Renopir, on the residential building. ' +
           'This allows us to leave the roof sheathing in place so that nothing inside the house is affected. ' +
@@ -493,10 +490,29 @@ export const translations = {
           'With this project, the client wanted a new look for the garden. ' +
           'We chose padouk facade cladding, which is a high-quality and stable tropical hardwood. ' +
           'This type of wood belongs to durability class 1 and can last 20 to 25 years without treatment. ' +
-          'We also chose barcode profile.'
+          'We also chose barcode profile.',
+        story: {
+          s1: {
+            title: "The client's request",
+            body: 'The client wanted a fresh look for the garden — warm, natural, and full of character. A facade that stands out without being loud.'
+          },
+          s2: {
+            title: 'The choice for padouk',
+            body: 'We chose padouk: a tropical hardwood from durability class 1. Stable, high-quality, and with a rich reddish-brown color that weathers beautifully.'
+          },
+          quote: {
+            text: 'Padouk can easily last 20 to 25 years untreated — a facade your children will still see looking great when they grow up.',
+            attribution: 'Robin & Thijs, RoThi'
+          },
+          s3: {
+            title: 'The barcode profile',
+            body: 'We also chose a barcode profile: planks of varying widths that together create a calm, rhythmic pattern of lines. Subtle, but unmistakable.'
+          }
+        }
       },
       project3: {
         title: 'Canopy and garden room',
+        subtitle: 'Two structures that give your garden an upgrade.',
         detailDescription:
           'This client wanted more connection from inside to outside. ' +
           'We chose a garden room and a canopy. ' +
@@ -511,6 +527,7 @@ export const translations = {
       },
       project4: {
         title: 'Sustainable flat roof Hilvarenbeek',
+        subtitle: 'This client is nice and warm again.',
         detailDescription:
           'This flat roof was long overdue for replacement. ' +
           'After we removed the old roof covering and roof sheathing, we could start building. ' +
@@ -520,6 +537,7 @@ export const translations = {
       },
       project5: {
         title: 'Douglas canopy Lage Mierde',
+        subtitle: 'A warm, characterful canopy for every season.',
         detailDescription:
           'This Douglas canopy was handmade and installed by RoThi. ' +
           'This client chose a gable roof with the OVH 206 tile on it. ' +
@@ -541,6 +559,7 @@ export const translations = {
       },
       project8: {
         title: 'Facade Cladding Business Hall Veldhoven',
+        subtitle: 'A simple solution that instantly gives your unit a fresh look.',
         detailDescription:
           'In consultation with the client, we chose low-maintenance facade cladding to give the hall a fresh look and warm appearance. ' +
           'This Facade block profile combines the warm appearance of wooden slats with the durability and ease of coated steel.'

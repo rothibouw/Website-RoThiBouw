@@ -1,7 +1,7 @@
 'use client';
 
 // @project
-import LazySection from '@/components/LazySection';
+import { Project2 } from '@/blocks/projects';
 import useDataThemeMode from '@/hooks/useDataThemeMode';
 
 // @data
@@ -12,18 +12,7 @@ import { projects, projectCategories } from './data';
 export default function ProjectsPage() {
   useDataThemeMode();
 
-  return (
-    <LazySection
-      sections={{
-        importFunc: () => import('@/blocks/projects').then((module) => ({ default: module.Project2 })),
-        props: {
-          headingKey: 'projects.heading',
-          captionKey: 'projects.caption',
-          projects,
-          categories: projectCategories
-        }
-      }}
-      offset="200px"
-    />
-  );
+  // The grid is this page's only content, so it is imported statically and
+  // server-rendered rather than lazy-loaded behind an IntersectionObserver.
+  return <Project2 headingKey="projects.heading" captionKey="projects.caption" projects={projects} categories={projectCategories} />;
 }

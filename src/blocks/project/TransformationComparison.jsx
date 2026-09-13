@@ -47,17 +47,7 @@ export default function TransformationComparison({ headingKey, captionKey, befor
                     width: 1,
                     paddingTop: '75%', // 4:3 aspect ratio
                     borderRadius: BORDER_RADIUS.xs,
-                    overflow: 'hidden',
-                    boxShadow: theme.shadows[4],
-                    '&:after': {
-                      content: '""',
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      background: `linear-gradient(180deg, ${alpha(theme.palette.common.black, 0)} 50%, ${alpha(theme.palette.common.black, 0.3)} 100%)`
-                    }
+                    overflow: 'hidden'
                   }}
                 >
                   <Box
@@ -104,17 +94,7 @@ export default function TransformationComparison({ headingKey, captionKey, befor
                     width: 1,
                     paddingTop: '75%', // 4:3 aspect ratio
                     borderRadius: BORDER_RADIUS.xs,
-                    overflow: 'hidden',
-                    boxShadow: theme.shadows[4],
-                    '&:after': {
-                      content: '""',
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      background: `linear-gradient(180deg, ${alpha(theme.palette.common.black, 0)} 50%, ${alpha(theme.palette.common.black, 0.3)} 100%)`
-                    }
+                    overflow: 'hidden'
                   }}
                 >
                   <Box

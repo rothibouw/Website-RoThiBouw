@@ -35,7 +35,8 @@ export async function generateMetadata({ params }) {
   }
 
   const title = t(project.titleKey);
-  const description = t(project.detailDescriptionKey)?.slice(0, 160);
+  const descriptionKey = project.detailDescriptionKey ?? project.storyItems?.[0]?.bodyKey;
+  const description = descriptionKey ? t(descriptionKey)?.slice(0, 160) : undefined;
 
   return {
     title,
