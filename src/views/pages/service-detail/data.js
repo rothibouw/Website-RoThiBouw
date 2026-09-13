@@ -1,6 +1,14 @@
-// Service detail page section configuration for LazySection.
-// Pure JS — no React imports, no t() calls.
-// Blocks receive i18n keys and translate internally.
+// Service detail page section configuration.
+// Pure data — no t() calls. Blocks receive i18n keys and translate internally.
+//
+// Components are imported statically, not behind a runtime import(), so every
+// section ends up in the server-rendered HTML.
+
+// @project
+import { ContactUs3 } from '@/blocks/contact-us';
+import { Cta1 } from '@/blocks/cta';
+import { Project1 } from '@/blocks/projects';
+import { ServiceOverview1 } from '@/blocks/service';
 
 import { projects } from '@/data/projects';
 import { servicesNavigationData } from '@/data/services';
@@ -10,12 +18,11 @@ export const createServiceDetailSections = (service) => {
 
   const sections = [];
 
-  // Note: the hero is rendered eagerly by the page view so that it is
-  // server-rendered; it is deliberately not part of this list.
+  // Note: the hero is rendered by the page view itself.
 
-  // 2. Description + feature list combined — images auto-rotate every 4s
+  // Description + feature list combined — images auto-rotate every 4s
   sections.push({
-    importFunc: () => import('@/blocks/service').then((module) => ({ default: module.ServiceOverview1 })),
+    Component: ServiceOverview1,
     props: {
       titleKey: service.descriptionTitleKey,
       descriptionKey: service.descriptionKey,
@@ -24,11 +31,11 @@ export const createServiceDetailSections = (service) => {
     }
   });
 
-  // 4. Related projects (only when at least one exists)
+  // Related projects (only when at least one exists)
   const relatedProjects = projects.filter((project) => project.categories.some((cat) => service.relatedCategories.includes(cat)));
   if (relatedProjects.length > 0) {
     sections.push({
-      importFunc: () => import('@/blocks/projects').then((module) => ({ default: module.Project1 })),
+      Component: Project1,
       props: {
         headingKey: 'services.relatedProjects.heading',
         captionKey: 'services.relatedProjects.caption',
@@ -39,9 +46,9 @@ export const createServiceDetailSections = (service) => {
     });
   }
 
-  // 5. CTA — keys only, Cta1 translates and adds NextLink internally
+  // CTA — keys only, Cta1 translates and adds NextLink internally
   sections.push({
-    importFunc: () => import('@/blocks/cta').then((module) => ({ default: module.Cta1 })),
+    Component: Cta1,
     props: {
       headingKey: 'services.cta.heading',
       primaryBtn: {
@@ -51,9 +58,9 @@ export const createServiceDetailSections = (service) => {
     }
   });
 
-  // 6. Other services navigation (current service filtered out)
+  // Other services navigation (current service filtered out)
   sections.push({
-    importFunc: () => import('@/blocks/contact-us').then((module) => ({ default: module.ContactUs3 })),
+    Component: ContactUs3,
     props: {
       ...servicesNavigationData,
       list: servicesNavigationData.list.filter((item) => item.titleKey !== service.titleKey)

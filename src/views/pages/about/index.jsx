@@ -4,12 +4,15 @@
 import Stack from '@mui/material/Stack';
 
 // @project
+import { OurStory1 } from '@/blocks/about';
 import { HeroSlideshow } from '@/blocks/hero';
-import LazySection from '@/components/LazySection';
+import { Team10 } from '@/blocks/team';
+
 import useDataThemeMode from '@/hooks/useDataThemeMode';
 
 // @data
-// import { heroData, ourStoryData, timelineData, teamData } from './data';
+// Note: `timelineData` and the TimeLine1 block ("Onze reis") are written but
+// deliberately not rendered yet — same status as serviceProcessSteps.
 import { heroData, ourStoryData, teamData } from './data';
 
 /***************************  ABOUT PAGE  ***************************/
@@ -17,17 +20,12 @@ import { heroData, ourStoryData, teamData } from './data';
 export default function AboutPage() {
   useDataThemeMode();
 
+  // Every section is imported statically so the whole page is server-rendered.
   return (
     <Stack spacing={0}>
       <HeroSlideshow {...heroData} headingComponent="h1" />
-      <LazySection
-        sections={[
-          { importFunc: () => import('@/blocks/about').then((m) => ({ default: m.OurStory1 })), props: ourStoryData },
-          // { importFunc: () => import('@/blocks/timeline').then((m) => ({ default: m.TimeLine1 })), props: timelineData },
-          { importFunc: () => import('@/blocks/team').then((m) => ({ default: m.Team10 })), props: teamData }
-        ]}
-        offset="200px"
-      />
+      <OurStory1 {...ourStoryData} />
+      <Team10 {...teamData} />
     </Stack>
   );
 }

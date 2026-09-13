@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 
 // @project
 import { HeroSlideshow } from '@/blocks/hero';
-import LazySection from '@/components/LazySection';
 import ContainerWrapper from '@/components/ContainerWrapper';
 import useDataThemeMode from '@/hooks/useDataThemeMode';
 
@@ -36,14 +35,15 @@ export default function ServiceDetailPage({ service }) {
 
   return (
     <Stack spacing={0}>
-      {/* The hero carries the page h1, so it is rendered eagerly rather than lazily */}
       <HeroSlideshow
         slides={[{ image: service.heroImage, title: service.titleKey }]}
         height={{ xs: 300, sm: 400, md: 500 }}
         showText
         headingComponent="h1"
       />
-      <LazySection sections={sections} offset="200px" />
+      {sections.map(({ Component, props }, index) => (
+        <Component key={index} {...props} />
+      ))}
     </Stack>
   );
 }

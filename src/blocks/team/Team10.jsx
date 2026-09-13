@@ -50,7 +50,6 @@ Team10.propTypes = {
     PropTypes.shape({
       name: PropTypes.string.isRequired,
       roleKey: PropTypes.string.isRequired,
-      quoteKey: PropTypes.string.isRequired,
       avatar: PropTypes.string.isRequired,
       phone: PropTypes.string,
       email: PropTypes.string,

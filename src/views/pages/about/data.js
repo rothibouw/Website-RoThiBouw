@@ -4,7 +4,7 @@ export const heroData = {
       image: '/assets/about/hero.jpeg',
       title: 'about.hero.title',
       titleHighlight: 'about.hero.titleHighlight',
-      // description: 'about.hero.description',
+      description: 'about.hero.description',
       objectPosition: 'center 30%' // Position image higher to show faces on larger screens
     }
   ],
@@ -51,7 +51,6 @@ export const teamData = {
     {
       name: 'Roy van Strijdhoven',
       roleKey: 'about.founders.roy.role',
-      quoteKey: 'about.founders.roy.quote',
       avatar: '/assets/about/roy.png',
       phone: '+31 (0)6 81 39 97 41',
       email: 'royvanstrijdhoven@rothibouw.nl'
@@ -60,7 +59,6 @@ export const teamData = {
     {
       name: 'Thijs van Gisbergen',
       roleKey: 'about.founders.thijs.role',
-      quoteKey: 'about.founders.thijs.quote',
       avatar: '/assets/about/thijs.jpeg',
       phone: '+31 (0)6 57 41 59 09',
       email: 'thijsvangisbergen@rothibouw.nl'

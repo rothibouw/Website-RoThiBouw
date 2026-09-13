@@ -175,7 +175,8 @@ export const translations = {
     hero: {
       title: 'Van vriendschap,',
       titleHighlight: 'naar vakmanschap',
-      description: '...'
+      description:
+        'Twee vrienden die elkaar op hun veertiende leerden kennen en samen een bouwbedrijf begonnen. Vakmanschap met een persoonlijke aanpak.'
     },
     story: {
       heading: 'Van droom naar',
@@ -211,12 +212,10 @@ export const translations = {
     founders: {
       heading: 'De vakmannen achter RoThi Bouw',
       roy: {
-        role: 'Mede-oprichter',
-        quote: '"..."'
+        role: 'Mede-oprichter'
       },
       thijs: {
-        role: 'Mede-oprichter',
-        quote: '"..."'
+        role: 'Mede-oprichter'
       }
     }
   },
@@ -389,7 +388,6 @@ export const translations = {
     caption: 'Ontdek hier onze uitgevoerde projecten',
     filterByCategory: 'Filter op categorie',
     noProjects: 'Geen projecten gevonden in deze categorie',
-    information: 'Projectinformatie',
     projectNotFound: 'Project niet gevonden',
     aboutThisProject: 'Over dit project',
     seeOurOtherProjects: 'Bekijk onze andere projecten',

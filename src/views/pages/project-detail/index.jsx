@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 
 // @project
 import { ProjectHeader } from '@/blocks/project';
-import LazySection from '@/components/LazySection';
 import ContainerWrapper from '@/components/ContainerWrapper';
 import useDataThemeMode from '@/hooks/useDataThemeMode';
 import useTranslation from '@/hooks/useTranslation';
@@ -34,9 +33,10 @@ export default function ProjectDetailPage({ project }) {
 
   return (
     <Stack spacing={0}>
-      {/* The header carries the page h1, so it is rendered eagerly rather than lazily */}
       <ProjectHeader titleKey={project.titleKey} subtitleKey={project.subtitleKey} />
-      <LazySection sections={sections} offset="200px" />
+      {sections.map(({ Component, props }, index) => (
+        <Component key={index} {...props} />
+      ))}
     </Stack>
   );
 }

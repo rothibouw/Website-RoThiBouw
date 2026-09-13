@@ -173,7 +173,8 @@ export const translations = {
     hero: {
       title: 'From friendship,',
       titleHighlight: 'to craftsmanship',
-      description: '...'
+      description:
+        'Two friends who met at fourteen and went on to start a construction company together. Craftsmanship with a personal touch.'
     },
     story: {
       heading: 'From dream to',
@@ -208,12 +209,10 @@ export const translations = {
     founders: {
       heading: 'The craftsmen behind RoThi Bouw',
       roy: {
-        role: 'Co-founder',
-        quote: '"..."'
+        role: 'Co-founder'
       },
       thijs: {
-        role: 'Co-founder',
-        quote: '"..."'
+        role: 'Co-founder'
       }
     }
   },
@@ -386,7 +385,6 @@ export const translations = {
     caption: 'Explore our completed construction projects and see the quality of our craftsmanship',
     filterByCategory: 'Filter by Category',
     noProjects: 'No projects found in this category',
-    information: 'Project Information',
     projectNotFound: 'Project not found',
     aboutThisProject: 'What we did for this project',
     seeOurOtherProjects: 'See Our Other Projects',

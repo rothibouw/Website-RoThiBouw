@@ -6,9 +6,8 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 // @project
-import { VacancyDetail1 } from '@/blocks/vacancies';
+import { ApplySection1, VacancyDetail1 } from '@/blocks/vacancies';
 import ContainerWrapper from '@/components/ContainerWrapper';
-import LazySection from '@/components/LazySection';
 import useDataThemeMode from '@/hooks/useDataThemeMode';
 import useTranslation from '@/hooks/useTranslation';
 
@@ -33,15 +32,8 @@ export default function VacancyDetailPage({ vacancy }) {
 
   return (
     <Stack spacing={0}>
-      {/* Carries the page h1 — rendered eagerly so it is server-rendered */}
       <VacancyDetail1 vacancy={vacancy} applyHref="#apply" />
-      <LazySection
-        sections={{
-          importFunc: () => import('@/blocks/vacancies').then((module) => ({ default: module.ApplySection1 })),
-          props: { vacancies: activeVacancies, defaultPosition: vacancy.slug }
-        }}
-        offset="200px"
-      />
+      <ApplySection1 vacancies={activeVacancies} defaultPosition={vacancy.slug} />
     </Stack>
   );
 }
