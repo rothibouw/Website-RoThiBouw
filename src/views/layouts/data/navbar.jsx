@@ -1,6 +1,7 @@
 // @project
 import useTranslation from '@/hooks/useTranslation';
 
+import { VACANCIES_PUBLISHED } from '@/data/vacancies';
 import { MegaMenuType } from '@/enum';
 
 /***************************  NAVBAR - DATA  ***************************/
@@ -60,6 +61,16 @@ export const useNavbarData = () => {
         title: t('nav.projects'),
         link: '/projects'
       },
+      // Hidden until RoThi confirm they want the careers section public
+      ...(VACANCIES_PUBLISHED
+        ? [
+            {
+              id: 'vacancies',
+              title: t('nav.career'),
+              link: '/vacancies'
+            }
+          ]
+        : []),
       {
         id: 'contact',
         title: t('nav.contact'),

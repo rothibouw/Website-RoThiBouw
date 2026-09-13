@@ -1,5 +1,6 @@
 // @project
 import branding from '@/branding.json';
+import { VACANCIES_PUBLISHED } from '@/data/vacancies';
 
 /***************************  SEO METADATA  ***************************/
 
@@ -89,6 +90,21 @@ export const projectsMetadata = {
     title: 'Projecten',
     description: "Foto's en beschrijvingen van afgeronde bouwprojecten door RoThi Bouw.",
     url: '/projects',
+    ...ogCommon
+  }
+};
+
+// VACANCIES
+export const vacanciesMetadata = {
+  title: 'Vacatures',
+  // Kept out of the index until the careers section is published — see VACANCIES_PUBLISHED
+  ...(VACANCIES_PUBLISHED ? {} : { robots: { index: false, follow: false } }),
+  description:
+    'Werken bij RoThi Bouw? Bekijk onze openstaande vacatures voor vakmensen in de regio Reusel, Eindhoven en Tilburg en solliciteer direct online.',
+  openGraph: {
+    title: 'Vacatures',
+    description: 'Kom werken bij RoThi Bouw. Bekijk onze openstaande vacatures en solliciteer direct.',
+    url: '/vacancies',
     ...ogCommon
   }
 };

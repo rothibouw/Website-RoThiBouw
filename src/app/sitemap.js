@@ -1,6 +1,7 @@
 // @project
 import { services } from '@/data/services';
 import { projects } from '@/data/projects';
+import { activeVacancies, VACANCIES_PUBLISHED } from '@/data/vacancies';
 
 const baseUrl = process.env.NEXT_PUBLIC_METADATA_BASE || 'https://www.rothibouw.nl';
 
@@ -11,7 +12,8 @@ export default function sitemap() {
     { url: baseUrl, lastModified: new Date(), changeFrequency: 'monthly', priority: 1.0 },
     { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/projects`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.7 }
+    { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.7 },
+    ...(VACANCIES_PUBLISHED ? [{ url: `${baseUrl}/vacancies`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.6 }] : [])
     // Note: /privacy-policy and /terms-conditions are excluded (noindex)
   ];
 
@@ -29,5 +31,12 @@ export default function sitemap() {
     priority: 0.7
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...projectRoutes];
+  const vacancyRoutes = (VACANCIES_PUBLISHED ? activeVacancies : []).map((vacancy) => ({
+    url: `${baseUrl}/vacancies/${vacancy.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.6
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...projectRoutes, ...vacancyRoutes];
 }
